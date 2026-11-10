@@ -2,7 +2,7 @@ name: 뉴스 수집
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '7,37 * * * *'
   workflow_dispatch:
 
 permissions:
