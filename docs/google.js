@@ -2,8 +2,10 @@
 // - 액세스 토큰은 메모리에만 두고 저장하지 않습니다(잠그면 삭제).
 // - 토큰은 약 1시간 유효합니다. 만료되면 '다시 연결' 버튼으로 새로 받습니다.
 (function () {
-  const SCOPES = ['https://www.googleapis.com/auth/calendar.events', 'https://www.googleapis.com/auth/tasks'];
-  const CAL = 'https://www.googleapis.com/calendar/v3/calendars/primary/events';
+  // 캘린더 목록 보기(읽기 전용) · 일정 보기/편집 · 할 일
+  const SCOPES = ['https://www.googleapis.com/auth/calendar.calendarlist.readonly', 'https://www.googleapis.com/auth/calendar.events', 'https://www.googleapis.com/auth/tasks'];
+  const CALS = 'https://www.googleapis.com/calendar/v3/calendars';
+  const evUrl = cal => `${CALS}/${encodeURIComponent(cal || 'primary')}/events`;
   const TASKS = 'https://tasks.googleapis.com/tasks/v1';
   let token = null, exp = 0, loading = null;
 
@@ -30,8 +32,8 @@
         scope: SCOPES.join(' '),
         callback: r => {
           if (r.error) { rej(new Error(r.error === 'access_denied' ? '권한 허용이 취소되었습니다.' : '구글 연결 오류: ' + r.error)); return; }
-          if (!google.accounts.oauth2.hasGrantedAllScopes(r, SCOPES[0], SCOPES[1])) {
-            rej(new Error('캘린더와 할 일 권한을 모두 체크해야 합니다. 다시 연결해 주세요.')); return;
+          if (!google.accounts.oauth2.hasGrantedAllScopes(r, ...SCOPES)) {
+            rej(new Error('캘린더 목록·일정·할 일 권한을 모두 체크해야 합니다. 다시 연결해 주세요.')); return;
           }
           token = r.access_token;
           exp = Date.now() + (Number(r.expires_in) || 3600) * 1000 - 60000;
@@ -88,10 +90,11 @@
 
   window.GApi = {
     SCOPES, load, connect, hasToken, clear, revoke,
-    listEvents: (timeMin, timeMax) => pages(CAL, { timeMin, timeMax, singleEvents: 'true', orderBy: 'startTime', maxResults: 250 }, 4),
-    insertEvent: ev => api('POST', CAL, ev),
-    patchEvent: (id, ev) => api('PATCH', `${CAL}/${encodeURIComponent(id)}`, ev),
-    deleteEvent: id => api('DELETE', `${CAL}/${encodeURIComponent(id)}`),
+    calendars: () => pages('https://www.googleapis.com/calendar/v3/users/me/calendarList', { minAccessRole: 'reader', maxResults: 250 }, 2),
+    listEvents: (cal, timeMin, timeMax) => pages(evUrl(cal), { timeMin, timeMax, singleEvents: 'true', orderBy: 'startTime', maxResults: 250 }, 4),
+    insertEvent: (cal, ev) => api('POST', evUrl(cal), ev),
+    patchEvent: (cal, id, ev) => api('PATCH', `${evUrl(cal)}/${encodeURIComponent(id)}`, ev),
+    deleteEvent: (cal, id) => api('DELETE', `${evUrl(cal)}/${encodeURIComponent(id)}`),
     lists: async () => (await api('GET', `${TASKS}/users/@me/lists?maxResults=100`)).items || [],
     listTasks: listId => pages(`${TASKS}/lists/${encodeURIComponent(listId)}/tasks`, { showCompleted: 'true', showHidden: 'true', maxResults: 100 }, 5),
     insertTask: (listId, t) => api('POST', `${TASKS}/lists/${encodeURIComponent(listId)}/tasks`, t),

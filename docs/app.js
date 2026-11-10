@@ -31,6 +31,7 @@
     search: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
     lock: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
     gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+    refresh: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>',
     back: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>'
   };
 
@@ -77,11 +78,20 @@
   const localDT = d => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}T${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
   const addDays = (ymd, n) => { const d = new Date(ymd + 'T00:00'); d.setDate(d.getDate() + n); return d.toLocaleDateString('sv-SE'); };
   const hm = ts => { const d = new Date(ts); return `${d.getHours()}:${pad2(d.getMinutes())}`; };
-  function normEv(e) {
+  // 일정은 캘린더마다 따로 있으므로 '캘린더ID::일정ID'를 고유 키로 사용
+  function normEv(e, cal) {
     const all = !e.start.dateTime;
-    return { gid: e.id, title: e.summary || '(제목 없음)', allDay: all, start: all ? e.start.date : e.start.dateTime,
+    const c = cal || { id: 'primary', name: '', color: '', edit: true };
+    return { gid: `${c.id}::${e.id}`, eid: e.id, cal: c.id, calName: c.name, color: c.color, canEdit: c.edit !== false,
+      title: e.summary || '(제목 없음)', allDay: all, start: all ? e.start.date : e.start.dateTime,
       end: all ? e.end.date : e.end.dateTime, location: e.location || '', desc: e.description || '', link: e.htmlLink || '' };
   }
+  const safeColor = c => /^#[0-9a-fA-F]{6}$/.test(c || '') ? c : '#0b5c6b';
+  const dot = c => `<svg class="cdot" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="${safeColor(c)}"/></svg>`;
+  // 구글 캘린더 목록 → 표시할 캘린더(사용자가 앱에서 바꾼 선택 우선, 없으면 구글에서 '표시' 중인 캘린더)
+  const calById = id => (G().calendars || []).find(c => c.id === id);
+  const shownCals = () => (G().calendars || []).filter(c => c.show);
+  const writableCals = () => (G().calendars || []).filter(c => c.edit && c.show);
   function normTask(t) {
     return { gid: t.id, title: t.title || '(제목 없음)', notes: t.notes || '', due: t.due ? t.due.slice(0, 10) : null,
       done: t.status === 'completed', completedAt: t.completed || null };
@@ -97,7 +107,8 @@
   const gTasks = () => (G().cache && G().cache.tasks) || [];
 
   function gPreload() { if (gOn()) GApi.load().catch(() => {}); }
-  const gConnect = consent => GApi.connect(G().clientId, consent);
+  // 캘린더 목록 권한이 추가된 뒤(scopeVer 2) 처음 연결할 때는 동의 화면을 한 번 더 띄움
+  const gConnect = consent => GApi.connect(G().clientId, consent || G().scopeVer !== 2).then(() => { G().scopeVer = 2; });
   // 토큰이 없으면 먼저 연결하고 실행합니다(버튼을 누른 처리 안에서 호출해야 팝업이 열림).
   async function gRun(fn) {
     if (!GApi.hasToken()) await gConnect(false);
@@ -110,14 +121,27 @@
     try {
       const g = G(), t = today();
       const min = new Date(addDays(t, -30) + 'T00:00'), max = new Date(addDays(t, 61) + 'T00:00');
-      const evs = await GApi.listEvents(min.toISOString(), max.toISOString());
+      // 1) 캘린더 목록: 기본 캘린더뿐 아니라 구독·공유·직접 만든 캘린더 모두
+      const prev = {};
+      (g.calendars || []).forEach(c => { if (c.userSet) prev[c.id] = c.show; });
+      g.calendars = (await GApi.calendars()).filter(c => !c.deleted).map(c => ({
+        id: c.id, name: c.summaryOverride || c.summary || c.id, color: c.backgroundColor || '', primary: !!c.primary,
+        edit: c.accessRole === 'owner' || c.accessRole === 'writer',
+        show: c.id in prev ? prev[c.id] : !!(c.selected || c.primary), userSet: c.id in prev
+      })).sort((a, b) => (b.primary ? 1 : 0) - (a.primary ? 1 : 0) || a.name.localeCompare(b.name, 'ko'));
+      // 2) 표시할 캘린더마다 일정 가져오기(한 캘린더가 실패해도 나머지는 표시)
+      const evs = [], failed = [];
+      await Promise.all(shownCals().map(async c => {
+        try { (await GApi.listEvents(c.id, min.toISOString(), max.toISOString())).forEach(e => { if (e.status !== 'cancelled' && e.start) evs.push(normEv(e, c)); }); }
+        catch (e) { if (e.code === 'EXPIRED') throw e; failed.push(c.name); }
+      }));
+      if (failed.length) toast(`일부 캘린더를 불러오지 못했습니다: ${failed.join(', ')}`);
       if (!g.listId) {
         const ls = await GApi.lists();
         if (ls.length) { g.listId = ls[0].id; g.listName = ls[0].title; }
       }
       const tks = g.listId ? await GApi.listTasks(g.listId) : [];
-      g.cache = { events: evs.filter(e => e.status !== 'cancelled' && e.start).map(normEv),
-        tasks: tks.filter(x => !x.deleted).map(normTask), at: Date.now() };
+      g.cache = { events: evs, tasks: tks.filter(x => !x.deleted).map(normTask), at: Date.now() };
       await saveSettings();
       return true;
     } catch (e) { toast(e.message); return false; }
@@ -353,17 +377,35 @@
     </header>`;
 
   // ---------- 홈 ----------
+  // 화면 순서: 빠른 기록 → 오늘 일정 → 할 일 → 날씨 → 오늘의 영단어 → 오늘의 명언 → 주요 뉴스 → 카테고리
+  let wordIdx = null; // 앱을 새로 열 때(새로고침)마다 다른 단어
+  function pickWord() {
+    let n;
+    do { n = Math.floor(Math.random() * WORDS.length); } while (WORDS.length > 1 && n === wordIdx);
+    wordIdx = n;
+  }
+  function wordHtml() {
+    if (wordIdx == null) pickWord();
+    const w = WORDS[wordIdx];
+    return `<div class="card-head"><span class="label">오늘의 영단어</span>
+      <button type="button" class="sm" data-act="word">${ICON.refresh}<span>다른 단어</span></button></div>
+      <div class="row wrap gap8 baseline"><span class="word">${esc(w.w)}</span><span class="muted small">${esc(w.pos)} · ${esc(w.m)}</span></div>`;
+  }
+  function bindWord() {
+    const b = document.querySelector('#word [data-act="word"]');
+    if (b) b.onclick = () => { pickWord(); document.getElementById('word').innerHTML = wordHtml(); bindWord(); };
+  }
+
   function viewHome() {
     const d = new Date();
     const wd = '일월화수목금토'[d.getDay()];
     const quote = QUOTES[dayIndex() % QUOTES.length];
-    const word = WORDS[dayIndex() % WORDS.length];
     const sched = catBySys('schedule'), todo = catBySys('todo');
     const t = today();
-    // 일정: 앱 기록 + 구글 캘린더(마지막 동기화 사본)
+    // 일정: 앱 기록 + 구글 캘린더(표시하도록 고른 모든 캘린더의 마지막 동기화 사본)
     const evRows = live().filter(i => i.catId === sched.id && (i.date || '').slice(0, 10) === t)
       .map(e => ({ time: (e.date || '').length > 10 ? e.date.slice(11, 16) : '종일', title: e.title || '(제목 없음)', href: `#/item/${e.id}`, g: false }))
-      .concat(gEvents().filter(e => evOnDay(e, t)).map(e => ({ time: evTime(e), title: e.title, href: `#/gevent/${encodeURIComponent(e.gid)}`, g: true })))
+      .concat(gEvents().filter(e => evOnDay(e, t)).map(e => ({ time: evTime(e), title: e.title, href: `#/gevent/${encodeURIComponent(e.gid)}`, g: true, color: e.color, calName: e.calName })))
       .sort((a, b) => (a.time === '종일' ? '00' : a.time).localeCompare(b.time === '종일' ? '00' : b.time));
     // 할 일: 앱 기록 + Google Tasks (미완료 전부 + 오늘 완료한 것)
     const doneToday = ts => ts && new Date(ts).toLocaleDateString('sv-SE') === t;
@@ -374,9 +416,8 @@
       .sort((a, b) => (a.done ? 1 : 0) - (b.done ? 1 : 0) || (a.due || '9').localeCompare(b.due || '9'));
     const doneN = todos.filter(i => i.done).length;
     const g = G();
-    const gLine = !gOn() ? '<p class="muted tiny"><a class="accent" href="#/settings">설정 → 구글 연결</a>에서 구글 캘린더·할 일을 연결할 수 있습니다.</p>'
-      : `<div class="row between gline"><span class="muted tiny">구글 ${g.cache ? hm(g.cache.at) + ' 동기화' : '아직 동기화 전'}${GApi.hasToken() ? '' : ' · 연결 만료'}</span>
-         <button type="button" class="sm" data-act="gsync">${GApi.hasToken() ? '동기화' : '구글 연결'}</button></div>`;
+    const gStatus = !gOn() ? '<p class="muted tiny"><a class="accent" href="#/settings">설정 → 구글 연결</a>에서 구글 캘린더·할 일을 연결할 수 있습니다.</p>'
+      : `<p class="muted tiny gline">구글 ${g.cache ? hm(g.cache.at) + ' 동기화' : '아직 동기화 전'}${GApi.hasToken() ? '' : ' · 연결 만료(할 일의 동기화 버튼으로 다시 연결)'}${shownCals().length > 1 ? ` · 캘린더 ${shownCals().length}개` : ''}</p>`;
     const btnCats = cats().filter(c => c.sys !== 'schedule' && c.sys !== 'todo');
 
     $app.innerHTML = `
@@ -390,36 +431,24 @@
         </nav>
       </header>
 
-      <div class="grid2">
-        <section class="card weather" id="weather" aria-label="날씨">${weatherHtml()}</section>
-        <section class="card" aria-label="오늘의 영단어">
-          <div class="label">오늘의 영단어</div>
-          <div class="word">${esc(word.w)}</div>
-          <div class="muted small">${esc(word.pos)} · ${esc(word.m)}</div>
-        </section>
-      </div>
-
-      <section class="card" aria-label="오늘의 명언">
-        <div class="label">오늘의 명언</div>
-        <p class="quote">${esc(quote.text)}</p>
-        <div class="muted small">${esc(quote.by)}</div>
-      </section>
+      <a class="primary big" href="#/new">+ 빠른 기록 (사진·메모)</a>
 
       <section class="card" aria-label="오늘 일정">
-        <div class="card-head"><h2>오늘 일정</h2><a class="small" href="${gOn() ? '#/gevent/new' : `#/new?cat=${sched.id}`}">+ 추가</a></div>
+        <div class="card-head"><h2>오늘 일정</h2><a class="small accent" href="${gOn() ? '#/gevent/new' : `#/new?cat=${sched.id}`}">+ 추가</a></div>
         ${evRows.length ? evRows.map(e => `
-          <a class="event" href="${e.href}"><span class="time">${esc(e.time)}</span><span class="grow">${esc(e.title)}</span>${e.g ? '<span class="gmark" title="구글 캘린더">G</span>' : ''}</a>`).join('')
+          <a class="event" href="${e.href}"><span class="time">${esc(e.time)}</span><span class="grow">${esc(e.title)}</span>${e.g ? `<span class="calname" title="${esc(e.calName || '구글 캘린더')}">${dot(e.color)}</span>` : ''}</a>`).join('')
           : '<p class="muted small">오늘 일정이 없습니다.</p>'}
-        ${gLine}
+        ${gStatus}
       </section>
 
       <section class="card" aria-label="할 일">
-        <div class="card-head"><h2>할 일</h2><span class="muted small">${todos.length ? `${doneN}/${todos.length} 완료` : ''}</span></div>
+        <div class="card-head"><h2>할 일</h2>
+          <span class="row gap8"><span class="muted small">${todos.length ? `${doneN}/${todos.length} 완료` : ''}</span>
+          ${gOn() ? `<button type="button" class="sm" data-act="gsync">${ICON.refresh}<span>${GApi.hasToken() ? '동기화' : '구글 연결'}</span></button>` : ''}</span></div>
         ${todos.length ? todos.map((i, n) => `
           <div class="todo ${i.done ? 'done' : ''}">
             <input type="checkbox" id="td-${n}" data-act="${i.g ? 'gtoggle' : 'toggle'}" data-id="${esc(i.id)}" ${i.done ? 'checked' : ''}>
             <label for="td-${n}">${esc(i.title)}${i.due && i.due < t && !i.done ? ' <span class="late">지남</span>' : ''}</label>
-            ${i.g ? '<span class="gmark" title="Google Tasks">G</span>' : ''}
             <a class="tiny muted" href="${i.href}">편집</a>
           </div>`).join('') : '<p class="muted small">할 일이 없습니다.</p>'}
         <form class="row gap8" id="f-quicktodo">
@@ -427,6 +456,16 @@
           <input id="qt" type="text" placeholder="새 할 일 입력" autocomplete="off">
           <button type="submit">추가</button>
         </form>
+      </section>
+
+      <a class="card wx" id="weather" href="${WX_SITE}" target="_blank" rel="noopener noreferrer" aria-label="날씨 자세히 보기(기상청 날씨누리)">${weatherHtml()}</a>
+
+      <section class="card" id="word" aria-label="오늘의 영단어">${wordHtml()}</section>
+
+      <section class="card" aria-label="오늘의 명언">
+        <div class="label">오늘의 명언</div>
+        <p class="quote">${esc(quote.text)}</p>
+        <div class="muted small">${esc(quote.by)}</div>
       </section>
 
       <section class="card" id="news" aria-label="주요 뉴스">${newsHtml()}</section>
@@ -438,11 +477,10 @@
           <a class="cat-btn dashed" href="#/rules"><span>분류 규칙</span></a>
         </div>
       </section>
-
-      <a class="primary big" href="#/new">+ 빠른 기록 (사진·메모)</a>
     </main>`;
 
     $app.querySelector('[data-act="lock"]').onclick = lockNow;
+    bindWord(); bindNews();
     $app.querySelectorAll('[data-act="toggle"]').forEach(el => {
       el.onchange = async () => {
         const it = S.items.find(x => x.id === el.dataset.id);
@@ -480,7 +518,7 @@
     if (gs) gs.onclick = async () => {
       try {
         if (!GApi.hasToken()) await gConnect(false);
-        gs.disabled = true; gs.textContent = '동기화 중…';
+        gs.disabled = true; gs.lastChild.textContent = '동기화 중…';
         if (await gSync()) toast('구글과 동기화했습니다.');
       } catch (err) { toast(err.message); }
       if (!parseHash().parts.length) viewHome();
@@ -493,6 +531,7 @@
   }
 
   // ---------- 구글 일정 편집 ----------
+  const primaryCal = () => (G().calendars || []).find(c => c.primary) || { id: 'primary', name: '기본 캘린더', color: '', edit: true };
   function viewGEvent(gid, dateParam) {
     const isNew = !gid || gid === 'new';
     const e0 = isNew ? null : gEvents().find(e => e.gid === gid);
@@ -500,26 +539,35 @@
     const now = new Date(); now.setMinutes(0, 0, 0); now.setHours(now.getHours() + 1);
     const base = dateParam ? new Date(dateParam + 'T09:00') : now;
     const ev = e0 || { title: '', allDay: false, start: base.toISOString(), end: new Date(base.getTime() + 3600000).toISOString(), location: '', desc: '' };
+    // 2단계에서 저장된 사본(캘린더 정보 없음)은 기본 캘린더로 취급
+    const calId = e0 ? (e0.cal || 'primary') : null, eid = e0 ? (e0.eid || e0.gid) : null;
+    const ro = e0 && e0.canEdit === false;
+    const choices = writableCals().length ? writableCals() : [primaryCal()];
     const sVal = ev.allDay ? ev.start : localDT(new Date(ev.start));
     const eVal = ev.allDay ? addDays(ev.end, -1) : localDT(new Date(ev.end));
+    const dis = ro ? 'disabled' : '';
     $app.innerHTML = `
     <main class="screen">
-      ${topbar(isNew ? '새 구글 일정' : '구글 일정 편집')}
+      ${topbar(isNew ? '새 구글 일정' : ro ? '구글 일정 (읽기 전용)' : '구글 일정 편집')}
       <form id="f-gev" class="stack">
-        <label>제목<input id="g-title" type="text" value="${esc(ev.title === '(제목 없음)' ? '' : ev.title)}" required></label>
-        <label class="row"><input type="checkbox" id="g-all" ${ev.allDay ? 'checked' : ''}> 종일</label>
-        <label>시작<input id="g-start" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(sVal)}" required></label>
-        <label>끝<input id="g-end" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(eVal)}"></label>
-        <label>장소<input id="g-loc" type="text" value="${esc(ev.location)}"></label>
-        <label>메모<textarea id="g-desc" rows="5">${esc(ev.desc)}</textarea></label>
-        <div class="row gap8">
+        ${isNew ? `<label>캘린더<select id="g-cal">${choices.map(c => `<option value="${esc(c.id)}" ${c.primary ? 'selected' : ''}>${esc(c.name)}</option>`).join('')}</select></label>`
+          : `<p class="small row gap8">${dot(e0.color)}<span>${esc(e0.calName || '기본 캘린더')}</span></p>`}
+        ${ro ? '<p class="small muted">공휴일·구독 캘린더처럼 편집 권한이 없는 캘린더의 일정은 앱에서 바꿀 수 없습니다.</p>' : ''}
+        <label>제목<input id="g-title" type="text" value="${esc(ev.title === '(제목 없음)' ? '' : ev.title)}" required ${dis}></label>
+        <label class="row"><input type="checkbox" id="g-all" ${ev.allDay ? 'checked' : ''} ${dis}> 종일</label>
+        <label>시작<input id="g-start" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(sVal)}" required ${dis}></label>
+        <label>끝<input id="g-end" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(eVal)}" ${dis}></label>
+        <label>장소<input id="g-loc" type="text" value="${esc(ev.location)}" ${dis}></label>
+        <label>메모<textarea id="g-desc" rows="5" ${dis}>${esc(ev.desc)}</textarea></label>
+        ${ro ? '' : `<div class="row gap8">
           <button class="primary grow" type="submit">${isNew ? '구글 캘린더에 추가' : '저장'}</button>
           ${isNew ? '' : '<button type="button" class="danger" data-act="gdel">삭제</button>'}
-        </div>
+        </div>`}
         ${ev.link ? `<a class="small accent" href="${esc(ev.link)}" target="_blank" rel="noopener noreferrer">구글 캘린더에서 열기</a>` : ''}
-        <p class="tiny muted">반복 일정은 이 회차만 바뀝니다. 참석자·알림 설정은 구글 캘린더에서 바꿔 주세요.</p>
+        <p class="tiny muted">반복 일정은 이 회차만 바뀝니다. 참석자·알림 설정과 캘린더 옮기기는 구글 캘린더에서 해 주세요.</p>
       </form>
     </main>`;
+    if (ro) return;
     const all = document.getElementById('g-all'), si = document.getElementById('g-start'), ei = document.getElementById('g-end');
     all.onchange = () => {
       const s = si.value, e = ei.value;
@@ -532,9 +580,11 @@
       e.preventDefault();
       const body = evBody(document.getElementById('g-title').value.trim(), all.checked, si.value, ei.value,
         document.getElementById('g-loc').value, document.getElementById('g-desc').value);
+      const target = isNew ? document.getElementById('g-cal').value : calId;
       try {
-        const r = await gRun(() => isNew ? GApi.insertEvent(body) : GApi.patchEvent(gid, body));
-        await gCachePut('events', normEv(r));
+        const r = await gRun(() => isNew ? GApi.insertEvent(target, body) : GApi.patchEvent(calId, eid, body));
+        if (!isNew && e0.gid !== `${calId}::${eid}`) await gCachePut('events', { gid: e0.gid }, true); // 예전 형식 사본 정리
+        await gCachePut('events', normEv(r, calById(target) || (target === 'primary' ? primaryCal() : { id: target, name: '', color: '', edit: true })));
         toast(isNew ? '구글 캘린더에 추가했습니다.' : '저장했습니다.');
         location.hash = '#/';
       } catch (err) { toast(err.message); }
@@ -543,8 +593,8 @@
     if (d) d.onclick = async () => {
       if (!confirm('구글 캘린더에서 이 일정을 삭제할까요? (구글 캘린더 휴지통에 30일 보관)')) return;
       try {
-        await gRun(() => GApi.deleteEvent(gid));
-        await gCachePut('events', { gid }, true);
+        await gRun(() => GApi.deleteEvent(calId, eid));
+        await gCachePut('events', { gid: e0.gid }, true);
         toast('삭제했습니다.'); location.hash = '#/';
       } catch (err) { toast(err.message); }
     };
@@ -600,15 +650,17 @@
   }
 
   // ---------- 날씨 (Open-Meteo, API 키 불필요) ----------
+  // 홈에는 한 줄 요약만, 누르면 기상청 날씨누리로 이동
+  const WX_SITE = 'https://www.weather.go.kr/w/index.do';
   const WMO = c => c === 0 ? '맑음' : c <= 2 ? '구름 조금' : c === 3 ? '흐림' : c <= 48 ? '안개' : c <= 57 ? '이슬비' : c <= 67 ? '비' : c <= 77 ? '눈' : c <= 82 ? '소나기' : c <= 86 ? '눈보라' : '뇌우';
   function weatherHtml() {
     const w = S.weather;
-    if (!w) return '<div class="label light">날씨</div><div class="temp">…</div><div class="small light">불러오는 중</div>';
-    if (w.error) return `<div class="label light">날씨</div><div class="small light">${esc(w.error)}</div>`;
-    return `<div class="label light">날씨 · ${esc(w.place)}</div>
-      <div class="temp">${Math.round(w.temp)}°</div>
-      <div class="small light">${esc(WMO(w.code))} · 최고 ${Math.round(w.max)}° / 최저 ${Math.round(w.min)}°${w.pop != null ? ` · 강수 ${w.pop}%` : ''}</div>
-      <div class="tiny light">Open-Meteo</div>`;
+    const tail = '<span class="wx-go" aria-hidden="true">›</span>';
+    if (!w) return `<span class="wx-temp">…</span><span class="grow small muted">날씨 불러오는 중</span>${tail}`;
+    if (w.error) return `<span class="grow small muted">${esc(w.error)} · 눌러서 기상청에서 보기</span>${tail}`;
+    return `<span class="wx-temp">${Math.round(w.temp)}°</span>
+      <span class="grow"><span class="small"><b>${esc(WMO(w.code))}</b> · 최고 ${Math.round(w.max)}° 최저 ${Math.round(w.min)}°${w.pop != null ? ` · 강수 ${w.pop}%` : ''}</span>
+      <span class="tiny muted">${esc(w.place)} · 자세히: 기상청 날씨누리</span></span>${tail}`;
   }
   async function loadWeather() {
     if (S.weather && !S.weather.error && Date.now() - S.weather.at < 30 * 60000) return;
@@ -620,7 +672,7 @@
       const j = await r.json();
       S.weather = { at: Date.now(), place: loc.name, temp: j.current.temperature_2m, code: j.current.weather_code,
         max: j.daily.temperature_2m_max[0], min: j.daily.temperature_2m_min[0], pop: j.daily.precipitation_probability_max ? j.daily.precipitation_probability_max[0] : null };
-    } catch (e) { S.weather = { error: '날씨를 불러오지 못했습니다(인터넷 연결 확인).' }; }
+    } catch (e) { S.weather = { error: '날씨를 불러오지 못했습니다' }; }
     const el = document.getElementById('weather');
     if (el) el.innerHTML = weatherHtml();
   }
@@ -638,28 +690,55 @@
     });
   }
 
-  // ---------- 뉴스 (GitHub Actions가 만든 news.json) ----------
+  // ---------- 뉴스 (GitHub Actions가 30분마다 만든 news.json) ----------
+  // 국내: 주요(연합뉴스TV) · 조경 · 엔지니어링 탭, 해외: BBC World
+  let newsTab = 'main';
   function newsHtml() {
     const n = S.news;
-    if (!n) return '<div class="card-head"><h2>주요 뉴스</h2></div><p class="muted small">불러오는 중…</p>';
-    if (n.error) return `<div class="card-head"><h2>주요 뉴스</h2></div><p class="muted small">${esc(n.error)}</p>`;
-    const upd = n.updated ? new Date(n.updated) : null;
-    const block = s => !s ? '' : `
-      <div class="news-src">${esc(s.label)}</div>
-      ${(s.items || []).length ? `<ol class="news">${s.items.slice(0, 5).map(a => `<li><a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></li>`).join('')}</ol>`
-        : `<p class="muted small">${esc(s.error || '기사가 없습니다.')}</p>`}`;
-    return `<div class="card-head"><h2>주요 뉴스</h2><span class="muted small">${upd ? `${upd.getHours()}:${String(upd.getMinutes()).padStart(2, '0')} 갱신` : ''}</span></div>
-      ${block(n.domestic)}<hr>${block(n.world)}`;
+    const head = upd => `<div class="card-head"><h2>주요 뉴스</h2><span class="row gap8">
+      <span class="muted tiny">${upd ? `${hm(upd)} 수집` : ''}</span>
+      <button type="button" class="sm" data-act="newsre" aria-label="뉴스 새로고침">${ICON.refresh}<span>새로고침</span></button></span></div>`;
+    if (!n) return head() + '<p class="muted small">불러오는 중…</p>';
+    if (n.error) return head() + `<p class="muted small">${esc(n.error)}</p>`;
+    const tabs = [{ key: 'main', label: '주요', data: n.domestic }]
+      .concat((n.domesticTabs || []).map(x => ({ key: x.key, label: x.label, data: x })));
+    if (!tabs.some(x => x.key === newsTab)) newsTab = 'main';
+    const cur = tabs.find(x => x.key === newsTab).data;
+    const list = (s, label) => !s ? '' : `
+      <div class="news-src">${esc(label)}${s.source ? ` <span class="muted tiny">· ${esc(s.source)}</span>` : ''}</div>
+      ${(s.items || []).length ? `<ol class="news">${s.items.slice(0, 5).map(a => `<li><a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></li>`).join('')}</ol>` : ''}
+      ${s.error ? `<p class="muted tiny">${esc(s.error)}</p>` : (s.items || []).length ? '' : '<p class="muted small">기사가 없습니다.</p>'}`;
+    return head(n.updated ? new Date(n.updated) : null) + `
+      <div class="tabs" role="group" aria-label="국내 뉴스 분야">
+        ${tabs.map(x => `<button type="button" class="tab ${x.key === newsTab ? 'on' : ''}" data-tab="${esc(x.key)}" aria-pressed="${x.key === newsTab}">${esc(x.label)}</button>`).join('')}
+      </div>
+      ${list(cur, '국내 · ' + (newsTab === 'main' ? '주요' : tabs.find(x => x.key === newsTab).label))}
+      <hr>${list(n.world, '해외')}`;
   }
-  async function loadNews() {
-    if (S.news && !S.news.error && Date.now() - S.news.at < 15 * 60000) return;
+  function bindNews() {
+    const el = document.getElementById('news');
+    if (!el) return;
+    el.querySelectorAll('[data-tab]').forEach(b => { b.onclick = () => { newsTab = b.dataset.tab; el.innerHTML = newsHtml(); bindNews(); }; });
+    const re = el.querySelector('[data-act="newsre"]');
+    if (re) re.onclick = async () => {
+      re.disabled = true;
+      const before = S.news && S.news.updated;
+      await loadNews(true);
+      const after = S.news && S.news.updated;
+      toast(S.news && S.news.error ? S.news.error
+        : after && after !== before ? `새 뉴스를 불러왔습니다(${hm(new Date(after))} 수집).`
+          : '최신 수집본입니다. 뉴스는 30분마다 자동 수집됩니다.');
+    };
+  }
+  async function loadNews(force) {
+    if (!force && S.news && !S.news.error && Date.now() - S.news.at < 15 * 60000) return;
     try {
-      const r = await fetch('./news.json', { cache: 'no-cache' });
+      const r = await fetch('./news.json', { cache: force ? 'no-store' : 'no-cache' });
       if (!r.ok) throw new Error();
       S.news = Object.assign(await r.json(), { at: Date.now() });
     } catch (e) { S.news = { error: '뉴스 파일이 아직 없습니다. 자동 수집이 처음 실행되면 표시됩니다.' }; }
     const el = document.getElementById('news');
-    if (el) el.innerHTML = newsHtml();
+    if (el) { el.innerHTML = newsHtml(); bindNews(); }
   }
 
   // ---------- 카테고리 목록 (+ 선택 이동) ----------
@@ -733,7 +812,8 @@
         </label>
         <label>제목<input id="e-title" type="text" value="${esc(it.title || '')}"></label>
         <label>${sys === 'schedule' ? '날짜·시간' : sys === 'todo' ? '마감일' : '날짜'}<input id="e-date" type="${dateType}" value="${esc(sys === 'schedule' ? (it.date || '').slice(0, 16) : (it.date || '').slice(0, 10))}"></label>
-        <label id="amt-wrap" ${c && c.name === '재무' ? '' : 'hidden'}>금액(원)<input id="e-amt" type="number" inputmode="numeric" value="${it.amount != null ? esc(it.amount) : ''}"></label>
+        <label id="amt-wrap" ${(c && c.name === '재무') || it.amount != null ? '' : 'hidden'}>금액(원)<input id="e-amt" type="number" inputmode="numeric" value="${it.amount != null ? esc(it.amount) : ''}"></label>
+        <button type="button" id="amt-add" class="sm add-field" ${(c && c.name === '재무') || it.amount != null ? 'hidden' : ''}>+ 금액 추가</button>
         ${sys === 'todo' ? `<label class="row"><input type="checkbox" id="e-done" ${it.done ? 'checked' : ''}> 완료</label>` : ''}
         <label>내용<textarea id="e-body" rows="7">${esc(it.body || '')}</textarea></label>
         <label>태그(쉼표로 구분)<input id="e-tags" type="text" value="${esc((it.tags || []).join(', '))}" placeholder="예: 현장, 출장"></label>
@@ -754,13 +834,22 @@
     let newImage = it.image || null;
     document.getElementById('e-cat').onchange = e => {
       const nc = catById(e.target.value);
-      document.getElementById('amt-wrap').hidden = !(nc && nc.name === '재무');
+      // 재무로 바꾸면 금액 칸을 보여 주고, 다른 분류에서는 이미 금액을 넣었거나 '+ 금액 추가'를 누른 경우에만 보임
+      const aw = document.getElementById('amt-wrap'), ab = document.getElementById('amt-add');
+      if (nc && nc.name === '재무') { aw.hidden = false; ab.hidden = true; }
+      else if (document.getElementById('e-amt').value === '' && !aw.dataset.user) { aw.hidden = true; ab.hidden = false; }
       const di = document.getElementById('e-date'), v = di.value;
       const wantDT = !!(nc && nc.sys === 'schedule');
       if (wantDT !== (di.type === 'datetime-local')) {
         di.type = wantDT ? 'datetime-local' : 'date';
         di.value = wantDT ? (v ? v.slice(0, 10) + 'T09:00' : '') : v.slice(0, 10);
       }
+    };
+    document.getElementById('amt-add').onclick = () => {
+      const aw = document.getElementById('amt-wrap');
+      aw.hidden = false; aw.dataset.user = '1';
+      document.getElementById('amt-add').hidden = true;
+      document.getElementById('e-amt').focus();
     };
     const photo = document.getElementById('e-photo'), rmBtn = document.getElementById('e-rmimg');
     document.getElementById('e-img').onchange = async e => {
@@ -779,8 +868,9 @@
       const title = document.getElementById('e-title').value.trim() || '(제목 없음)';
       const body = evBody(title, dv.length <= 10, dv, '', '', document.getElementById('e-body').value);
       try {
-        const r = await gRun(() => GApi.insertEvent(body));
-        await gCachePut('events', normEv(r));
+        const pc = primaryCal();
+        const r = await gRun(() => GApi.insertEvent(pc.id, body));
+        await gCachePut('events', normEv(r, pc));
         it.gEventId = r.id; await saveItem(it);
         toast(`${fmtDate(dv)} 구글 캘린더에 등록했습니다.`);
       } catch (err) { toast(err.message); }
@@ -821,7 +911,7 @@
   function viewSearch(q, catFilter) {
     // 구글 일정·할 일(마지막 동기화 사본)도 함께 검색
     const at = G().cache ? G().cache.at : 0;
-    const gItems = gEvents().map(e => ({ id: 'ge-' + e.gid, title: e.title, body: [e.location, e.desc].filter(Boolean).join('\n'),
+    const gItems = gEvents().map(e => ({ id: 'ge-' + e.gid, title: e.title, body: [e.location, e.desc, e.calName].filter(Boolean).join('\n'),
       catId: catBySys('schedule').id, date: e.allDay ? e.start : localDT(new Date(e.start)), updated: at, tags: [], _href: `#/gevent/${encodeURIComponent(e.gid)}`, _g: true }))
       .concat(gTasks().map(x => ({ id: 'gt-' + x.gid, title: x.title, body: x.notes, catId: catBySys('todo').id, date: x.due,
         updated: at, tags: [], _href: `#/gtask/${encodeURIComponent(x.gid)}`, _g: true })));
@@ -1063,6 +1153,12 @@
         </div>
         <p class="small">할 일 목록: ${esc(G().listName || '(첫 동기화 때 기본 목록으로 지정)')}</p>
         <div id="glist-box"></div>
+        <fieldset class="cals"><legend class="small"><b>홈에 표시할 캘린더</b></legend>
+          ${(G().calendars || []).length ? G().calendars.map((c, i) => `<label class="row cal-row">
+            <input type="checkbox" data-cal="${i}" ${c.show ? 'checked' : ''}>${dot(c.color)}<span class="grow">${esc(c.name)}</span>
+            <span class="tiny muted">${c.primary ? '기본' : c.edit ? '' : '읽기 전용'}</span></label>`).join('')
+            : '<p class="tiny muted">동기화하면 구글 캘린더 목록(기본·직접 만든·공유·구독 캘린더)이 여기에 나옵니다.</p>'}
+        </fieldset>
         <details><summary>연결 해제·클라이언트 ID 변경</summary>
           <div class="stack">
             <p class="tiny muted">연결을 해제하면 이 앱의 구글 권한을 취소하고, 폰에 있는 구글 일정·할 일 사본을 지웁니다. 구글 캘린더의 원본은 그대로 남습니다.</p>
@@ -1132,6 +1228,19 @@
       } catch (err) { toast(err.message); }
       reSettings();
     };
+    $app.querySelectorAll('[data-cal]').forEach(cb => {
+      cb.onchange = async () => {
+        const c = G().calendars[Number(cb.dataset.cal)];
+        c.show = cb.checked; c.userSet = true;
+        // 숨긴 캘린더의 사본은 바로 빼고, 새로 고른 캘린더는 동기화로 가져옴
+        if (!c.show && G().cache) G().cache.events = G().cache.events.filter(e => e.cal !== c.id);
+        await saveSettings();
+        if (c.show) {
+          try { if (!GApi.hasToken()) await gConnect(false); if (await gSync()) toast(`'${c.name}' 일정을 가져왔습니다.`); }
+          catch (err) { toast(err.message); }
+        }
+      };
+    });
     const gl = $app.querySelector('[data-act="glists"]');
     if (gl) gl.onclick = async () => {
       try {
