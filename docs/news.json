@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-10T15:29:25.776Z",
+  "updated": "2026-11-10T21:23:35.195Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "'노태우 비자금 은닉 의혹' 노재헌 피의자 입건",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111002622VjX",
-        "date": "2026-11-10T15:26:24.000Z"
+        "title": "[날씨클릭] 아침 추위 낮부터 누그러져…큰 일교차 유의",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611110618376fU",
+        "date": "2026-11-10T21:18:39.000Z"
       },
       {
-        "title": "민주 권리당원, 김민석 징계 청원…\"당 분열시켜\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111002503vaC",
-        "date": "2026-11-10T15:25:06.000Z"
+        "title": "연준 월러 \"12월 0.5%p 인상도 고려\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611110616152KR",
+        "date": "2026-11-10T21:16:17.000Z"
       },
       {
-        "title": "한성숙 총리 \"관계성범죄 예방·보호체계 전면 점검\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111001415Xm2",
-        "date": "2026-11-10T15:14:17.000Z"
+        "title": "루비오 \"이란에 대규모 군사작전 지금은 필요 없어\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111061540gTx",
+        "date": "2026-11-10T21:15:41.000Z"
       },
       {
-        "title": "美 국방장관, 탄핵 추진에 \"정치적 쇼\" 반발",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111000639C6N",
-        "date": "2026-11-10T15:06:40.000Z"
+        "title": "헤그세스 \"전쟁 이겼다고 탄핵하나\" 반발",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111060224Ssr",
+        "date": "2026-11-10T21:02:25.000Z"
       },
       {
-        "title": "조현, 루비오와 G7서 별도 환담…정상 간 합의 이행 협력",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111000156LlJ",
-        "date": "2026-11-10T15:01:58.000Z"
+        "title": "어느덧 빼빼로 데이…어른들은 모르는 '빼난지원금' 무슨 뜻?",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110173936oEF",
+        "date": "2026-11-10T21:01:04.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Anthropic heads for lower than expected $1.3 trillion valuation in stock market debut",
-        "link": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T14:46:50.000Z"
+        "title": "Meghan's father Thomas Markle detained for allegedly cutting off ankle monitor, officials say",
+        "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T21:23:00.000Z"
       },
       {
-        "title": "First day of Ukraine peace talks 'very productive', US says",
+        "title": "First day of Ukraine peace talks constructive, Zelensky says",
         "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T14:36:57.000Z"
+        "date": "2026-11-10T21:21:55.000Z"
       },
       {
-        "title": "Arrests made in Mohamed Al Fayed probe in France, police say",
-        "link": "https://www.bbc.co.uk/news/articles/ck1wvwyrd4ywo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T14:29:00.000Z"
+        "title": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+        "link": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T21:06:04.000Z"
       },
       {
-        "title": "Iran rejects French claims it was behind supermarket fridge hacking",
-        "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T13:45:13.000Z"
+        "title": "Spain's king and queen attend memorial service for rail crash victims",
+        "link": "https://www.bbc.co.uk/news/articles/ckjwew54yd4wo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T20:46:40.000Z"
       },
       {
-        "title": "French wartime resistance heroine Solange Alexandre dies aged 104",
-        "link": "https://www.bbc.co.uk/news/articles/cjdx3x7wg941o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T13:23:54.000Z"
+        "title": "US federal authorities could have prevented Epstein crimes, report finds",
+        "link": "https://www.bbc.co.uk/news/articles/cq5ynyn8zyr8o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T20:36:58.000Z"
       }
     ]
   }
