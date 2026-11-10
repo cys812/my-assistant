@@ -1,54 +1,130 @@
 {
-  "updated": "2026-11-10T02:00:14.080Z",
+  "updated": "2026-11-10T06:58:00.943Z",
   "domestic": {
-    "label": "국내 · 연합뉴스TV",
-    "source": "http://www.yonhapnewstv.co.kr/browse/feed/",
+    "label": "주요 · 연합뉴스TV",
+    "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "삼성 2나노 적용 '딥엑스 AI칩', CES 혁신상",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101055458uq"
+        "title": "중국, 올해 무역 흑자 벌써 1조 달러…사상 최대 흑자 낼 듯",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155157yB7",
+        "date": "2026-11-10T06:51:57.000Z"
       },
       {
-        "title": "이 대통령 \"美 중간선거 뒤 대외환경 변화 예상…불확실성 최소화 만전\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110105433UaQ"
+        "title": "인천 송도 영어유치원 입구에 불 지른 60대 체포…인명피해 없어",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155151zi6",
+        "date": "2026-11-10T06:51:52.000Z"
       },
       {
-        "title": "삼성전자, 스타트업 1천곳 육성…'C랩 스타트업 데모데이'",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110105058kpb"
+        "title": "옛 연인 직장동료 감금·폭행한 30대 검거",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155010GuU",
+        "date": "2026-11-10T06:50:10.000Z"
       },
       {
-        "title": "한화에어로, 선박용 수소연료전지 형식승인 국내 첫 획득",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101050042oF"
+        "title": "아기 판다 '슈바오' 인기몰이…공개 열흘 만에 5만 명 발길",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110154634Pvd",
+        "date": "2026-11-10T06:46:36.000Z"
       },
       {
-        "title": "KT 3분기 영업이익 6.1% 감소…AX 수주는 20% 증가",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101049138tF"
+        "title": "\"해발 2천ｍ 아름다운 스키장에 웬 KFC 매장?\"…이탈리아서 논란",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101542438PI",
+        "date": "2026-11-10T06:42:44.000Z"
       }
     ]
   },
+  "domesticTabs": [
+    {
+      "key": "landscape",
+      "label": "조경",
+      "source": "한국조경신문",
+      "items": [
+        {
+          "title": "[김부식 칼럼] 반려정원, 함께 살아가는 반려문화와 조경",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53816",
+          "date": "2026-11-06T09:00:00.000Z"
+        },
+        {
+          "title": "파크골프장 늘리자고 도시공원위원회 무력화하나",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53815",
+          "date": "2026-10-29T09:00:00.000Z"
+        },
+        {
+          "title": "조경진흥법 10년, “산업 범위부터 다시 정하자”",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53814",
+          "date": "2026-10-29T09:00:00.000Z"
+        },
+        {
+          "title": "LH, 불법하도급 신고 ‘진술만으로’ 받는다",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53813",
+          "date": "2026-10-29T09:00:00.000Z"
+        },
+        {
+          "title": "제14회 경기정원문화박람회 개막…두물머리 국가정원 기원",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53812",
+          "date": "2026-10-29T09:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "key": "engineering",
+      "label": "엔지니어링",
+      "source": "엔지니어링데일리",
+      "items": [
+        {
+          "title": "“발주 늦어지고 유찰은 반복”…환경공단, 기술형입찰 이중고",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23802",
+          "date": "2026-11-10T13:03:26.000Z"
+        },
+        {
+          "title": "인천 송도 트램, 내년 상반기 예타 도전",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23800",
+          "date": "2026-11-10T09:16:26.000Z"
+        },
+        {
+          "title": "11월 2주 엔지니어링 주간 입낙찰 동향",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23798",
+          "date": "2026-11-09T11:28:36.000Z"
+        },
+        {
+          "title": "엔지니어링협회, 2026 하반기 한마음 걷기대회 개최",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23797",
+          "date": "2026-11-09T08:47:09.000Z"
+        },
+        {
+          "title": "“BIM 대가, 철도 전 분야로”…철도공단, 6개 분야 기준 마련 막바지",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23793",
+          "date": "2026-11-06T17:59:54.000Z"
+        }
+      ]
+    }
+  ],
   "world": {
     "label": "해외 · BBC World",
-    "source": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "source": "BBC World",
     "items": [
       {
+        "title": "Polish unity on show in silent march to honour Krakow shooting victims",
+        "link": "https://www.bbc.co.uk/news/articles/cqkg5gm4nr4no?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T05:38:53.000Z"
+      },
+      {
+        "title": "Trump says more US attacks on Iran 'highly unlikely'",
+        "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T05:33:25.000Z"
+      },
+      {
+        "title": "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
+        "link": "https://www.bbc.co.uk/news/articles/cmp3g37l566po?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T05:22:39.000Z"
+      },
+      {
         "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-        "link": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
+        "link": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T03:58:13.000Z"
       },
       {
-        "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-        "link": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
-        "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
-        "link": "https://www.bbc.co.uk/news/articles/cm86z6w59gggo?at_medium=RSS&at_campaign=rss"
-      },
-      {
-        "title": "France accuses Iran of supermarket fridge hacking",
-        "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss"
+        "title": "Qantas to outsource 850 local jobs with most roles moving to India",
+        "link": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T01:55:22.000Z"
       }
     ]
   }
