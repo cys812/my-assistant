@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-10T06:58:00.943Z",
+  "updated": "2026-11-10T15:29:25.776Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "중국, 올해 무역 흑자 벌써 1조 달러…사상 최대 흑자 낼 듯",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155157yB7",
-        "date": "2026-11-10T06:51:57.000Z"
+        "title": "'노태우 비자금 은닉 의혹' 노재헌 피의자 입건",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111002622VjX",
+        "date": "2026-11-10T15:26:24.000Z"
       },
       {
-        "title": "인천 송도 영어유치원 입구에 불 지른 60대 체포…인명피해 없어",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155151zi6",
-        "date": "2026-11-10T06:51:52.000Z"
+        "title": "민주 권리당원, 김민석 징계 청원…\"당 분열시켜\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111002503vaC",
+        "date": "2026-11-10T15:25:06.000Z"
       },
       {
-        "title": "옛 연인 직장동료 감금·폭행한 30대 검거",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110155010GuU",
-        "date": "2026-11-10T06:50:10.000Z"
+        "title": "한성숙 총리 \"관계성범죄 예방·보호체계 전면 점검\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111001415Xm2",
+        "date": "2026-11-10T15:14:17.000Z"
       },
       {
-        "title": "아기 판다 '슈바오' 인기몰이…공개 열흘 만에 5만 명 발길",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110154634Pvd",
-        "date": "2026-11-10T06:46:36.000Z"
+        "title": "美 국방장관, 탄핵 추진에 \"정치적 쇼\" 반발",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111000639C6N",
+        "date": "2026-11-10T15:06:40.000Z"
       },
       {
-        "title": "\"해발 2천ｍ 아름다운 스키장에 웬 KFC 매장?\"…이탈리아서 논란",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101542438PI",
-        "date": "2026-11-10T06:42:44.000Z"
+        "title": "조현, 루비오와 G7서 별도 환담…정상 간 합의 이행 협력",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111000156LlJ",
+        "date": "2026-11-10T15:01:58.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "BIM, 10억원 따면 2억원 외주",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23806",
+          "date": "2026-11-10T17:28:56.000Z"
+        },
+        {
           "title": "“발주 늦어지고 유찰은 반복”…환경공단, 기술형입찰 이중고",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23802",
           "date": "2026-11-10T13:03:26.000Z"
@@ -88,11 +93,6 @@
           "title": "엔지니어링협회, 2026 하반기 한마음 걷기대회 개최",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23797",
           "date": "2026-11-09T08:47:09.000Z"
-        },
-        {
-          "title": "“BIM 대가, 철도 전 분야로”…철도공단, 6개 분야 기준 마련 막바지",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23793",
-          "date": "2026-11-06T17:59:54.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Polish unity on show in silent march to honour Krakow shooting victims",
-        "link": "https://www.bbc.co.uk/news/articles/cqkg5gm4nr4no?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T05:38:53.000Z"
+        "title": "Anthropic heads for lower than expected $1.3 trillion valuation in stock market debut",
+        "link": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T14:46:50.000Z"
       },
       {
-        "title": "Trump says more US attacks on Iran 'highly unlikely'",
-        "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T05:33:25.000Z"
+        "title": "First day of Ukraine peace talks 'very productive', US says",
+        "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T14:36:57.000Z"
       },
       {
-        "title": "Australia considers criminal penalties for rogue AI in wake of OpenAI hack",
-        "link": "https://www.bbc.co.uk/news/articles/cmp3g37l566po?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T05:22:39.000Z"
+        "title": "Arrests made in Mohamed Al Fayed probe in France, police say",
+        "link": "https://www.bbc.co.uk/news/articles/ck1wvwyrd4ywo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T14:29:00.000Z"
       },
       {
-        "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
-        "link": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T03:58:13.000Z"
+        "title": "Iran rejects French claims it was behind supermarket fridge hacking",
+        "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T13:45:13.000Z"
       },
       {
-        "title": "Qantas to outsource 850 local jobs with most roles moving to India",
-        "link": "https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T01:55:22.000Z"
+        "title": "French wartime resistance heroine Solange Alexandre dies aged 104",
+        "link": "https://www.bbc.co.uk/news/articles/cjdx3x7wg941o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-10T13:23:54.000Z"
       }
     ]
   }
