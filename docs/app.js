@@ -191,7 +191,19 @@
 
   // ---------- 잠금·설정 화면 ----------
   async function start() {
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
+    // 새 버전 자동 적용: 앱을 열거나 다시 볼 때마다 새 버전이 있는지 확인하고,
+    // 잠긴 화면이면 바로 새로 고치고, 쓰는 중이면 '지금 적용' 안내를 띄움
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).then(reg => {
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) reg.update().catch(() => {}); });
+      }).catch(() => {});
+      let hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController) { hadController = true; return; } // 처음 설치일 때는 그대로
+        if (!Vault.isUnlocked()) { location.reload(); return; }
+        toast('새 버전이 준비되었습니다.', { label: '지금 적용', fn: () => location.reload() });
+      });
+    }
     if (!(await Vault.isSetUp())) renderSetup(); else renderLock();
   }
 
