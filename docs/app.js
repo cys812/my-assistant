@@ -1,4 +1,4 @@
-// 나만의비서 — 1단계 앱 (홈·기록함·카테고리 규칙·일괄 이동·통합 검색·잠금·백업)
+// 나만의비서 — 2단계 앱 (1단계 + 구글 캘린더·할 일 연동)
 (function () {
   'use strict';
   const CFG = window.APP_CONFIG || {};
@@ -68,6 +68,84 @@
     await Vault.saveItem(it);
     const i = S.items.findIndex(x => x.id === it.id);
     if (i >= 0) S.items[i] = it; else S.items.push(it);
+  }
+
+  // ---------- 구글 연동 공통 ----------
+  const G = () => S.settings.google || (S.settings.google = { clientId: '', listId: '', listName: '', cache: null });
+  const gOn = () => !!G().clientId;
+  const pad2 = n => String(n).padStart(2, '0');
+  const localDT = d => `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}T${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+  const addDays = (ymd, n) => { const d = new Date(ymd + 'T00:00'); d.setDate(d.getDate() + n); return d.toLocaleDateString('sv-SE'); };
+  const hm = ts => { const d = new Date(ts); return `${d.getHours()}:${pad2(d.getMinutes())}`; };
+  function normEv(e) {
+    const all = !e.start.dateTime;
+    return { gid: e.id, title: e.summary || '(제목 없음)', allDay: all, start: all ? e.start.date : e.start.dateTime,
+      end: all ? e.end.date : e.end.dateTime, location: e.location || '', desc: e.description || '', link: e.htmlLink || '' };
+  }
+  function normTask(t) {
+    return { gid: t.id, title: t.title || '(제목 없음)', notes: t.notes || '', due: t.due ? t.due.slice(0, 10) : null,
+      done: t.status === 'completed', completedAt: t.completed || null };
+  }
+  function evOnDay(e, ymd) {
+    if (e.allDay) return e.start <= ymd && ymd < e.end;
+    const s = new Date(e.start).toLocaleDateString('sv-SE');
+    const en = new Date(new Date(e.end).getTime() - 1).toLocaleDateString('sv-SE');
+    return s <= ymd && ymd <= en;
+  }
+  const evTime = e => e.allDay ? '종일' : (() => { const d = new Date(e.start); return pad2(d.getHours()) + ':' + pad2(d.getMinutes()); })();
+  const gEvents = () => (G().cache && G().cache.events) || [];
+  const gTasks = () => (G().cache && G().cache.tasks) || [];
+
+  function gPreload() { if (gOn()) GApi.load().catch(() => {}); }
+  const gConnect = consent => GApi.connect(G().clientId, consent);
+  // 토큰이 없으면 먼저 연결하고 실행합니다(버튼을 누른 처리 안에서 호출해야 팝업이 열림).
+  async function gRun(fn) {
+    if (!GApi.hasToken()) await gConnect(false);
+    return fn();
+  }
+  let gSyncing = false;
+  async function gSync() {
+    if (!gOn() || !GApi.hasToken() || gSyncing) return false;
+    gSyncing = true;
+    try {
+      const g = G(), t = today();
+      const min = new Date(addDays(t, -30) + 'T00:00'), max = new Date(addDays(t, 61) + 'T00:00');
+      const evs = await GApi.listEvents(min.toISOString(), max.toISOString());
+      if (!g.listId) {
+        const ls = await GApi.lists();
+        if (ls.length) { g.listId = ls[0].id; g.listName = ls[0].title; }
+      }
+      const tks = g.listId ? await GApi.listTasks(g.listId) : [];
+      g.cache = { events: evs.filter(e => e.status !== 'cancelled' && e.start).map(normEv),
+        tasks: tks.filter(x => !x.deleted).map(normTask), at: Date.now() };
+      await saveSettings();
+      return true;
+    } catch (e) { toast(e.message); return false; }
+    finally { gSyncing = false; }
+  }
+  // 변경 후 캐시만 고쳐 바로 화면에 반영
+  async function gCachePut(kind, obj, remove) {
+    const g = G();
+    if (!g.cache) g.cache = { events: [], tasks: [], at: Date.now() };
+    const arr = g.cache[kind];
+    const i = arr.findIndex(x => x.gid === obj.gid);
+    if (remove) { if (i >= 0) arr.splice(i, 1); }
+    else if (i >= 0) arr[i] = obj; else arr.push(obj);
+    await saveSettings();
+  }
+  // Date 입력값 → 구글 일정 시작/끝
+  function evBody(title, allDay, startV, endV, location, desc) {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (allDay) {
+      const s = startV.slice(0, 10);
+      let e = (endV || '').slice(0, 10);
+      e = e && e >= s ? addDays(e, 1) : addDays(s, 1); // 구글 종일 일정의 끝 날짜는 '다음 날'
+      return { summary: title, location, description: desc, start: { date: s }, end: { date: e } };
+    }
+    const s = new Date(startV);
+    let e = endV ? new Date(endV) : new Date(s.getTime() + 3600000);
+    if (!(e > s)) e = new Date(s.getTime() + 3600000);
+    return { summary: title, location, description: desc, start: { dateTime: s.toISOString(), timeZone: tz }, end: { dateTime: e.toISOString(), timeZone: tz } };
   }
 
   // 자동 분류: 사용자 규칙 → 기본 단서 → 미분류
@@ -184,6 +262,7 @@
 
   function lockNow() {
     Vault.lock();
+    GApi.clear();
     S.items = []; S.settings = null;
     renderLock('잠겼습니다.');
   }
@@ -261,6 +340,8 @@
       case 'rules': return viewRules();
       case 'settings': return viewSettings();
       case 'trash': return viewTrash();
+      case 'gevent': return viewGEvent(parts[1], q.get('date'));
+      case 'gtask': return viewGTask(parts[1]);
       default: return viewHome();
     }
   }
@@ -279,11 +360,23 @@
     const word = WORDS[dayIndex() % WORDS.length];
     const sched = catBySys('schedule'), todo = catBySys('todo');
     const t = today();
-    const todaysEvents = live().filter(i => i.catId === sched.id && (i.date || '').slice(0, 10) === t)
-      .sort((a, b) => (a.date || '').localeCompare(b.date || ''));
-    const todos = live().filter(i => i.catId === todo.id && (!i.done || (i.doneAt && new Date(i.doneAt).toLocaleDateString('sv-SE') === t)))
-      .sort((a, b) => (a.done ? 1 : 0) - (b.done ? 1 : 0) || (a.date || '9').localeCompare(b.date || '9'));
+    // 일정: 앱 기록 + 구글 캘린더(마지막 동기화 사본)
+    const evRows = live().filter(i => i.catId === sched.id && (i.date || '').slice(0, 10) === t)
+      .map(e => ({ time: (e.date || '').length > 10 ? e.date.slice(11, 16) : '종일', title: e.title || '(제목 없음)', href: `#/item/${e.id}`, g: false }))
+      .concat(gEvents().filter(e => evOnDay(e, t)).map(e => ({ time: evTime(e), title: e.title, href: `#/gevent/${encodeURIComponent(e.gid)}`, g: true })))
+      .sort((a, b) => (a.time === '종일' ? '00' : a.time).localeCompare(b.time === '종일' ? '00' : b.time));
+    // 할 일: 앱 기록 + Google Tasks (미완료 전부 + 오늘 완료한 것)
+    const doneToday = ts => ts && new Date(ts).toLocaleDateString('sv-SE') === t;
+    const todos = live().filter(i => i.catId === todo.id && (!i.done || doneToday(i.doneAt)))
+      .map(i => ({ id: i.id, title: i.title || '(제목 없음)', done: !!i.done, due: (i.date || '').slice(0, 10), href: `#/item/${i.id}`, g: false }))
+      .concat(gTasks().filter(x => !x.done || doneToday(x.completedAt))
+        .map(x => ({ id: x.gid, title: x.title, done: x.done, due: x.due || '', href: `#/gtask/${encodeURIComponent(x.gid)}`, g: true })))
+      .sort((a, b) => (a.done ? 1 : 0) - (b.done ? 1 : 0) || (a.due || '9').localeCompare(b.due || '9'));
     const doneN = todos.filter(i => i.done).length;
+    const g = G();
+    const gLine = !gOn() ? '<p class="muted tiny"><a class="accent" href="#/settings">설정 → 구글 연결</a>에서 구글 캘린더·할 일을 연결할 수 있습니다.</p>'
+      : `<div class="row between gline"><span class="muted tiny">구글 ${g.cache ? hm(g.cache.at) + ' 동기화' : '아직 동기화 전'}${GApi.hasToken() ? '' : ' · 연결 만료'}</span>
+         <button type="button" class="sm" data-act="gsync">${GApi.hasToken() ? '동기화' : '구글 연결'}</button></div>`;
     const btnCats = cats().filter(c => c.sys !== 'schedule' && c.sys !== 'todo');
 
     $app.innerHTML = `
@@ -313,20 +406,21 @@
       </section>
 
       <section class="card" aria-label="오늘 일정">
-        <div class="card-head"><h2>오늘 일정</h2><a class="small" href="#/new?cat=${sched.id}">+ 추가</a></div>
-        ${todaysEvents.length ? todaysEvents.map(e => `
-          <a class="event" href="#/item/${e.id}"><span class="time">${esc((e.date || '').length > 10 ? e.date.slice(11, 16) : '종일')}</span><span>${esc(e.title || '(제목 없음)')}</span></a>`).join('')
+        <div class="card-head"><h2>오늘 일정</h2><a class="small" href="${gOn() ? '#/gevent/new' : `#/new?cat=${sched.id}`}">+ 추가</a></div>
+        ${evRows.length ? evRows.map(e => `
+          <a class="event" href="${e.href}"><span class="time">${esc(e.time)}</span><span class="grow">${esc(e.title)}</span>${e.g ? '<span class="gmark" title="구글 캘린더">G</span>' : ''}</a>`).join('')
           : '<p class="muted small">오늘 일정이 없습니다.</p>'}
-        <p class="muted tiny">구글 캘린더 연결은 2단계 업데이트에서 추가됩니다.</p>
+        ${gLine}
       </section>
 
       <section class="card" aria-label="할 일">
         <div class="card-head"><h2>할 일</h2><span class="muted small">${todos.length ? `${doneN}/${todos.length} 완료` : ''}</span></div>
-        ${todos.length ? todos.map(i => `
+        ${todos.length ? todos.map((i, n) => `
           <div class="todo ${i.done ? 'done' : ''}">
-            <input type="checkbox" id="td-${i.id}" data-act="toggle" data-id="${i.id}" ${i.done ? 'checked' : ''}>
-            <label for="td-${i.id}">${esc(i.title || '(제목 없음)')}</label>
-            <a class="tiny muted" href="#/item/${i.id}">편집</a>
+            <input type="checkbox" id="td-${n}" data-act="${i.g ? 'gtoggle' : 'toggle'}" data-id="${esc(i.id)}" ${i.done ? 'checked' : ''}>
+            <label for="td-${n}">${esc(i.title)}${i.due && i.due < t && !i.done ? ' <span class="late">지남</span>' : ''}</label>
+            ${i.g ? '<span class="gmark" title="Google Tasks">G</span>' : ''}
+            <a class="tiny muted" href="${i.href}">편집</a>
           </div>`).join('') : '<p class="muted small">할 일이 없습니다.</p>'}
         <form class="row gap8" id="f-quicktodo">
           <label class="sr" for="qt">새 할 일</label>
@@ -356,14 +450,153 @@
         await saveItem(it); viewHome();
       };
     });
+    $app.querySelectorAll('[data-act="gtoggle"]').forEach(el => {
+      el.onchange = async () => {
+        const x = gTasks().find(k => k.gid === el.dataset.id);
+        const done = el.checked;
+        try {
+          const r = await gRun(() => GApi.patchTask(G().listId, x.gid, done ? { status: 'completed' } : { status: 'needsAction', completed: null }));
+          await gCachePut('tasks', normTask(r));
+        } catch (err) { toast(err.message); el.checked = !done; return; }
+        viewHome();
+      };
+    });
     document.getElementById('f-quicktodo').onsubmit = async e => {
       e.preventDefault();
       const v = document.getElementById('qt').value.trim();
       if (!v) return;
-      await saveItem({ id: uid(), catId: todo.id, catBy: 'manual', title: v, source: '메모', created: Date.now(), tags: [] });
+      if (gOn()) {
+        try {
+          const r = await gRun(async () => { if (!G().listId) await gSync(); return GApi.insertTask(G().listId, { title: v }); });
+          await gCachePut('tasks', normTask(r));
+          toast('Google Tasks에 추가했습니다.');
+        } catch (err) { toast(err.message); return; }
+      } else {
+        await saveItem({ id: uid(), catId: todo.id, catBy: 'manual', title: v, source: '메모', created: Date.now(), tags: [] });
+      }
       viewHome();
     };
+    const gs = $app.querySelector('[data-act="gsync"]');
+    if (gs) gs.onclick = async () => {
+      try {
+        if (!GApi.hasToken()) await gConnect(false);
+        gs.disabled = true; gs.textContent = '동기화 중…';
+        if (await gSync()) toast('구글과 동기화했습니다.');
+      } catch (err) { toast(err.message); }
+      if (!parseHash().parts.length) viewHome();
+    };
+    gPreload();
+    if (gOn() && GApi.hasToken() && (!G().cache || Date.now() - G().cache.at > 5 * 60000)) {
+      gSync().then(ok => { if (ok && !parseHash().parts.length) viewHome(); });
+    }
     loadWeather(); loadNews();
+  }
+
+  // ---------- 구글 일정 편집 ----------
+  function viewGEvent(gid, dateParam) {
+    const isNew = !gid || gid === 'new';
+    const e0 = isNew ? null : gEvents().find(e => e.gid === gid);
+    if (!isNew && !e0) { toast('일정을 찾을 수 없습니다. 동기화 후 다시 열어 주세요.'); location.hash = '#/'; return; }
+    const now = new Date(); now.setMinutes(0, 0, 0); now.setHours(now.getHours() + 1);
+    const base = dateParam ? new Date(dateParam + 'T09:00') : now;
+    const ev = e0 || { title: '', allDay: false, start: base.toISOString(), end: new Date(base.getTime() + 3600000).toISOString(), location: '', desc: '' };
+    const sVal = ev.allDay ? ev.start : localDT(new Date(ev.start));
+    const eVal = ev.allDay ? addDays(ev.end, -1) : localDT(new Date(ev.end));
+    $app.innerHTML = `
+    <main class="screen">
+      ${topbar(isNew ? '새 구글 일정' : '구글 일정 편집')}
+      <form id="f-gev" class="stack">
+        <label>제목<input id="g-title" type="text" value="${esc(ev.title === '(제목 없음)' ? '' : ev.title)}" required></label>
+        <label class="row"><input type="checkbox" id="g-all" ${ev.allDay ? 'checked' : ''}> 종일</label>
+        <label>시작<input id="g-start" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(sVal)}" required></label>
+        <label>끝<input id="g-end" type="${ev.allDay ? 'date' : 'datetime-local'}" value="${esc(eVal)}"></label>
+        <label>장소<input id="g-loc" type="text" value="${esc(ev.location)}"></label>
+        <label>메모<textarea id="g-desc" rows="5">${esc(ev.desc)}</textarea></label>
+        <div class="row gap8">
+          <button class="primary grow" type="submit">${isNew ? '구글 캘린더에 추가' : '저장'}</button>
+          ${isNew ? '' : '<button type="button" class="danger" data-act="gdel">삭제</button>'}
+        </div>
+        ${ev.link ? `<a class="small accent" href="${esc(ev.link)}" target="_blank" rel="noopener noreferrer">구글 캘린더에서 열기</a>` : ''}
+        <p class="tiny muted">반복 일정은 이 회차만 바뀝니다. 참석자·알림 설정은 구글 캘린더에서 바꿔 주세요.</p>
+      </form>
+    </main>`;
+    const all = document.getElementById('g-all'), si = document.getElementById('g-start'), ei = document.getElementById('g-end');
+    all.onchange = () => {
+      const s = si.value, e = ei.value;
+      si.type = ei.type = all.checked ? 'date' : 'datetime-local';
+      si.value = all.checked ? s.slice(0, 10) : (s ? s.slice(0, 10) + 'T09:00' : '');
+      ei.value = all.checked ? e.slice(0, 10) : (e ? e.slice(0, 10) + 'T10:00' : '');
+    };
+    gPreload();
+    document.getElementById('f-gev').onsubmit = async e => {
+      e.preventDefault();
+      const body = evBody(document.getElementById('g-title').value.trim(), all.checked, si.value, ei.value,
+        document.getElementById('g-loc').value, document.getElementById('g-desc').value);
+      try {
+        const r = await gRun(() => isNew ? GApi.insertEvent(body) : GApi.patchEvent(gid, body));
+        await gCachePut('events', normEv(r));
+        toast(isNew ? '구글 캘린더에 추가했습니다.' : '저장했습니다.');
+        location.hash = '#/';
+      } catch (err) { toast(err.message); }
+    };
+    const d = $app.querySelector('[data-act="gdel"]');
+    if (d) d.onclick = async () => {
+      if (!confirm('구글 캘린더에서 이 일정을 삭제할까요? (구글 캘린더 휴지통에 30일 보관)')) return;
+      try {
+        await gRun(() => GApi.deleteEvent(gid));
+        await gCachePut('events', { gid }, true);
+        toast('삭제했습니다.'); location.hash = '#/';
+      } catch (err) { toast(err.message); }
+    };
+  }
+
+  // ---------- 구글 할 일 편집 ----------
+  function viewGTask(gid) {
+    const isNew = !gid || gid === 'new';
+    const x = isNew ? { title: '', notes: '', due: null, done: false } : gTasks().find(k => k.gid === gid);
+    if (!x) { toast('할 일을 찾을 수 없습니다. 동기화 후 다시 열어 주세요.'); location.hash = '#/'; return; }
+    $app.innerHTML = `
+    <main class="screen">
+      ${topbar(isNew ? '새 할 일 (Google Tasks)' : '할 일 편집 (Google Tasks)')}
+      <form id="f-gt" class="stack">
+        <label>제목<input id="t-title" type="text" value="${esc(x.title === '(제목 없음)' ? '' : x.title)}" required></label>
+        <label>날짜<input id="t-due" type="date" value="${esc(x.due || '')}"></label>
+        <p class="tiny muted">Google Tasks는 날짜만 저장하고 시각은 저장하지 않습니다.</p>
+        ${isNew ? '' : `<label class="row"><input type="checkbox" id="t-done" ${x.done ? 'checked' : ''}> 완료</label>`}
+        <label>메모<textarea id="t-notes" rows="5">${esc(x.notes)}</textarea></label>
+        <div class="row gap8">
+          <button class="primary grow" type="submit">저장</button>
+          ${isNew ? '' : '<button type="button" class="danger" data-act="tdel">삭제</button>'}
+        </div>
+        <p class="tiny muted">목록: ${esc(G().listName || '기본 목록')}</p>
+      </form>
+    </main>`;
+    gPreload();
+    document.getElementById('f-gt').onsubmit = async e => {
+      e.preventDefault();
+      const due = document.getElementById('t-due').value;
+      const body = { title: document.getElementById('t-title').value.trim(), notes: document.getElementById('t-notes').value,
+        due: due ? due + 'T00:00:00.000Z' : null };
+      const dn = document.getElementById('t-done');
+      if (dn) Object.assign(body, dn.checked ? { status: 'completed' } : { status: 'needsAction', completed: null });
+      try {
+        const r = await gRun(async () => {
+          if (!G().listId) await gSync();
+          return isNew ? GApi.insertTask(G().listId, body) : GApi.patchTask(G().listId, gid, body);
+        });
+        await gCachePut('tasks', normTask(r));
+        toast('저장했습니다.'); location.hash = '#/';
+      } catch (err) { toast(err.message); }
+    };
+    const d = $app.querySelector('[data-act="tdel"]');
+    if (d) d.onclick = async () => {
+      if (!confirm('Google Tasks에서 이 할 일을 삭제할까요?')) return;
+      try {
+        await gRun(() => GApi.deleteTask(G().listId, gid));
+        await gCachePut('tasks', { gid }, true);
+        toast('삭제했습니다.'); location.hash = '#/';
+      } catch (err) { toast(err.message); }
+    };
   }
 
   // ---------- 날씨 (Open-Meteo, API 키 불필요) ----------
@@ -511,6 +744,7 @@
           <p class="tiny muted">사진 속 글자 자동 인식(OCR)은 3단계 업데이트에서 추가됩니다.</p>
         </div>
         ${!isNew ? `<p class="tiny muted">입력 경로: ${esc(it.source || '-')} · 분류: ${it.catBy === 'rule' ? '사용자 규칙' : it.catBy === 'auto' ? '자동' : it.catBy === 'manual' ? '직접 지정' : '미분류'}</p>` : ''}
+        ${!isNew && gOn() ? `<button type="button" data-act="tocal">구글 캘린더에 일정으로 등록${it.gEventId ? ' (다시)' : ''}</button>` : ''}
         <div class="row gap8">
           <button class="primary grow" type="submit">저장</button>
           ${!isNew ? '<button type="button" class="danger" data-act="del">삭제</button>' : ''}
@@ -538,6 +772,19 @@
       } catch (err) { toast(err.message); }
     };
     rmBtn.onclick = () => { newImage = null; photo.hidden = true; photo.removeAttribute('src'); rmBtn.hidden = true; };
+    const tocal = $app.querySelector('[data-act="tocal"]');
+    if (tocal) { gPreload(); tocal.onclick = async () => {
+      const dv = document.getElementById('e-date').value;
+      if (!dv) { toast('먼저 날짜를 입력하세요.'); return; }
+      const title = document.getElementById('e-title').value.trim() || '(제목 없음)';
+      const body = evBody(title, dv.length <= 10, dv, '', '', document.getElementById('e-body').value);
+      try {
+        const r = await gRun(() => GApi.insertEvent(body));
+        await gCachePut('events', normEv(r));
+        it.gEventId = r.id; await saveItem(it);
+        toast(`${fmtDate(dv)} 구글 캘린더에 등록했습니다.`);
+      } catch (err) { toast(err.message); }
+    }; }
     const del = $app.querySelector('[data-act="del"]');
     if (del) del.onclick = async () => {
       if (!confirm('휴지통으로 옮길까요? 30일 뒤 완전히 삭제됩니다.')) return;
@@ -572,7 +819,13 @@
   }
   // ---------- 통합 검색 ----------
   function viewSearch(q, catFilter) {
-    const res = Classifier.search(S.items, q);
+    // 구글 일정·할 일(마지막 동기화 사본)도 함께 검색
+    const at = G().cache ? G().cache.at : 0;
+    const gItems = gEvents().map(e => ({ id: 'ge-' + e.gid, title: e.title, body: [e.location, e.desc].filter(Boolean).join('\n'),
+      catId: catBySys('schedule').id, date: e.allDay ? e.start : localDT(new Date(e.start)), updated: at, tags: [], _href: `#/gevent/${encodeURIComponent(e.gid)}`, _g: true }))
+      .concat(gTasks().map(x => ({ id: 'gt-' + x.gid, title: x.title, body: x.notes, catId: catBySys('todo').id, date: x.due,
+        updated: at, tags: [], _href: `#/gtask/${encodeURIComponent(x.gid)}`, _g: true })));
+    const res = Classifier.search(S.items.concat(gItems), q);
     const counts = {};
     res.forEach(r => { counts[r.item.catId] = (counts[r.item.catId] || 0) + 1; });
     const shown = catFilter ? res.filter(r => r.item.catId === catFilter) : res;
@@ -589,10 +842,10 @@
         <a class="chip ${catFilter ? '' : 'on'}" href="#/search?q=${encodeURIComponent(q)}">전체 ${res.length}</a>
         ${cats().filter(c => counts[c.id]).map(c => `<a class="chip ${catFilter === c.id ? 'on' : ''}" href="#/search?q=${encodeURIComponent(q)}&c=${c.id}">${esc(c.name)} ${counts[c.id]}</a>`).join('')}
       </div>
-      <p class="tiny muted">제목·내용·태그·사진 속 글자·녹취록에서 찾습니다.</p>
+      <p class="tiny muted">제목·내용·태그·사진 속 글자·녹취록${gOn() ? '과 구글 일정(지난 30일~앞으로 60일)·할 일' : ''}에서 찾습니다.</p>
       <ul class="list">${shown.map(r => `
-        <li><a class="result" href="#/item/${r.item.id}">
-          <span class="row between"><span class="tag">${esc(catName(r.item.catId))}</span><span class="tiny muted">${esc(fmtDate(r.item.date) || new Date(r.item.updated).toLocaleDateString('ko-KR'))}</span></span>
+        <li><a class="result" href="${r.item._href || '#/item/' + r.item.id}">
+          <span class="row between"><span class="tag">${esc(catName(r.item.catId))}${r.item._g ? ' · 구글' : ''}</span><span class="tiny muted">${esc(fmtDate(r.item.date) || new Date(r.item.updated).toLocaleDateString('ko-KR'))}</span></span>
           <span class="t">${highlight(r.item.title || '(제목 없음)', q)}</span>
           ${r.snippet ? `<span class="small muted">${esc(r.where)}: ${highlight(r.snippet, q)}</span>` : ''}
         </a></li>`).join('') || '<li class="muted small">찾는 기록이 없습니다.</li>'}</ul>` : '<p class="muted small">검색어를 입력하세요. 여러 단어는 모두 포함된 기록만 찾습니다.</p>'}
@@ -786,6 +1039,8 @@
   }
 
   // ---------- 설정 ----------
+  const onSettings = () => parseHash().parts[0] === 'settings';
+  const reSettings = () => { if (onSettings()) viewSettings(); };
   async function viewSettings() {
     let persisted = '확인 불가', usage = '';
     try { if (navigator.storage && navigator.storage.persisted) persisted = (await navigator.storage.persisted()) ? '허용됨' : '허용 안 됨(앱을 홈 화면에 설치하면 허용될 가능성이 높습니다)'; } catch (e) {}
@@ -793,6 +1048,29 @@
     $app.innerHTML = `
     <main class="screen">
       ${topbar('설정')}
+      <section class="card stack" id="gsec"><h2>구글 캘린더·할 일 연결</h2>
+        ${!gOn() ? `
+        <p class="small muted">구글 클라우드에서 발급받은 <b>웹 클라이언트 ID</b>를 붙여 넣으세요. 발급 방법은 안내문을 참고하세요. 클라이언트 ID는 비밀번호가 아니며, 이 폰에만 암호화되어 저장됩니다.</p>
+        <form id="f-gcid" class="stack">
+          <label>클라이언트 ID<input id="gcid" type="text" autocomplete="off" spellcheck="false" placeholder="123456789012-xxxx.apps.googleusercontent.com" required></label>
+          <button class="primary" type="submit">저장하고 연결</button>
+        </form>` : `
+        <p class="small">상태: <b>${GApi.hasToken() ? '연결됨' : '연결 만료(버튼을 누르면 다시 연결)'}</b>${G().cache ? ` · 마지막 동기화 ${hm(G().cache.at)}` : ''}</p>
+        <p class="tiny muted">클라이언트 ID: ${esc(G().clientId.slice(0, 12))}…</p>
+        <div class="row gap8 wrap">
+          <button class="primary" type="button" data-act="gconnect">${GApi.hasToken() ? '지금 동기화' : '구글 연결'}</button>
+          <button type="button" data-act="glists">할 일 목록 선택</button>
+        </div>
+        <p class="small">할 일 목록: ${esc(G().listName || '(첫 동기화 때 기본 목록으로 지정)')}</p>
+        <div id="glist-box"></div>
+        <details><summary>연결 해제·클라이언트 ID 변경</summary>
+          <div class="stack">
+            <p class="tiny muted">연결을 해제하면 이 앱의 구글 권한을 취소하고, 폰에 있는 구글 일정·할 일 사본을 지웁니다. 구글 캘린더의 원본은 그대로 남습니다.</p>
+            <button type="button" class="danger" data-act="gdisconnect">연결 해제</button>
+          </div>
+        </details>
+        <p class="tiny muted">보안상 구글 접속 권한(토큰)은 저장하지 않습니다. 약 1시간마다, 그리고 앱을 잠근 뒤에는 '구글 연결'을 한 번 눌러야 새로 동기화됩니다. 그 사이에도 마지막 동기화 내용은 홈에 보입니다.</p>`}
+      </section>
       <section class="card stack"><h2>백업</h2>
         <p class="small muted">암호화된 상태 그대로 파일로 저장합니다. 파일만으로는 내용을 볼 수 없고, 복원할 때 비밀번호(또는 복구 코드)가 필요합니다. 구글 드라이브나 PC에 보관하세요.</p>
         <button class="primary" type="button" data-act="export">백업 파일 내보내기</button>
@@ -814,7 +1092,7 @@
         <p class="small">영구 저장: ${esc(persisted)}${usage ? ' · ' + esc(usage) : ''}</p>
         <a href="#/trash">휴지통 보기</a>
       </section>
-      <p class="tiny muted center">나만의비서 1단계 · 암호화 AES-256-GCM, 비밀번호 열쇠 PBKDF2-SHA256 ${Vault.PBKDF2_ITER.toLocaleString()}회</p>
+      <p class="tiny muted center">나만의비서 2단계 · 암호화 AES-256-GCM, 비밀번호 열쇠 PBKDF2-SHA256 ${Vault.PBKDF2_ITER.toLocaleString()}회</p>
     </main>`;
     $app.querySelector('[data-act="export"]').onclick = async () => {
       const data = await Vault.exportBackup();
@@ -827,6 +1105,54 @@
       toast('백업 파일을 저장했습니다.');
     };
     document.getElementById('imp').onchange = restoreFromFile;
+    gPreload();
+    const fc = document.getElementById('f-gcid');
+    if (fc) {
+      // 붙여넣기만 하면 되도록 미리 구글 도구를 불러 둠
+      GApi.load().catch(() => {});
+      fc.onsubmit = async e => {
+        e.preventDefault();
+        const v = document.getElementById('gcid').value.trim();
+        if (!/^[0-9]+-[a-z0-9]+\.apps\.googleusercontent\.com$/.test(v)) {
+          toast('형식이 맞지 않습니다. 숫자-문자.apps.googleusercontent.com 형태의 "클라이언트 ID"를 넣어 주세요(보안 비밀번호가 아님).'); return;
+        }
+        G().clientId = v; G().listId = ''; G().listName = ''; G().cache = null;
+        await saveSettings();
+        try { await gConnect(true); await gSync(); toast('구글과 연결했습니다.'); }
+        catch (err) { toast(err.message); }
+        reSettings();
+      };
+    }
+    const gc = $app.querySelector('[data-act="gconnect"]');
+    if (gc) gc.onclick = async () => {
+      try {
+        if (!GApi.hasToken()) await gConnect(false);
+        gc.disabled = true; gc.textContent = '동기화 중…';
+        if (await gSync()) toast('구글과 동기화했습니다.');
+      } catch (err) { toast(err.message); }
+      reSettings();
+    };
+    const gl = $app.querySelector('[data-act="glists"]');
+    if (gl) gl.onclick = async () => {
+      try {
+        const ls = await gRun(() => GApi.lists());
+        const box = document.getElementById('glist-box');
+        box.innerHTML = `<label>목록<select id="glist">${ls.map(l => `<option value="${esc(l.id)}" ${l.id === G().listId ? 'selected' : ''}>${esc(l.title)}</option>`).join('')}</select></label>
+          <button type="button" class="primary" id="glist-ok">이 목록 사용</button>`;
+        document.getElementById('glist-ok').onclick = async () => {
+          const sel = document.getElementById('glist');
+          G().listId = sel.value; G().listName = sel.options[sel.selectedIndex].text;
+          await saveSettings(); await gSync(); toast('할 일 목록을 바꿨습니다.'); reSettings();
+        };
+      } catch (err) { toast(err.message); }
+    };
+    const gd = $app.querySelector('[data-act="gdisconnect"]');
+    if (gd) gd.onclick = async () => {
+      if (!confirm('구글 연결을 해제할까요?')) return;
+      GApi.revoke();
+      S.settings.google = { clientId: '', listId: '', listName: '', cache: null };
+      await saveSettings(); toast('연결을 해제했습니다.'); reSettings();
+    };
     document.getElementById('f-pw').onsubmit = async e => {
       e.preventDefault();
       const n = document.getElementById('npw2').value;
@@ -834,8 +1160,8 @@
       toast('변경 중…');
       toast((await Vault.changePassword(document.getElementById('opw').value, n)) ? '비밀번호를 바꿨습니다.' : '현재 비밀번호가 맞지 않습니다.');
     };
-    $app.querySelector('[data-act="loc-seoul"]').onclick = async () => { S.settings.location = CFG.defaultLocation || { name: '서울', lat: 37.5665, lon: 126.978 }; S.weather = null; await saveSettings(); viewSettings(); };
-    $app.querySelector('[data-act="loc-auto"]').onclick = async () => { S.settings.location = null; S.weather = null; await saveSettings(); viewSettings(); };
+    $app.querySelector('[data-act="loc-seoul"]').onclick = async () => { S.settings.location = CFG.defaultLocation || { name: '서울', lat: 37.5665, lon: 126.978 }; S.weather = null; await saveSettings(); reSettings(); };
+    $app.querySelector('[data-act="loc-auto"]').onclick = async () => { S.settings.location = null; S.weather = null; await saveSettings(); reSettings(); };
   }
 
   async function restoreFromFile(e) {

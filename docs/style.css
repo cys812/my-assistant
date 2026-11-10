@@ -62,6 +62,10 @@ button.sm, a.sm { min-height: 36px; padding: 0 10px; font-size: 13px; }
 .event { display: flex; gap: 12px; padding: 2px 0; }
 .event .time { width: 48px; font-weight: 700; color: var(--accent); font-size: 13px; flex: none; }
 .todo { display: flex; align-items: center; gap: 10px; }
+.gmark { flex: none; font-size: 10px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent); border-radius: 6px; padding: 0 4px; line-height: 16px; }
+.late { font-size: 11px; color: var(--danger); font-weight: 700; }
+.gline { border-top: 1px dashed var(--line); padding-top: 8px; margin-top: 2px; }
+.wrap { flex-wrap: wrap; }
 .todo label { flex: 1; flex-direction: row; color: var(--ink); font-size: 14px; }
 .todo.done label { text-decoration: line-through; color: var(--muted); }
 .news-src { font-size: 12px; font-weight: 700; color: var(--accent); }
