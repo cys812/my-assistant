@@ -1,5 +1,5 @@
 // 서비스 워커: 오프라인 실행(앱 껍데기 캐시) + 공유 시트 수신
-const VERSION = 'v2.1.0-2026-11-10';
+const VERSION = 'v2.1.1-2026-11-10';
 const SHELL = ['./', './index.html', './style.css', './config.js', './data.js', './vault.js', './classify.js', './google.js', './app.js',
   './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 

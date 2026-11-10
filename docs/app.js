@@ -396,10 +396,29 @@
     if (b) b.onclick = () => { pickWord(); document.getElementById('word').innerHTML = wordHtml(); bindWord(); };
   }
 
+  // 오늘의 명언도 앱을 새로 열 때마다, 그리고 '다른 명언' 버튼으로 바뀜
+  let quoteIdx = null;
+  function pickQuote() {
+    let n;
+    do { n = Math.floor(Math.random() * QUOTES.length); } while (QUOTES.length > 1 && n === quoteIdx);
+    quoteIdx = n;
+  }
+  function quoteHtml() {
+    if (quoteIdx == null) pickQuote();
+    const q = QUOTES[quoteIdx];
+    return `<div class="card-head"><span class="label">오늘의 명언</span>
+      <button type="button" class="sm" data-act="quote">${ICON.refresh}<span>다른 명언</span></button></div>
+      <p class="quote">${esc(q.text)}</p>
+      <div class="muted small">${esc(q.by)}</div>`;
+  }
+  function bindQuote() {
+    const b = document.querySelector('#quote [data-act="quote"]');
+    if (b) b.onclick = () => { pickQuote(); document.getElementById('quote').innerHTML = quoteHtml(); bindQuote(); };
+  }
+
   function viewHome() {
     const d = new Date();
     const wd = '일월화수목금토'[d.getDay()];
-    const quote = QUOTES[dayIndex() % QUOTES.length];
     const sched = catBySys('schedule'), todo = catBySys('todo');
     const t = today();
     // 일정: 앱 기록 + 구글 캘린더(표시하도록 고른 모든 캘린더의 마지막 동기화 사본)
@@ -462,11 +481,7 @@
 
       <section class="card" id="word" aria-label="오늘의 영단어">${wordHtml()}</section>
 
-      <section class="card" aria-label="오늘의 명언">
-        <div class="label">오늘의 명언</div>
-        <p class="quote">${esc(quote.text)}</p>
-        <div class="muted small">${esc(quote.by)}</div>
-      </section>
+      <section class="card" id="quote" aria-label="오늘의 명언">${quoteHtml()}</section>
 
       <section class="card" id="news" aria-label="주요 뉴스">${newsHtml()}</section>
 
@@ -480,7 +495,7 @@
     </main>`;
 
     $app.querySelector('[data-act="lock"]').onclick = lockNow;
-    bindWord(); bindNews();
+    bindWord(); bindQuote(); bindNews();
     $app.querySelectorAll('[data-act="toggle"]').forEach(el => {
       el.onchange = async () => {
         const it = S.items.find(x => x.id === el.dataset.id);
