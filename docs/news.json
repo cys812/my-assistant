@@ -1,15 +1,55 @@
 {
-  "updated": "2026-10-20T22:03:03.763Z",
+  "updated": "2026-11-10T02:00:14.080Z",
   "domestic": {
     "label": "국내 · 연합뉴스TV",
     "source": "http://www.yonhapnewstv.co.kr/browse/feed/",
-    "items": [],
-    "error": "수집 실패: fetch failed"
+    "items": [
+      {
+        "title": "삼성 2나노 적용 '딥엑스 AI칩', CES 혁신상",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101055458uq"
+      },
+      {
+        "title": "이 대통령 \"美 중간선거 뒤 대외환경 변화 예상…불확실성 최소화 만전\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110105433UaQ"
+      },
+      {
+        "title": "삼성전자, 스타트업 1천곳 육성…'C랩 스타트업 데모데이'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110105058kpb"
+      },
+      {
+        "title": "한화에어로, 선박용 수소연료전지 형식승인 국내 첫 획득",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101050042oF"
+      },
+      {
+        "title": "KT 3분기 영업이익 6.1% 감소…AX 수주는 20% 증가",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611101049138tF"
+      }
+    ]
   },
   "world": {
     "label": "해외 · BBC World",
     "source": "https://feeds.bbci.co.uk/news/world/rss.xml",
-    "items": [],
-    "error": "수집 실패: fetch failed"
+    "items": [
+      {
+        "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
+        "link": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+        "link": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+        "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
+        "link": "https://www.bbc.co.uk/news/articles/cm86z6w59gggo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "title": "France accuses Iran of supermarket fridge hacking",
+        "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss"
+      }
+    ]
   }
 }
