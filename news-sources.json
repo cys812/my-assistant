@@ -1,0 +1,11 @@
+{
+  "domestic": {
+    "label": "국내 · 연합뉴스TV",
+    "url": "http://www.yonhapnewstv.co.kr/browse/feed/"
+  },
+  "world": {
+    "label": "해외 · BBC World",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+  },
+  "count": 5
+}

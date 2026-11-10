@@ -1,0 +1,15 @@
+{
+  "updated": "2026-10-20T22:03:03.763Z",
+  "domestic": {
+    "label": "국내 · 연합뉴스TV",
+    "source": "http://www.yonhapnewstv.co.kr/browse/feed/",
+    "items": [],
+    "error": "수집 실패: fetch failed"
+  },
+  "world": {
+    "label": "해외 · BBC World",
+    "source": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "items": [],
+    "error": "수집 실패: fetch failed"
+  }
+}
