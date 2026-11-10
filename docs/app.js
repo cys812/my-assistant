@@ -31,6 +31,7 @@
     search: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
     lock: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>',
     gear: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+    plus: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
     refresh: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>',
     back: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>'
   };
@@ -442,7 +443,8 @@
     $app.innerHTML = `
     <main class="screen home">
       <header class="home-head">
-        <div><div class="muted small">${d.getMonth() + 1}월 ${d.getDate()}일 ${wd}요일</div><h1>나만의비서</h1></div>
+        <div><div class="muted small">${d.getMonth() + 1}월 ${d.getDate()}일 ${wd}요일</div>
+          <div class="row gap8"><h1>나만의비서</h1><a class="quick-add" href="#/new" aria-label="빠른 기록(사진·메모)" title="빠른 기록">${ICON.plus}</a></div></div>
         <nav class="row gap8">
           <a class="icon-btn" href="#/search" aria-label="검색">${ICON.search}</a>
           <a class="icon-btn" href="#/settings" aria-label="설정">${ICON.gear}</a>
@@ -450,9 +452,7 @@
         </nav>
       </header>
 
-      <a class="primary big" href="#/new">+ 빠른 기록 (사진·메모)</a>
-
-      <section class="card" aria-label="오늘 일정">
+      <section class="card bold-edge" aria-label="오늘 일정">
         <div class="card-head"><h2>오늘 일정</h2><a class="small accent" href="${gOn() ? '#/gevent/new' : `#/new?cat=${sched.id}`}">+ 추가</a></div>
         ${evRows.length ? evRows.map(e => `
           <a class="event" href="${e.href}"><span class="time">${esc(e.time)}</span><span class="grow">${esc(e.title)}</span>${e.g ? `<span class="calname" title="${esc(e.calName || '구글 캘린더')}">${dot(e.color)}</span>` : ''}</a>`).join('')
@@ -460,7 +460,7 @@
         ${gStatus}
       </section>
 
-      <section class="card" aria-label="할 일">
+      <section class="card bold-edge" aria-label="할 일">
         <div class="card-head"><h2>할 일</h2>
           <span class="row gap8"><span class="muted small">${todos.length ? `${doneN}/${todos.length} 완료` : ''}</span>
           ${gOn() ? `<button type="button" class="sm" data-act="gsync">${ICON.refresh}<span>${GApi.hasToken() ? '동기화' : '구글 연결'}</span></button>` : ''}</span></div>

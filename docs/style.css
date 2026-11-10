@@ -119,3 +119,11 @@ button.sm { gap: 4px; }
 .add-field { align-self: flex-start; color: var(--accent); border-style: dashed; border-color: var(--accent); }
 fieldset.cals { border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; margin: 0; display: flex; flex-direction: column; gap: 2px; }
 .cal-row { min-height: 40px; }
+
+/* 빠른 기록: 제목 옆 + 아이콘 / 오늘 일정·할 일 카드 테두리 진하게 */
+.quick-add { width: 36px; height: 36px; border-radius: 18px; background: var(--accent); color: #fff; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.quick-add:active { transform: scale(.94); }
+@media (prefers-color-scheme: dark) { .quick-add { color: #0b1a1d; } }
+.card.bold-edge { border: 2px solid var(--edge-strong); }
+:root { --edge-strong: #838d9a; }
+@media (prefers-color-scheme: dark) { :root { --edge-strong: #6b7684; } }
