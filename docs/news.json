@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-11T01:24:51.629Z",
+  "updated": "2026-11-11T08:12:18.670Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "취업자 넉달째 10만명대 증가…청년층 4년째 감소",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111102329oG4",
-        "date": "2026-11-11T01:23:29.000Z"
+        "title": "블랙핑크 지수·NCT·베이비몬스터·이날치, 내년 '코첼라' 나선다",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111170930H5V",
+        "date": "2026-11-11T08:09:31.000Z"
       },
       {
-        "title": "[뉴스초점] 젠슨황 스캔들 파장…\"10조원대 AI칩 中으로\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611111016001tI",
-        "date": "2026-11-11T01:16:02.000Z"
+        "title": "'접근 금지' 어기고 전 연인 집 침입·협박한 40대 구속",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611111707002bY",
+        "date": "2026-11-11T08:07:03.000Z"
       },
       {
-        "title": "이용철 법무장관 후보자 첫 출근…\"공소취소 의견 적절치 않아\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111101318XEE",
-        "date": "2026-11-11T01:13:19.000Z"
+        "title": "[뉴스워치] '아들 성범죄 피해자' 살해…합의 불발되자 범행",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111170519zHL",
+        "date": "2026-11-11T08:05:21.000Z"
       },
       {
-        "title": "[속보] 경찰, 10대 여성 살해한 50대 남성 긴급체포",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111101232ev9",
-        "date": "2026-11-11T01:12:33.000Z"
+        "title": "'국고채 입찰 담합' 은행·증권사 15곳에 1.6조 과징금…역대 최대",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111170407AaD",
+        "date": "2026-11-11T08:04:08.000Z"
       },
       {
-        "title": "세종 착한가격업소서 지역화폐로 결제하면 15% 캐시백",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111095907e6r",
-        "date": "2026-11-11T00:59:09.000Z"
+        "title": "'안경테·렌즈 꼼꼼히 확인'…'스마트안경 식별' 특별 연수",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111170232uqK",
+        "date": "2026-11-11T08:02:33.000Z"
       }
     ]
   },
@@ -70,6 +70,16 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "국토안전관리원, 설계 단계를 넘어 공사 단계까지 권한 확대 될까?",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23815",
+          "date": "2026-11-11T14:17:58.000Z"
+        },
+        {
+          "title": "한미글로벌, 가덕도신공항 여객터미널 설계단계 건설사업관리 수주",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23813",
+          "date": "2026-11-11T13:50:52.000Z"
+        },
+        {
           "title": "BIM, 10억원 따면 2억원 외주",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23806",
           "date": "2026-11-10T17:28:56.000Z"
@@ -83,16 +93,6 @@
           "title": "인천 송도 트램, 내년 상반기 예타 도전",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23800",
           "date": "2026-11-10T09:16:26.000Z"
-        },
-        {
-          "title": "11월 2주 엔지니어링 주간 입낙찰 동향",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23798",
-          "date": "2026-11-09T11:28:36.000Z"
-        },
-        {
-          "title": "엔지니어링협회, 2026 하반기 한마음 걷기대회 개최",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23797",
-          "date": "2026-11-09T08:47:09.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "Kennedys sue to block Trump's arch, arguing it would cast shadow on JFK's grave",
+        "link": "https://www.bbc.co.uk/news/articles/cw8dvpmzp2p4o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T03:44:06.000Z"
+      },
+      {
         "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
         "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T01:14:40.000Z"
+        "date": "2026-11-11T03:26:42.000Z"
+      },
+      {
+        "title": "Headquarters of Haitian gang destroyed, El Salvador's president says",
+        "link": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T02:47:59.000Z"
+      },
+      {
+        "title": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
+        "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T02:41:16.000Z"
       },
       {
         "title": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
         "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
         "date": "2026-11-11T01:01:20.000Z"
-      },
-      {
-        "title": "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
-        "link": "https://www.bbc.co.uk/news/articles/c687z7g4xr97o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T00:26:02.000Z"
-      },
-      {
-        "title": "Real Madrid's Vinícius Jr sends surprise message to boy who lost his legs in Sudan's war",
-        "link": "https://www.bbc.co.uk/news/articles/cqm26mmpp2p1o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T00:19:42.000Z"
-      },
-      {
-        "title": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
-        "link": "https://www.bbc.co.uk/news/articles/c8wy9y37z30vo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T00:18:07.000Z"
       }
     ]
   }
