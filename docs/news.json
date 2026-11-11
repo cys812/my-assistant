@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-11T16:30:20.612Z",
+  "updated": "2026-11-11T22:55:57.122Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "WP \"젠슨황 불륜 스캔들로 트럼프 대중정책 모순점 드러나\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611120124195hf",
-        "date": "2026-11-11T16:24:20.000Z"
+        "title": "[속보] 당정 \"은행지주CEO 연임요건 강화…임원추천위 전원 독립이사로\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112075439yUZ",
+        "date": "2026-11-11T22:54:39.000Z"
       },
       {
-        "title": "G7, 북한·이란의 러시아 군사지원 규탄…\"北 핵무기 규탄\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112005135l9X",
-        "date": "2026-11-11T15:51:37.000Z"
+        "title": "[속보] NYT \"젠슨 황, 엔비디아 여성 임원과도 불륜 관계\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112074254hlO",
+        "date": "2026-11-11T22:42:55.000Z"
       },
       {
-        "title": "이란 안보수장 \"미국이 공격하면 유럽 내 미군 기지까지 타격\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112002216tCw",
-        "date": "2026-11-11T15:22:17.000Z"
+        "title": "[속보] \"엔비디아 이사회, 젠슨황 해임 준비…이르면 오늘 회의\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112074112jWA",
+        "date": "2026-11-11T22:41:13.000Z"
       },
       {
-        "title": "윤정환 감독, 10월 이달의 감독 수상…개인 5번째",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111235758QLt",
-        "date": "2026-11-11T14:57:59.000Z"
+        "title": "美 민주당 전방위 조사 압박에 백악관 \"명백한 범죄행위\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261112073331rqf",
+        "date": "2026-11-11T22:33:31.000Z"
       },
       {
-        "title": "[날씨] 일교차 큰 가을 날씨…수도권 미세먼지 유의",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111233228yyY",
-        "date": "2026-11-11T14:32:29.000Z"
+        "title": "[이시각헤드라인] 11월 12일 라이브투데이",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611120724169YB",
+        "date": "2026-11-11T22:24:18.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
+        "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T22:07:37.000Z"
+      },
+      {
+        "title": "African writing award probe finds 'no evidence' winning story was AI generated",
+        "link": "https://www.bbc.co.uk/news/articles/cmglr260z7eko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T20:00:54.000Z"
+      },
+      {
+        "title": "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
+        "link": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T18:38:45.000Z"
+      },
+      {
+        "title": "Missing 11-month-old baby found buried alive in a crate in South Carolina",
+        "link": "https://www.bbc.co.uk/news/articles/c8e391xzg6z2o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T18:10:57.000Z"
+      },
+      {
         "title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
         "link": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T15:05:11.000Z"
-      },
-      {
-        "title": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
-        "link": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T14:56:11.000Z"
-      },
-      {
-        "title": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
-        "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T14:51:26.000Z"
-      },
-      {
-        "title": "Spain sees widespread disruption in first general strike for 14 years",
-        "link": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T14:06:27.000Z"
-      },
-      {
-        "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
-        "link": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-11T13:25:47.000Z"
+        "date": "2026-11-11T18:04:58.000Z"
       }
     ]
   }
