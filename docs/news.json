@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-10T21:23:35.195Z",
+  "updated": "2026-11-11T01:24:51.629Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[날씨클릭] 아침 추위 낮부터 누그러져…큰 일교차 유의",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611110618376fU",
-        "date": "2026-11-10T21:18:39.000Z"
+        "title": "취업자 넉달째 10만명대 증가…청년층 4년째 감소",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111102329oG4",
+        "date": "2026-11-11T01:23:29.000Z"
       },
       {
-        "title": "연준 월러 \"12월 0.5%p 인상도 고려\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611110616152KR",
-        "date": "2026-11-10T21:16:17.000Z"
+        "title": "[뉴스초점] 젠슨황 스캔들 파장…\"10조원대 AI칩 中으로\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611111016001tI",
+        "date": "2026-11-11T01:16:02.000Z"
       },
       {
-        "title": "루비오 \"이란에 대규모 군사작전 지금은 필요 없어\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111061540gTx",
-        "date": "2026-11-10T21:15:41.000Z"
+        "title": "이용철 법무장관 후보자 첫 출근…\"공소취소 의견 적절치 않아\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111101318XEE",
+        "date": "2026-11-11T01:13:19.000Z"
       },
       {
-        "title": "헤그세스 \"전쟁 이겼다고 탄핵하나\" 반발",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111060224Ssr",
-        "date": "2026-11-10T21:02:25.000Z"
+        "title": "[속보] 경찰, 10대 여성 살해한 50대 남성 긴급체포",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261111101232ev9",
+        "date": "2026-11-11T01:12:33.000Z"
       },
       {
-        "title": "어느덧 빼빼로 데이…어른들은 모르는 '빼난지원금' 무슨 뜻?",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261110173936oEF",
-        "date": "2026-11-10T21:01:04.000Z"
+        "title": "세종 착한가격업소서 지역화폐로 결제하면 15% 캐시백",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261111095907e6r",
+        "date": "2026-11-11T00:59:09.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Meghan's father Thomas Markle detained for allegedly cutting off ankle monitor, officials say",
-        "link": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T21:23:00.000Z"
+        "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
+        "link": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T01:14:40.000Z"
       },
       {
-        "title": "First day of Ukraine peace talks constructive, Zelensky says",
-        "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T21:21:55.000Z"
+        "title": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
+        "link": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T01:01:20.000Z"
       },
       {
-        "title": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
-        "link": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T21:06:04.000Z"
+        "title": "'They will kill you too': Sonia Gandhi's turbulent journey in Indian politics",
+        "link": "https://www.bbc.co.uk/news/articles/c687z7g4xr97o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T00:26:02.000Z"
       },
       {
-        "title": "Spain's king and queen attend memorial service for rail crash victims",
-        "link": "https://www.bbc.co.uk/news/articles/ckjwew54yd4wo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T20:46:40.000Z"
+        "title": "Real Madrid's Vinícius Jr sends surprise message to boy who lost his legs in Sudan's war",
+        "link": "https://www.bbc.co.uk/news/articles/cqm26mmpp2p1o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T00:19:42.000Z"
       },
       {
-        "title": "US federal authorities could have prevented Epstein crimes, report finds",
-        "link": "https://www.bbc.co.uk/news/articles/cq5ynyn8zyr8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-10T20:36:58.000Z"
+        "title": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
+        "link": "https://www.bbc.co.uk/news/articles/c8wy9y37z30vo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-11T00:18:07.000Z"
       }
     ]
   }
