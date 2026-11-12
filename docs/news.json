@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-12T12:25:02.724Z",
+  "updated": "2026-11-12T20:18:53.458Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "이탈리아 학교 1,800곳에 폭발물 위협…배후는 누구?",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112212449L32",
-        "date": "2026-11-12T12:24:51.000Z"
+        "title": "11월 서울·경기 주택사업자 경기 전망 큰폭 하락",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113051607lxX",
+        "date": "2026-11-12T20:16:09.000Z"
       },
       {
-        "title": "[날씨] 내일도 큰 일교차 유의…늦은 오후부터 남부 비",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261112212223hXC",
-        "date": "2026-11-12T12:22:24.000Z"
+        "title": "공소청, 10대 살해 50대 남성 구속영장 청구",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113051508brf",
+        "date": "2026-11-12T20:15:09.000Z"
       },
       {
-        "title": "\"이대통령 아들 군면제\" 허위글 이수정 2심도 벌금 300만원",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611122114183EB",
-        "date": "2026-11-12T12:14:20.000Z"
+        "title": "인천 송도 영어유치원 방화 60대 구속…\"도주 우려\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113051434iCV",
+        "date": "2026-11-12T20:14:35.000Z"
       },
       {
-        "title": "3천원이 1만원으로…상장사 대표 낀 작전 세력 덜미",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261112211141u8Q",
-        "date": "2026-11-12T12:11:43.000Z"
+        "title": "경산 박스 공장에서 큰 불…인명피해 없어",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113051355N4N",
+        "date": "2026-11-12T20:13:56.000Z"
       },
       {
-        "title": "이 대통령 \"국내 자본시장, 저평가된 매력적 투자대상\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261112211008vvi",
-        "date": "2026-11-12T12:10:10.000Z"
+        "title": "플라이빗도 해킹…고객 40명 개인정보 유출",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113051318l4z",
+        "date": "2026-11-12T20:13:20.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "New York City building collapse kills several people",
-        "link": "https://www.bbc.co.uk/news/articles/c8zx964glvwxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T12:17:47.000Z"
+        "title": "Jensen Huang has resigned, what's next for Nvidia?",
+        "link": "https://www.bbc.co.uk/news/videos/cmdx1r99kp9wo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-12T19:33:37.000Z"
       },
       {
-        "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+        "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
+        "link": "https://www.bbc.co.uk/news/articles/cr894w453e90o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-12T19:23:02.000Z"
+      },
+      {
+        "title": "Hegseth awards medal to war memorial guard who reprimanded him and group",
+        "link": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-12T18:47:35.000Z"
+      },
+      {
+        "title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
         "link": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T12:14:51.000Z"
+        "date": "2026-11-12T18:28:59.000Z"
       },
       {
-        "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-        "link": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T12:03:47.000Z"
-      },
-      {
-        "title": "Who could replace Jensen Huang as Nvidia's chief executive?",
-        "link": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T11:21:25.000Z"
-      },
-      {
-        "title": "British woman missing from cruise ship in Atlantic",
-        "link": "https://www.bbc.co.uk/news/articles/cmy0enrkwkklo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T10:13:35.000Z"
+        "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+        "link": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-12T17:11:48.000Z"
       }
     ]
   }
