@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-13T01:23:37.076Z",
+  "updated": "2026-11-13T08:37:59.552Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "한수원 \"체코 원전 차질 없이…내년 4월 건설허가 신청\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113101956LY6",
-        "date": "2026-11-13T01:19:56.000Z"
+        "title": "TSMC 직원 개인정보 털렸나…해커 \"4만 6천건 판매\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113173510Bhy",
+        "date": "2026-11-13T08:35:12.000Z"
       },
       {
-        "title": "한 총리 \"AI 스마트안경 시험 부정행위 무관용 대응\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113101932QxI",
-        "date": "2026-11-13T01:19:35.000Z"
+        "title": "[날씨] 내일 큰 추위 없지만 전국 비…다음 주 기온 뚝",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113172836lHW",
+        "date": "2026-11-13T08:28:37.000Z"
       },
       {
-        "title": "'젠슨황 사임'에도 코스피 강세…5,400선 회복",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113101840dDX",
-        "date": "2026-11-13T01:18:40.000Z"
+        "title": "이란 혁명수비대 \"호르무즈서 가스운반선 기뢰 충돌…대형 폭발\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113172822qON",
+        "date": "2026-11-13T08:28:23.000Z"
       },
       {
-        "title": "배민, 겨울철 라이더 500명에 1억원 규모 안전용품 지원",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113101444a9W",
-        "date": "2026-11-13T01:14:45.000Z"
+        "title": "[비즈&] 삼성전자, 구글·젠틀몬스터와 AI 안경 공개 外",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH2026111317272821k",
+        "date": "2026-11-13T08:27:29.000Z"
       },
       {
-        "title": "'15살 소녀 살해' 50대 남성 오늘 구속영장심사",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113101303DZk",
-        "date": "2026-11-13T01:13:06.000Z"
+        "title": "[퇴근길머니] 33년 공든 탑 '와르르'…AI 제국서 쫓겨난 황제",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113171959Xvk",
+        "date": "2026-11-13T08:20:00.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "건설공사 안전 위한 의무적 공사중지 제도, 입법화까지 가능성은?",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23828",
+          "date": "2026-11-13T14:55:57.000Z"
+        },
+        {
           "title": "“현장 보고서 100분→10분, 조감도 2일→2시간” 한국종합기술 AI 경진대회",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23822",
           "date": "2026-11-12T16:45:06.000Z"
@@ -88,11 +93,6 @@
           "title": "국토안전관리원, 설계 단계를 넘어 공사 단계까지 권한 확대 될까?",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23815",
           "date": "2026-11-11T14:17:58.000Z"
-        },
-        {
-          "title": "한미글로벌, 가덕도신공항 여객터미널 설계단계 건설사업관리 수주",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23813",
-          "date": "2026-11-11T13:50:52.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+        "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T03:57:01.000Z"
+      },
+      {
         "title": "Australian footballers will not be charged after hotel incident, police say",
         "link": "https://www.bbc.co.uk/news/articles/ckregjwr7njqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T01:03:59.000Z"
+        "date": "2026-11-13T03:02:54.000Z"
+      },
+      {
+        "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
+        "link": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T02:48:29.000Z"
+      },
+      {
+        "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+        "link": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T02:01:35.000Z"
       },
       {
         "title": "Neither war nor peace in Tigray - is Ethiopia's latest conflict really over?",
         "link": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o?at_medium=RSS&at_campaign=rss",
         "date": "2026-11-13T00:20:24.000Z"
-      },
-      {
-        "title": "Military cemetery decorum: The tradition behind Hegseth's Veterans Day reprimand",
-        "link": "https://www.bbc.co.uk/news/videos/cv5y1309dg3go?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T23:42:52.000Z"
-      },
-      {
-        "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
-        "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T23:34:05.000Z"
-      },
-      {
-        "title": "Search for British woman missing from Tui cruise in Atlantic called off",
-        "link": "https://www.bbc.co.uk/news/articles/cmy0enrkwkklo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-12T21:27:21.000Z"
       }
     ]
   }
