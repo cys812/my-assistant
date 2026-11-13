@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-13T08:37:59.552Z",
+  "updated": "2026-11-13T17:02:35.788Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "TSMC 직원 개인정보 털렸나…해커 \"4만 6천건 판매\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113173510Bhy",
-        "date": "2026-11-13T08:35:12.000Z"
+        "title": "산업장관, 체코 측에 \"두코바니 원전 사업, 차질 없는 이행\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611140111459Uw",
+        "date": "2026-11-13T16:11:46.000Z"
       },
       {
-        "title": "[날씨] 내일 큰 추위 없지만 전국 비…다음 주 기온 뚝",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113172836lHW",
-        "date": "2026-11-13T08:28:37.000Z"
+        "title": "미 10월 도매물가 전년 대비 6.5% 상승…4년만에 최고",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114010123xN3",
+        "date": "2026-11-13T16:01:25.000Z"
       },
       {
-        "title": "이란 혁명수비대 \"호르무즈서 가스운반선 기뢰 충돌…대형 폭발\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113172822qON",
-        "date": "2026-11-13T08:28:23.000Z"
+        "title": "빛바랜 김휘집 스리런…불펜 난조에 한일전 패배",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114004944PFk",
+        "date": "2026-11-13T15:49:45.000Z"
       },
       {
-        "title": "[비즈&] 삼성전자, 구글·젠틀몬스터와 AI 안경 공개 外",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH2026111317272821k",
-        "date": "2026-11-13T08:27:29.000Z"
+        "title": "조현, 중국에 '한반도 문제' 역할 당부…왕이 \"정책 변함없어\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114002114az8",
+        "date": "2026-11-13T15:21:17.000Z"
       },
       {
-        "title": "[퇴근길머니] 33년 공든 탑 '와르르'…AI 제국서 쫓겨난 황제",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261113171959Xvk",
-        "date": "2026-11-13T08:20:00.000Z"
+        "title": "대법 \"석방 단정 말라\"…한덕수 선고 내주 나오나",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114001706G0C",
+        "date": "2026-11-13T15:17:08.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-        "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T03:57:01.000Z"
+        "title": "Why is the Microsoft outage lasting so long?",
+        "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T14:21:26.000Z"
       },
       {
-        "title": "Australian footballers will not be charged after hotel incident, police say",
-        "link": "https://www.bbc.co.uk/news/articles/ckregjwr7njqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T03:02:54.000Z"
+        "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
+        "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T12:28:28.000Z"
       },
       {
-        "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
-        "link": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T02:48:29.000Z"
+        "title": "How a sex scandal at Nvidia is putting pressure on the White House",
+        "link": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T12:22:30.000Z"
       },
       {
-        "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-        "link": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T02:01:35.000Z"
+        "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
+        "link": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T11:43:27.000Z"
       },
       {
-        "title": "Neither war nor peace in Tigray - is Ethiopia's latest conflict really over?",
-        "link": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T00:20:24.000Z"
+        "title": "Nigerian university in mourning after four students die at post-exam party",
+        "link": "https://www.bbc.co.uk/news/articles/cmvg2dvw0355o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T11:37:08.000Z"
       }
     ]
   }
