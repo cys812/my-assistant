@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-13T17:02:35.788Z",
+  "updated": "2026-11-13T22:26:54.168Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "산업장관, 체코 측에 \"두코바니 원전 사업, 차질 없는 이행\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611140111459Uw",
-        "date": "2026-11-13T16:11:46.000Z"
+        "title": "\"건강 득 없고 거리 오염만\"…유럽 주요 도시, 담배 필터 금지 촉구",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113160151K0A",
+        "date": "2026-11-13T21:02:05.000Z"
       },
       {
-        "title": "미 10월 도매물가 전년 대비 6.5% 상승…4년만에 최고",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114010123xN3",
-        "date": "2026-11-13T16:01:25.000Z"
+        "title": "푸껫 해변에 '죽은 불가사리 떼' 출현…바다에 무슨 일이",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112165227VAs",
+        "date": "2026-11-13T21:01:02.000Z"
       },
       {
-        "title": "빛바랜 김휘집 스리런…불펜 난조에 한일전 패배",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114004944PFk",
-        "date": "2026-11-13T15:49:45.000Z"
+        "title": "AI 안경 강제 세척? 시험지에 QR?…국가 시험 관리 '비상'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113155700Hoc",
+        "date": "2026-11-13T20:01:03.000Z"
       },
       {
-        "title": "조현, 중국에 '한반도 문제' 역할 당부…왕이 \"정책 변함없어\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114002114az8",
-        "date": "2026-11-13T15:21:17.000Z"
+        "title": "말 두마리 데리고 시내버스 탑승…\"영상 찍으려고\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261112161932PbQ",
+        "date": "2026-11-13T20:01:03.000Z"
       },
       {
-        "title": "대법 \"석방 단정 말라\"…한덕수 선고 내주 나오나",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114001706G0C",
-        "date": "2026-11-13T15:17:08.000Z"
+        "title": "\"중간선거 책임론 직면한 밴스 美부통령…2028년 대선 출마 포기 검토\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114034734LvQ",
+        "date": "2026-11-13T18:47:36.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Why is the Microsoft outage lasting so long?",
+        "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+        "link": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T21:14:22.000Z"
+      },
+      {
+        "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
+        "link": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T19:53:57.000Z"
+      },
+      {
+        "title": "Democratic Senate leader Schumer set to face leadership challenge",
+        "link": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T19:03:10.000Z"
+      },
+      {
+        "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
         "link": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T14:21:26.000Z"
+        "date": "2026-11-13T18:36:57.000Z"
       },
       {
-        "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
-        "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T12:28:28.000Z"
-      },
-      {
-        "title": "How a sex scandal at Nvidia is putting pressure on the White House",
-        "link": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T12:22:30.000Z"
-      },
-      {
-        "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
-        "link": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T11:43:27.000Z"
-      },
-      {
-        "title": "Nigerian university in mourning after four students die at post-exam party",
-        "link": "https://www.bbc.co.uk/news/articles/cmvg2dvw0355o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T11:37:08.000Z"
+        "title": "The Peruvian city that has embraced Pope Leo as one of its own",
+        "link": "https://www.bbc.co.uk/news/articles/cwg7l8n7dx5mo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-13T18:34:45.000Z"
       }
     ]
   }
