@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-14T09:58:47.766Z",
+  "updated": "2026-11-14T16:28:17.156Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "U23 야구 대표팀, 세계선수권 슈퍼라운드 2패…메달 수확 실패",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185708Tr8",
-        "date": "2026-11-14T09:57:09.000Z"
+        "title": "인천서 60대 몰던 차량 상가로 돌진…\"감기약 복용\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611150100365nG",
+        "date": "2026-11-14T16:00:38.000Z"
       },
       {
-        "title": "[날씨] 내일 맑고 포근해…다음 주 비 내리며 기온 '뚝'",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185654yXq",
-        "date": "2026-11-14T09:56:54.000Z"
+        "title": "프랑스 5주 연속 주말 시위…물가 급등에 \"생활비 SOS\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115004638e0w",
+        "date": "2026-11-14T15:46:39.000Z"
       },
       {
-        "title": "다시 NC 오빠된 손아섭…\"성적으로 얘기할게요\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185155oIn",
-        "date": "2026-11-14T09:51:57.000Z"
+        "title": "머스크 \"'젠슨 황 부재' 엔비디아, 공급망 핵심 계약 잃을 것\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115003353bVl",
+        "date": "2026-11-14T15:33:55.000Z"
       },
       {
-        "title": "엔비디아 급락이 기회?…서학개미 1천억원 매수",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH2026111418485964a",
-        "date": "2026-11-14T09:49:02.000Z"
+        "title": "미 교통장관 \"항공운항 서서히 정상화…일부 지연·결항 지속\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114233415bxM",
+        "date": "2026-11-14T14:34:16.000Z"
       },
       {
-        "title": "'충돌 사망 사고' 스페인 2부 리그 GK, 12경기 출전 정지 중징계",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114184823NBn",
-        "date": "2026-11-14T09:48:24.000Z"
+        "title": "이탈리아, 메타에 과징금 1조 부과…\"이용자 사진에 무단 접근\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114225624bTK",
+        "date": "2026-11-14T13:56:25.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "What we know about the ground stop and what to do if you're affected",
-        "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T07:42:11.000Z"
-      },
-      {
-        "title": "Microsoft says services fully restored after day-long global outage",
-        "link": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T06:42:27.000Z"
-      },
-      {
         "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
         "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T05:52:31.000Z"
+        "date": "2026-11-14T15:53:55.000Z"
       },
       {
-        "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
-        "link": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T01:47:36.000Z"
+        "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+        "link": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T15:42:54.000Z"
       },
       {
-        "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
-        "link": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T00:03:56.000Z"
+        "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+        "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T15:15:57.000Z"
+      },
+      {
+        "title": "What we know about the ground stop and what to do if you're affected",
+        "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T14:20:57.000Z"
+      },
+      {
+        "title": "Second catch attempt for SpaceX Starship rocket",
+        "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T14:18:41.000Z"
       }
     ]
   }
