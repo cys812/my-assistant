@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-14T16:28:17.156Z",
+  "updated": "2026-11-14T20:53:03.946Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "인천서 60대 몰던 차량 상가로 돌진…\"감기약 복용\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611150100365nG",
-        "date": "2026-11-14T16:00:38.000Z"
+        "title": "엔비디아 투자자, 젠슨황 복귀 요구 서한…온라인 청원도 11만명 참여",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115054536FXI",
+        "date": "2026-11-14T20:45:37.000Z"
       },
       {
-        "title": "프랑스 5주 연속 주말 시위…물가 급등에 \"생활비 SOS\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115004638e0w",
-        "date": "2026-11-14T15:46:39.000Z"
+        "title": "트럼프, 캘리포니아 주지사의 '사형수 감형'에 \"사법정의 재앙\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115051337Ndm",
+        "date": "2026-11-14T20:13:39.000Z"
       },
       {
-        "title": "머스크 \"'젠슨 황 부재' 엔비디아, 공급망 핵심 계약 잃을 것\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115003353bVl",
-        "date": "2026-11-14T15:33:55.000Z"
+        "title": "11시간 넘게 랩 배틀 200회…스페인 래퍼 '기네스 신기록'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261113104113xoE",
+        "date": "2026-11-14T20:01:05.000Z"
       },
       {
-        "title": "미 교통장관 \"항공운항 서서히 정상화…일부 지연·결항 지속\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114233415bxM",
-        "date": "2026-11-14T14:34:16.000Z"
+        "title": "미 항공 운항 중단 여파 계속…14일에도 4천 편 넘게 결항",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115045207Gya",
+        "date": "2026-11-14T19:52:07.000Z"
       },
       {
-        "title": "이탈리아, 메타에 과징금 1조 부과…\"이용자 사진에 무단 접근\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114225624bTK",
-        "date": "2026-11-14T13:56:25.000Z"
+        "title": "콜롬비아서 버스 전복…최소 6명 사망·11명 부상",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261115043315Ohw",
+        "date": "2026-11-14T19:33:16.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-        "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T15:53:55.000Z"
-      },
-      {
-        "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
-        "link": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T15:42:54.000Z"
-      },
-      {
         "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
         "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T15:15:57.000Z"
+        "date": "2026-11-14T20:41:45.000Z"
       },
       {
-        "title": "What we know about the ground stop and what to do if you're affected",
+        "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+        "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T20:23:06.000Z"
+      },
+      {
+        "title": "How telecoms upgrade work sparked US flight chaos",
         "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T14:20:57.000Z"
+        "date": "2026-11-14T20:03:48.000Z"
       },
       {
-        "title": "Second catch attempt for SpaceX Starship rocket",
-        "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T14:18:41.000Z"
+        "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+        "link": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T19:14:33.000Z"
+      },
+      {
+        "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says",
+        "link": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T19:12:25.000Z"
       }
     ]
   }
