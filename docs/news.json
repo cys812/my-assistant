@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-14T02:37:36.200Z",
+  "updated": "2026-11-14T09:58:47.766Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "2027 롤드컵, 나고야 거쳐 서울에서 결승",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114112456oj9",
-        "date": "2026-11-14T02:24:57.000Z"
+        "title": "U23 야구 대표팀, 세계선수권 슈퍼라운드 2패…메달 수확 실패",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185708Tr8",
+        "date": "2026-11-14T09:57:09.000Z"
       },
       {
-        "title": "[속보] 오늘 오전 인천 출발 미국행 항공편 결항 취소…정상화 수순",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114111828vYD",
-        "date": "2026-11-14T02:18:30.000Z"
+        "title": "[날씨] 내일 맑고 포근해…다음 주 비 내리며 기온 '뚝'",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185654yXq",
+        "date": "2026-11-14T09:56:54.000Z"
       },
       {
-        "title": "[속보] 美, 항공기 운항중단 조치 해제...4시간 20분만",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114111535ExX",
-        "date": "2026-11-14T02:15:35.000Z"
+        "title": "다시 NC 오빠된 손아섭…\"성적으로 얘기할게요\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114185155oIn",
+        "date": "2026-11-14T09:51:57.000Z"
       },
       {
-        "title": "여야 미래대응기금 공방…與 \"앞뒤 다른 계산법\"·野 \"전면 백지화해야\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261114111500gcX",
-        "date": "2026-11-14T02:15:02.000Z"
+        "title": "엔비디아 급락이 기회?…서학개미 1천억원 매수",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH2026111418485964a",
+        "date": "2026-11-14T09:49:02.000Z"
       },
       {
-        "title": "[뉴스초점] 전국 대부분 가을비…수능일 영하권 추위",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114111100KA8",
-        "date": "2026-11-14T02:11:02.000Z"
+        "title": "'충돌 사망 사고' 스페인 2부 리그 GK, 12경기 출전 정지 중징계",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261114184823NBn",
+        "date": "2026-11-14T09:48:24.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "의견 청취 했으나 해법 찾기는 더 복잡해진 국가철도망 구축계획",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23835",
+          "date": "2026-11-14T14:34:22.000Z"
+        },
+        {
           "title": "건설공사 안전 위한 의무적 공사중지 제도, 입법화까지 가능성은?",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23828",
           "date": "2026-11-13T14:55:57.000Z"
@@ -88,11 +93,6 @@
           "title": "산림업, 생존 위해 '벌크 UP' 대신 '디테일 UP' 절실",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23816",
           "date": "2026-11-11T17:34:30.000Z"
-        },
-        {
-          "title": "국토안전관리원, 설계 단계를 넘어 공사 단계까지 권한 확대 될까?",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23815",
-          "date": "2026-11-11T14:17:58.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "What we know about the ground stop and what to do if you're affected",
+        "link": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T07:42:11.000Z"
+      },
+      {
+        "title": "Microsoft says services fully restored after day-long global outage",
+        "link": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T06:42:27.000Z"
+      },
+      {
+        "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+        "link": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T05:52:31.000Z"
+      },
+      {
+        "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+        "link": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-14T01:47:36.000Z"
+      },
+      {
         "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
         "link": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&at_campaign=rss",
         "date": "2026-11-14T00:03:56.000Z"
-      },
-      {
-        "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
-        "link": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T00:03:52.000Z"
-      },
-      {
-        "title": "Setback for SpaceX Starship rocket's double-catch test",
-        "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-14T00:01:01.000Z"
-      },
-      {
-        "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-        "link": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T23:40:45.000Z"
-      },
-      {
-        "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
-        "link": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-13T23:11:51.000Z"
       }
     ]
   }
