@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-16T00:14:21.967Z",
+  "updated": "2026-11-16T07:08:53.314Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[현장연결] 한 총리, AI 활용 부정행위 대응 방안 논의",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116091322AMb",
-        "date": "2026-11-16T00:13:23.000Z"
+        "title": "\"엔비디아, 백지수표 역할 끝\"…AI업계 자금지원 줄일 듯",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116160110TG8",
+        "date": "2026-11-16T07:01:11.000Z"
       },
       {
-        "title": "[속보] 코스피 0.28% 오른 5,305.40 개장",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116090808jCR",
-        "date": "2026-11-16T00:08:09.000Z"
+        "title": "정부, '부정행위' 세무사 수석합격자에 '시험 무효' 처분 절차 개시",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116160035OAK",
+        "date": "2026-11-16T07:00:38.000Z"
       },
       {
-        "title": "동급생 옷 찢고 AI 조롱 노래 만든 중학생…법원 \"학폭 처분 정당\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090748QbV",
-        "date": "2026-11-16T00:07:48.000Z"
+        "title": "세무사고시회 \"감독 아닌 자백으로 드러나\"…사과·방지책 촉구",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155852xrX",
+        "date": "2026-11-16T06:58:53.000Z"
       },
       {
-        "title": "코스피, 0.28% 오른 5,305.40에 출발…코스닥, 0.89%↑",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090656XFj",
-        "date": "2026-11-16T00:06:57.000Z"
+        "title": "\"눈 마주쳐?\" 말다툼하다 흉기 꺼내 위협…가석방 40대 체포",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155450erv",
+        "date": "2026-11-16T06:54:52.000Z"
       },
       {
-        "title": "[속보] 한 총리 \"수능 종료 후에도 점검강화…이상징후 면밀 조사\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090547txv",
-        "date": "2026-11-16T00:05:47.000Z"
+        "title": "너도밤나무 열매 풍작에 인가 발길 '뚝'…일본 곰 출몰 80%↓",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155303gX3",
+        "date": "2026-11-16T06:53:04.000Z"
       }
     ]
   },
@@ -70,6 +70,21 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "11월 3주 엔지니어링 주간 입낙찰 동향",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23848",
+          "date": "2026-11-16T15:59:05.000Z"
+        },
+        {
+          "title": "건엔협, BIM 플러스자격 수료식",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23847",
+          "date": "2026-11-16T13:55:28.000Z"
+        },
+        {
+          "title": "“깜깜이 대가 산정 사라지나”…지방 기술 분야 단가산출서 사전공개",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23846",
+          "date": "2026-11-16T13:45:47.000Z"
+        },
+        {
           "title": "의견 청취 했으나 해법 찾기는 더 복잡해진 국가철도망 구축계획",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23835",
           "date": "2026-11-14T14:34:22.000Z"
@@ -78,21 +93,6 @@
           "title": "건설공사 안전 위한 의무적 공사중지 제도, 입법화까지 가능성은?",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23828",
           "date": "2026-11-13T14:55:57.000Z"
-        },
-        {
-          "title": "“현장 보고서 100분→10분, 조감도 2일→2시간” 한국종합기술 AI 경진대회",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23822",
-          "date": "2026-11-12T16:45:06.000Z"
-        },
-        {
-          "title": "토펙엔지니어링, 수소 인프라 특강",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23818",
-          "date": "2026-11-11T23:41:31.000Z"
-        },
-        {
-          "title": "산림업, 생존 위해 '벌크 UP' 대신 '디테일 UP' 절실",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23816",
-          "date": "2026-11-11T17:34:30.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
-        "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T00:03:29.000Z"
+        "title": "Wife of assassinated ex-Haitian leader registers for presidential election",
+        "link": "https://www.bbc.co.uk/news/articles/cmwy83432q1jo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T05:06:59.000Z"
       },
       {
-        "title": "Mexican drug lord Miguel Angel Felix Gallardo dies age 80",
+        "title": "Watch: New York teen reunites with cat missing after building collapse",
+        "link": "https://www.bbc.co.uk/news/videos/cm3wgeqnppljo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T04:36:45.000Z"
+      },
+      {
+        "title": "Mexican drug lord Miguel Ángel Félix Gallardo dies age 80",
         "link": "https://www.bbc.co.uk/news/articles/c51k9nkwrndxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T23:52:10.000Z"
+        "date": "2026-11-16T03:21:56.000Z"
       },
       {
-        "title": "Steering failure preceded New Orleans cruise ship collision, says NTSB",
-        "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T22:57:27.000Z"
+        "title": "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
+        "link": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T03:09:49.000Z"
       },
       {
-        "title": "Police ban protests near 10 schools and five universities in Paris",
-        "link": "https://www.bbc.co.uk/news/articles/cqm2j0jvep4eo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T22:28:54.000Z"
-      },
-      {
-        "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
-        "link": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T22:24:20.000Z"
+        "title": "Yemeni forces' retreat leaves Houthis in control of key Red Sea waterway",
+        "link": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T03:08:31.000Z"
       }
     ]
   }
