@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-15T20:30:23.240Z",
+  "updated": "2026-11-16T00:14:21.967Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "교육위, 오늘 'AI안경 부정행위 대책' 현안보고…수능 대책 주목",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116052931fYd",
-        "date": "2026-11-15T20:29:31.000Z"
+        "title": "[현장연결] 한 총리, AI 활용 부정행위 대응 방안 논의",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116091322AMb",
+        "date": "2026-11-16T00:13:23.000Z"
       },
       {
-        "title": "손혁 전 한화 단장, LG 투수 총괄 코치로 합류",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116052836y8x",
-        "date": "2026-11-15T20:28:36.000Z"
+        "title": "[속보] 코스피 0.28% 오른 5,305.40 개장",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116090808jCR",
+        "date": "2026-11-16T00:08:09.000Z"
       },
       {
-        "title": "막바지 가을…주 중반 비 그치면 겨울 추위",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116052802FQo",
-        "date": "2026-11-15T20:28:03.000Z"
+        "title": "동급생 옷 찢고 AI 조롱 노래 만든 중학생…법원 \"학폭 처분 정당\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090748QbV",
+        "date": "2026-11-16T00:07:48.000Z"
       },
       {
-        "title": "靑 \"범죄 강력 대응…가석방 없는 무기형 논의\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116052524wV0",
-        "date": "2026-11-15T20:25:25.000Z"
+        "title": "코스피, 0.28% 오른 5,305.40에 출발…코스닥, 0.89%↑",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090656XFj",
+        "date": "2026-11-16T00:06:57.000Z"
       },
       {
-        "title": "'등 뒤 화살'에 내홍 격화…최민희 징계 착수",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116052352PY9",
-        "date": "2026-11-15T20:23:53.000Z"
+        "title": "[속보] 한 총리 \"수능 종료 후에도 점검강화…이상징후 면밀 조사\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116090547txv",
+        "date": "2026-11-16T00:05:47.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
-        "link": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T19:32:39.000Z"
-      },
-      {
-        "title": "Ronaldinho makes comeback in Ravenna win",
-        "link": "https://www.bbc.co.uk/sport/football/articles/ckregz4g823xo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T19:31:48.000Z"
-      },
-      {
         "title": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
         "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T19:20:53.000Z"
+        "date": "2026-11-16T00:03:29.000Z"
       },
       {
-        "title": "Pope Leo rides in helicopter cockpit during Peru trip",
-        "link": "https://www.bbc.co.uk/news/videos/c6pw4rl00lrjo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T18:38:11.000Z"
+        "title": "Mexican drug lord Miguel Angel Felix Gallardo dies age 80",
+        "link": "https://www.bbc.co.uk/news/articles/c51k9nkwrndxo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-15T23:52:10.000Z"
       },
       {
-        "title": "Czechs rally against plan to switch funding of public media",
-        "link": "https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-15T17:23:40.000Z"
+        "title": "Steering failure preceded New Orleans cruise ship collision, says NTSB",
+        "link": "https://www.bbc.co.uk/news/articles/c65y131w1534o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-15T22:57:27.000Z"
+      },
+      {
+        "title": "Police ban protests near 10 schools and five universities in Paris",
+        "link": "https://www.bbc.co.uk/news/articles/cqm2j0jvep4eo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-15T22:28:54.000Z"
+      },
+      {
+        "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+        "link": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-15T22:24:20.000Z"
       }
     ]
   }
