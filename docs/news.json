@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-16T07:08:53.314Z",
+  "updated": "2026-11-16T17:20:00.377Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "\"엔비디아, 백지수표 역할 끝\"…AI업계 자금지원 줄일 듯",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116160110TG8",
-        "date": "2026-11-16T07:01:11.000Z"
+        "title": "\"며칠 전까지 잘 팔렸죠\"…직구는 '품절대란'",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261117000916XjX",
+        "date": "2026-11-16T15:09:18.000Z"
       },
       {
-        "title": "정부, '부정행위' 세무사 수석합격자에 '시험 무효' 처분 절차 개시",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116160035OAK",
-        "date": "2026-11-16T07:00:38.000Z"
+        "title": "수능 긴급대응팀 구성…시험장 와이파이 차단 검토",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261117000829tJk",
+        "date": "2026-11-16T15:08:30.000Z"
       },
       {
-        "title": "세무사고시회 \"감독 아닌 자백으로 드러나\"…사과·방지책 촉구",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155852xrX",
-        "date": "2026-11-16T06:58:53.000Z"
+        "title": "세무사 수석합격자 \"합격 후 받은 물품 전부 반납\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116235924Kji",
+        "date": "2026-11-16T14:59:26.000Z"
       },
       {
-        "title": "\"눈 마주쳐?\" 말다툼하다 흉기 꺼내 위협…가석방 40대 체포",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155450erv",
-        "date": "2026-11-16T06:54:52.000Z"
+        "title": "[속보] 트럼프 \"중국에서 김정은 만날 수도 있어\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116235839Sy7",
+        "date": "2026-11-16T14:58:41.000Z"
       },
       {
-        "title": "너도밤나무 열매 풍작에 인가 발길 '뚝'…일본 곰 출몰 80%↓",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116155303gX3",
-        "date": "2026-11-16T06:53:04.000Z"
+        "title": "'AI 커닝' 세무사 수석, 소형 모니터 이용…이르면 내일 소환",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261116235559RIW",
+        "date": "2026-11-16T14:56:02.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "[기자수첩]너희들을 언젠가 자르겠다",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23849",
+          "date": "2026-11-16T17:33:45.000Z"
+        },
+        {
           "title": "11월 3주 엔지니어링 주간 입낙찰 동향",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23848",
           "date": "2026-11-16T15:59:05.000Z"
@@ -88,11 +93,6 @@
           "title": "의견 청취 했으나 해법 찾기는 더 복잡해진 국가철도망 구축계획",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23835",
           "date": "2026-11-14T14:34:22.000Z"
-        },
-        {
-          "title": "건설공사 안전 위한 의무적 공사중지 제도, 입법화까지 가능성은?",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23828",
-          "date": "2026-11-13T14:55:57.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Wife of assassinated ex-Haitian leader registers for presidential election",
-        "link": "https://www.bbc.co.uk/news/articles/cmwy83432q1jo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T05:06:59.000Z"
+        "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+        "link": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T17:07:55.000Z"
       },
       {
-        "title": "Watch: New York teen reunites with cat missing after building collapse",
-        "link": "https://www.bbc.co.uk/news/videos/cm3wgeqnppljo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T04:36:45.000Z"
+        "title": "Five EU countries announce migrant deportation centre in Rwanda",
+        "link": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T16:27:24.000Z"
       },
       {
-        "title": "Mexican drug lord Miguel Ángel Félix Gallardo dies age 80",
-        "link": "https://www.bbc.co.uk/news/articles/c51k9nkwrndxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T03:21:56.000Z"
+        "title": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
+        "link": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T14:58:12.000Z"
       },
       {
-        "title": "Australian MP 'full of gratitude' upon leaving hospital after alleged car attack",
-        "link": "https://www.bbc.co.uk/news/articles/cmpqr9j81888o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T03:09:49.000Z"
+        "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+        "link": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T14:48:55.000Z"
       },
       {
-        "title": "Yemeni forces' retreat leaves Houthis in control of key Red Sea waterway",
-        "link": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-16T03:08:31.000Z"
+        "title": "Estonia to close Russia border crossings after attempted drone factory arson attack",
+        "link": "https://www.bbc.co.uk/news/articles/cqp83nk673reo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-16T14:22:36.000Z"
       }
     ]
   }
