@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-17T18:20:51.528Z",
+  "updated": "2026-11-18T01:12:15.935Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "CNN \"미 국가안보국 기밀정보 오가는 내부 통신망 마비\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118024612REY",
-        "date": "2026-11-17T17:46:13.000Z"
+        "title": "현대로템, 서산에 제2시험동 준공…\"항공우주 엔진 기술 내재화\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118101111yfv",
+        "date": "2026-11-18T01:11:11.000Z"
       },
       {
-        "title": "민주, 수능 'AI 부정행위' 대책 당정협의 개최",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118023504MnL",
-        "date": "2026-11-17T17:35:05.000Z"
+        "title": "고경표 출연 '보검 매직컬2' 측 \"시청 불편 최소화할 것\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118100924q1d",
+        "date": "2026-11-18T01:09:26.000Z"
       },
       {
-        "title": "민주, '사관학교 통합' 당정협의…'1+2+1' 방안 등 검토",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118021331PaM",
-        "date": "2026-11-17T17:13:33.000Z"
+        "title": "제니, 첫 그래미 본상 도전…아이브·키키는 아시안 팝",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261118100718yGu",
+        "date": "2026-11-18T01:07:19.000Z"
       },
       {
-        "title": "원안위 \"상주 규모 3.6 지진에 원자로 안전 영향 없어\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118014649dPq",
-        "date": "2026-11-17T16:46:50.000Z"
+        "title": "아마존 창업자 \"외부 출신 엔비디아 CEO, 성공 가능성 낮아\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611181007180qV",
+        "date": "2026-11-18T01:07:19.000Z"
       },
       {
-        "title": "젠슨황, 12월1일 美의회 청문회 출석…하원 \"안보위협사건 청취\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118010213CUL",
-        "date": "2026-11-17T16:02:15.000Z"
+        "title": "AI 해킹 증거 없다지만…美 인프라 연쇄 먹통에 '사이버 재앙설' 확산",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118100240040",
+        "date": "2026-11-18T01:02:40.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "엔지니어링협회, 엔지니어링 비전 프로그램 개최",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23875",
+          "date": "2026-11-18T09:18:17.000Z"
+        },
+        {
           "title": "광주 군공항 무안 이전 본격화…126억 기본계획 수주전",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23863",
           "date": "2026-11-17T14:37:31.000Z"
@@ -88,11 +93,6 @@
           "title": "건엔협, BIM 플러스자격 수료식",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23847",
           "date": "2026-11-16T13:55:28.000Z"
-        },
-        {
-          "title": "“깜깜이 대가 산정 사라지나”…지방 기술 분야 단가산출서 사전공개",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23846",
-          "date": "2026-11-16T13:45:47.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Jensen Huang pushes Nvidia comeback after board rejects pressure to reinstate ex-boss",
-        "link": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-17T17:42:26.000Z"
+        "title": "Nvidia says it won't reinstate Huang as firm reports bumper results",
+        "link": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-18T00:28:01.000Z"
       },
       {
-        "title": "UK sanctions firms over Israeli West Bank settlements",
-        "link": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-17T17:41:49.000Z"
+        "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+        "link": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-17T23:02:12.000Z"
       },
       {
-        "title": "Trump says US taking 'very seriously' any Iranian plot against Washington",
-        "link": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-17T17:37:04.000Z"
+        "title": "American soldier arrested by UK police on suspicion of spying taken into US military custody",
+        "link": "https://www.bbc.co.uk/news/articles/c6x284ez38vdo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-17T22:46:30.000Z"
       },
       {
-        "title": "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge",
-        "link": "https://www.bbc.co.uk/news/articles/cq7825234lgmo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-17T17:19:57.000Z"
+        "title": "Thomas Markle charged over child sex abuse material in Philippines",
+        "link": "https://www.bbc.co.uk/news/articles/ckg5ry8m49ggo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-17T22:44:15.000Z"
       },
       {
-        "title": "US loses measles elimination status after 26 years amid record case numbers",
-        "link": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-17T17:10:03.000Z"
+        "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+        "link": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-17T21:24:35.000Z"
       }
     ]
   }
