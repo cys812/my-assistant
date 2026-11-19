@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-19T07:12:34.106Z",
+  "updated": "2026-11-19T16:44:01.535Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "한덕수 '내란' 대법 선고…김건희 '3대 의혹'도",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611191609344N3",
-        "date": "2026-11-19T07:09:36.000Z"
+        "title": "PHP서 또 치명적 보안 취약점 발견…웹사이트 해킹 경고등",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120013446UEV",
+        "date": "2026-11-19T16:34:48.000Z"
       },
       {
-        "title": "김주애 후계 굳히기?…\"北 매체, 관련 보도 절반 올해 집중\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261119160819yCO",
-        "date": "2026-11-19T07:08:19.000Z"
+        "title": "앤트로픽 CEO \"AI 안전 집착은 회사의 DNA\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120012142D4n",
+        "date": "2026-11-19T16:21:44.000Z"
       },
       {
-        "title": "국립중앙박물관 관람객 650만 명 돌파…역대 최다",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611191559398WY",
-        "date": "2026-11-19T06:59:40.000Z"
+        "title": "中 왕이, 미중러 정상회담에 \"역사책에 실릴 상징적 사건\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120011844btW",
+        "date": "2026-11-19T16:18:44.000Z"
       },
       {
-        "title": "석유협회 \"최고가격제 손실 최소 5조 원 추정…출구전략 마련해야\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611191556404IZ",
-        "date": "2026-11-19T06:56:42.000Z"
+        "title": "\"앤트로픽 기관투자자 절반이상 물량 못 받아\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120011445VYp",
+        "date": "2026-11-19T16:14:46.000Z"
       },
       {
-        "title": "프로야구 홀드왕 스기모토 '일본행'…소프트뱅크서 새로운 도전",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611191552492fl",
-        "date": "2026-11-19T06:52:50.000Z"
+        "title": "앤트로픽 상장에 백만장자 수천명 탄생…1인 평균 580억원 '잭팟'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120010813usD",
+        "date": "2026-11-19T16:08:13.000Z"
       }
     ]
   },
@@ -37,6 +37,11 @@
       "label": "조경",
       "source": "한국조경신문",
       "items": [
+        {
+          "title": "[데스크 칼럼] 조경은 지금 ‘불황’…숫자가 말하는 현실",
+          "link": "https://www.latimes.kr/news/articleView.html?idxno=53840",
+          "date": "2026-11-19T18:00:00.000Z"
+        },
         {
           "title": "한국조경협회, 서울숲서 한마음대축제…900여 조경인 교류·화합",
           "link": "https://www.latimes.kr/news/articleView.html?idxno=53838",
@@ -56,11 +61,6 @@
           "title": "“공원·녹지 확충하면 용적률 혜택 주겠다” 법안 발의",
           "link": "https://www.latimes.kr/news/articleView.html?idxno=53835",
           "date": "2026-11-12T09:00:00.000Z"
-        },
-        {
-          "title": "국가유산 조경설계 별도 제도화 제안…독립 전통조경 설계업 신설 논의",
-          "link": "https://www.latimes.kr/news/articleView.html?idxno=53834",
-          "date": "2026-11-12T09:00:00.000Z"
         }
       ]
     },
@@ -69,6 +69,16 @@
       "label": "엔지니어링",
       "source": "엔지니어링데일리",
       "items": [
+        {
+          "title": "항소심 법원도 “새만금공항 기본계획 취소해야”",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23891",
+          "date": "2026-11-19T17:38:09.000Z"
+        },
+        {
+          "title": "엔지니어링협회, 한국광해광업공단과 업무협약",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23890",
+          "date": "2026-11-19T17:35:58.000Z"
+        },
         {
           "title": "무영CM, 우즈베키스탄 의과대학 건설사업관리 수주",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23888",
@@ -83,16 +93,6 @@
           "title": "한국종합기술, 9년 연속 ESG평가 최고등급",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23886",
           "date": "2026-11-19T10:59:38.000Z"
-        },
-        {
-          "title": "한국엔지니어링협회, 2026 FIDIC 아시아 태평양 컨퍼런스 참가",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23880",
-          "date": "2026-11-18T16:34:08.000Z"
-        },
-        {
-          "title": "엔지니어링공제조합, 스카이밸리C.C 베스트 골프장 선정",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23878",
-          "date": "2026-11-18T15:17:05.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
-        "link": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T04:42:52.000Z"
+        "title": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+        "link": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T16:19:23.000Z"
       },
       {
-        "title": "Crimean Bridge attacked again, Russian official says",
-        "link": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T04:37:17.000Z"
+        "title": "Susan Smith seeks parole again 32 years after drowning her two sons",
+        "link": "https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T15:59:30.000Z"
       },
       {
-        "title": "Elon Musk says record $446m spending on US midterms was 'pretty foolish'",
-        "link": "https://www.bbc.co.uk/news/articles/cm9q8j2z3gg8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T02:59:06.000Z"
+        "title": "Dozens missing after boat carrying migrants sinks off Senegal's coast",
+        "link": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T15:52:26.000Z"
       },
       {
-        "title": "AI giant Anthropic valued at up to $1.5tn ahead of stock market debut",
-        "link": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T02:20:15.000Z"
+        "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
+        "link": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T15:23:34.000Z"
       },
       {
-        "title": "Van Gogh painting sells for record $190.4m after row over its Nazi history",
-        "link": "https://www.bbc.co.uk/news/articles/c5dj1dkwzvzwo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T00:49:19.000Z"
+        "title": "Venezuela signs military deal with US less than a year after Maduro's removal",
+        "link": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T13:31:23.000Z"
       }
     ]
   }
