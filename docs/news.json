@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-19T23:28:06.073Z",
+  "updated": "2026-11-20T04:12:31.937Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[3분증시] 뉴욕증시, AI 투자 불안에 2%대 급락",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611200826496X7",
-        "date": "2026-11-19T23:26:50.000Z"
+        "title": "[센터엔터] 영화 '암살자(들)', 북미 진출…17개 도시 개봉 外",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120130717sTj",
+        "date": "2026-11-20T04:07:18.000Z"
       },
       {
-        "title": "[날씨] '서울 -3도' 곳곳 영하권…충남·전북 대설주의보",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120081119ag8",
-        "date": "2026-11-19T23:11:20.000Z"
+        "title": "[경제읽기] 앤트로픽 상장 흥행에도 투심 불안…코스피 하락",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120130142DJn",
+        "date": "2026-11-20T04:01:44.000Z"
       },
       {
-        "title": "[출근길인터뷰] 공복혈당 보다 '당화혈색소' 봐야…생활습관 중요",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611200809523Gu",
-        "date": "2026-11-19T23:09:55.000Z"
+        "title": "서울대교구, 21일 故 장면 박사 기림미사…정순택 대주교 주례",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120125839BrE",
+        "date": "2026-11-20T03:58:40.000Z"
       },
       {
-        "title": "트럼프 \"미중러 회담 매우 성공적…곧 기자회견\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120075546gYv",
-        "date": "2026-11-19T22:55:48.000Z"
+        "title": "'38억 수익' 불법콜밴 업체 109명 무더기 검거",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120125010Crq",
+        "date": "2026-11-20T03:50:12.000Z"
       },
       {
-        "title": "[뉴스초점] 수능 부정행위 98명.‥'리트 만점자' 수사 계속",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120075106pG7",
-        "date": "2026-11-19T22:51:09.000Z"
+        "title": "서해안고속도로서 차량 3대 추돌…인명피해 없어",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120124909BTQ",
+        "date": "2026-11-20T03:49:10.000Z"
       }
     ]
   },
@@ -70,6 +70,16 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "부전-마산 복선전철 붕괴, 한계 20배 고압 주입 원인",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23895",
+          "date": "2026-11-20T10:12:57.000Z"
+        },
+        {
+          "title": "건엔협·염태영 의원, 제7회 정책포럼 개최",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23894",
+          "date": "2026-11-20T09:31:42.000Z"
+        },
+        {
           "title": "항소심 법원도 “새만금공항 기본계획 취소해야”",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23891",
           "date": "2026-11-19T17:38:09.000Z"
@@ -83,16 +93,6 @@
           "title": "무영CM, 우즈베키스탄 의과대학 건설사업관리 수주",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23888",
           "date": "2026-11-19T14:19:14.000Z"
-        },
-        {
-          "title": "도화, 산업부 세계일류상품 선정…\"철도 설계 기술력 입증\"",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23887",
-          "date": "2026-11-19T12:32:49.000Z"
-        },
-        {
-          "title": "한국종합기술, 9년 연속 ESG평가 최고등급",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23886",
-          "date": "2026-11-19T10:59:38.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "California probing whether China improperly acquired Nvidia technology",
-        "link": "https://www.bbc.co.uk/news/articles/cqn70vxp5p4no?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T23:04:30.000Z"
+        "title": "More climate money for Africa? Europe says use what's already pledged",
+        "link": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T00:54:50.000Z"
       },
       {
-        "title": "From premature baby to social media star - Famed hippo Fiona dies",
-        "link": "https://www.bbc.co.uk/news/videos/cq39gvj9y7xpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T22:54:03.000Z"
+        "title": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
+        "link": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T00:50:24.000Z"
       },
       {
-        "title": "Judge finds Thomas Markle mentally fit to stand trial on child abuse charges",
-        "link": "https://www.bbc.co.uk/news/articles/crgj35ldz2zxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T22:48:22.000Z"
+        "title": "Why Canada is embracing AI data centres while the US pushes back",
+        "link": "https://www.bbc.co.uk/news/articles/cmx2q223z1jlo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T00:13:24.000Z"
       },
       {
-        "title": "Fiona the hippo dies after swallowing a hat at Cincinnati Zoo",
-        "link": "https://www.bbc.co.uk/news/articles/cwz0k3172xzko?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T22:09:04.000Z"
+        "title": "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
+        "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T00:13:21.000Z"
       },
       {
-        "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
-        "link": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T21:38:42.000Z"
+        "title": "How did Anthropic's stock market debut unfold?",
+        "link": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-19T23:52:25.000Z"
       }
     ]
   }
