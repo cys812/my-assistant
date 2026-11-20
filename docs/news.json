@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-20T13:28:54.045Z",
+  "updated": "2026-11-20T21:27:14.162Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[라이브투데이2부] 11월20일 다시보기",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120220229ssL",
-        "date": "2026-11-20T13:20:06.000Z"
+        "title": "트럼프 \"고유가는 이란과의 협상이 관건\"…이견 '평행선' 시사",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261121055301UQa",
+        "date": "2026-11-20T20:53:02.000Z"
       },
       {
-        "title": "[라이브투데이1부] 11월20일 다시보기",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611202201360y7",
-        "date": "2026-11-20T13:15:06.000Z"
+        "title": "국힘, 오늘 대구에서 '조작기소특검법' 규탄 장외집회",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261121052032NMP",
+        "date": "2026-11-20T20:20:34.000Z"
       },
       {
-        "title": "이재명 \"5,500억 공익환수가 배임이면 일반 개발허가는 어찌되나\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120215734tcu",
-        "date": "2026-11-20T12:57:36.000Z"
+        "title": "\"멸종위기 마젤란 펭귄에 관심을\"…LA 동물원 '새 식구' 공개",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611181559221cX",
+        "date": "2026-11-20T20:02:03.000Z"
       },
       {
-        "title": "주말 서울 -5도 겨울 추위…빙판·강풍 주의",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120215728pYR",
-        "date": "2026-11-20T12:57:30.000Z"
+        "title": "가느다란 나뭇가지 끝에 곰 한 마리...아슬아슬 '나무 타기'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118172643z41",
+        "date": "2026-11-20T20:01:03.000Z"
       },
       {
-        "title": "'안경 만지작' 정답 쓱쓱…수능 부정행위 111건",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611202149599NA",
-        "date": "2026-11-20T12:50:00.000Z"
+        "title": "美연준 이사, 금리 추가 인상 필요성 강조…트럼프는 \"금리 너무 높아\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261121043456dSA",
+        "date": "2026-11-20T19:34:56.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "Trump threatens ban on US firms building AI data centres overseas",
+        "link": "https://www.bbc.co.uk/news/articles/cmde1lw9y54ko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T20:54:12.000Z"
+      },
+      {
+        "title": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+        "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T20:00:53.000Z"
+      },
+      {
+        "title": "Gérard Depardieu and French author investigated over sexual allegations",
+        "link": "https://www.bbc.co.uk/news/articles/c9ly43pj10mvo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T19:45:20.000Z"
+      },
+      {
+        "title": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
+        "link": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T19:27:49.000Z"
+      },
+      {
         "title": "White House removes cyber-security chief after series of tech outages",
         "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T13:28:32.000Z"
-      },
-      {
-        "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
-        "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T13:01:16.000Z"
-      },
-      {
-        "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
-        "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T12:56:48.000Z"
-      },
-      {
-        "title": "Nearly 600 women killed in South Africa within three months",
-        "link": "https://www.bbc.co.uk/news/articles/c69vwyjp0339o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T10:56:02.000Z"
-      },
-      {
-        "title": "South Korea catches 111 students with new measures against exam cheating",
-        "link": "https://www.bbc.co.uk/news/articles/cm3vgw1xevvwo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T10:16:19.000Z"
+        "date": "2026-11-20T19:03:56.000Z"
       }
     ]
   }
