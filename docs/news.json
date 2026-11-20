@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-20T04:12:31.937Z",
+  "updated": "2026-11-20T13:28:54.045Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[센터엔터] 영화 '암살자(들)', 북미 진출…17개 도시 개봉 外",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120130717sTj",
-        "date": "2026-11-20T04:07:18.000Z"
+        "title": "[라이브투데이2부] 11월20일 다시보기",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120220229ssL",
+        "date": "2026-11-20T13:20:06.000Z"
       },
       {
-        "title": "[경제읽기] 앤트로픽 상장 흥행에도 투심 불안…코스피 하락",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120130142DJn",
-        "date": "2026-11-20T04:01:44.000Z"
+        "title": "[라이브투데이1부] 11월20일 다시보기",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611202201360y7",
+        "date": "2026-11-20T13:15:06.000Z"
       },
       {
-        "title": "서울대교구, 21일 故 장면 박사 기림미사…정순택 대주교 주례",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120125839BrE",
-        "date": "2026-11-20T03:58:40.000Z"
+        "title": "이재명 \"5,500억 공익환수가 배임이면 일반 개발허가는 어찌되나\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261120215734tcu",
+        "date": "2026-11-20T12:57:36.000Z"
       },
       {
-        "title": "'38억 수익' 불법콜밴 업체 109명 무더기 검거",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120125010Crq",
-        "date": "2026-11-20T03:50:12.000Z"
+        "title": "주말 서울 -5도 겨울 추위…빙판·강풍 주의",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120215728pYR",
+        "date": "2026-11-20T12:57:30.000Z"
       },
       {
-        "title": "서해안고속도로서 차량 3대 추돌…인명피해 없어",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261120124909BTQ",
-        "date": "2026-11-20T03:49:10.000Z"
+        "title": "'안경 만지작' 정답 쓱쓱…수능 부정행위 111건",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611202149599NA",
+        "date": "2026-11-20T12:50:00.000Z"
       }
     ]
   },
@@ -70,6 +70,16 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "[FIDIC 아·태 특집]위둔 치암칫트롱 FIDIC 아시아태평양 회장 “동남아 건설시장의 방향성, 태국에서 찾는다”",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23897",
+          "date": "2026-11-20T15:22:31.000Z"
+        },
+        {
+          "title": "“영업정지 맞느니 휴업” 인력난 중소사…컨소사 부담 전가도",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23896",
+          "date": "2026-11-20T14:43:12.000Z"
+        },
+        {
           "title": "부전-마산 복선전철 붕괴, 한계 20배 고압 주입 원인",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23895",
           "date": "2026-11-20T10:12:57.000Z"
@@ -83,16 +93,6 @@
           "title": "항소심 법원도 “새만금공항 기본계획 취소해야”",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23891",
           "date": "2026-11-19T17:38:09.000Z"
-        },
-        {
-          "title": "엔지니어링협회, 한국광해광업공단과 업무협약",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23890",
-          "date": "2026-11-19T17:35:58.000Z"
-        },
-        {
-          "title": "무영CM, 우즈베키스탄 의과대학 건설사업관리 수주",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23888",
-          "date": "2026-11-19T14:19:14.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "More climate money for Africa? Europe says use what's already pledged",
-        "link": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T00:54:50.000Z"
+        "title": "White House removes cyber-security chief after series of tech outages",
+        "link": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T13:28:32.000Z"
       },
       {
-        "title": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-        "link": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T00:50:24.000Z"
+        "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+        "link": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T13:01:16.000Z"
       },
       {
-        "title": "Why Canada is embracing AI data centres while the US pushes back",
-        "link": "https://www.bbc.co.uk/news/articles/cmx2q223z1jlo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T00:13:24.000Z"
+        "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+        "link": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T12:56:48.000Z"
       },
       {
-        "title": "'I tell my son it's just fireworks': People inside besieged Yemeni city speak to BBC",
-        "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-20T00:13:21.000Z"
+        "title": "Nearly 600 women killed in South Africa within three months",
+        "link": "https://www.bbc.co.uk/news/articles/c69vwyjp0339o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T10:56:02.000Z"
       },
       {
-        "title": "How did Anthropic's stock market debut unfold?",
-        "link": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-19T23:52:25.000Z"
+        "title": "South Korea catches 111 students with new measures against exam cheating",
+        "link": "https://www.bbc.co.uk/news/articles/cm3vgw1xevvwo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-20T10:16:19.000Z"
       }
     ]
   }
