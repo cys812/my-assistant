@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-21T17:55:40.655Z",
+  "updated": "2026-11-21T22:56:49.343Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "트럼프 \"이란 핵보유 막을 수 있는 영구적인 합의 할 것\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122024936e1r",
-        "date": "2026-11-21T17:49:38.000Z"
+        "title": "'5경기 연속 선발' 황희찬, 길어지는 골 침묵…카스트로프는 시즌 첫 선발 출전",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122073622Vef",
+        "date": "2026-11-21T22:36:22.000Z"
       },
       {
-        "title": "이란 \"美 F-16 전투기 공격해 비상착륙\"…미군 \"거짓 주장\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122014651lQx",
-        "date": "2026-11-21T16:46:54.000Z"
+        "title": "코레일 \"경부선 일반열차 운행 정상적으로 재개\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122073322cah",
+        "date": "2026-11-21T22:33:23.000Z"
       },
       {
-        "title": "EU, 빅테크 디지털세 공식 제안…트럼프와 충돌 불가피",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611212340434Mh",
-        "date": "2026-11-21T14:40:44.000Z"
+        "title": "백혈병 투병 소녀의 마지막 소원…\"친구들과 수업 듣고 싶어요\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261119171728elq",
+        "date": "2026-11-21T21:02:03.000Z"
       },
       {
-        "title": "긴장 고조되는 발트해…\"러 화물선 드론에 피격\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261121233042DBI",
-        "date": "2026-11-21T14:30:43.000Z"
+        "title": "경찰서 뒷마당서 도넛 훔친 다람쥐…미 경찰 \"수배 중\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261119161743Lv9",
+        "date": "2026-11-21T20:01:04.000Z"
       },
       {
-        "title": "시험 도중 벨소리…국가자격시험서 부정행위 6건 적발",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261121223926gdR",
-        "date": "2026-11-21T13:39:26.000Z"
+        "title": "머리 한가운데 '뿔 하나 불쑥'…에스토니아서 발견된 '유니콘'?",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118155212U6u",
+        "date": "2026-11-21T20:01:04.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "FBI reportedly investigating apparent hack of its criminal database",
-        "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T16:35:15.000Z"
-      },
-      {
         "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
         "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T14:54:24.000Z"
+        "date": "2026-11-21T22:19:43.000Z"
       },
       {
-        "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-        "link": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T13:17:38.000Z"
+        "title": "Lock of former US President George Washington's hair sells for $4,000",
+        "link": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-21T22:01:19.000Z"
       },
       {
         "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
         "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T13:15:21.000Z"
+        "date": "2026-11-21T21:05:29.000Z"
       },
       {
-        "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
-        "link": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T10:26:36.000Z"
+        "title": "Russia-bound ship attacked in Gulf of Finland",
+        "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-21T19:20:22.000Z"
+      },
+      {
+        "title": "FBI reportedly investigating apparent hack of its criminal database",
+        "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-21T16:35:15.000Z"
       }
     ]
   }
