@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-22T02:55:15.313Z",
+  "updated": "2026-11-22T10:56:49.575Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "최교진 교육장관 사의 표명…\"준비 미흡 지적 책임 통감\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611221151036Ta",
-        "date": "2026-11-22T02:51:05.000Z"
+        "title": "잇단 악재에 AI 업계 '흔들'…국내 반도체도 긴장",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122195110AXk",
+        "date": "2026-11-22T10:51:11.000Z"
       },
       {
-        "title": "[속보] 최교진 교육장관, 사의 표명···\"수능 책임 통감\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122114948Jdq",
-        "date": "2026-11-22T02:49:50.000Z"
+        "title": "이 대통령 \"업자와 결탁했다면 1,100억 더 받았겠나\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122193044UYD",
+        "date": "2026-11-22T10:30:47.000Z"
       },
       {
-        "title": "한은 올해 성장 눈높이 3%대 후반 전망…\"내년 더 올릴 수도\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122113303qeP",
-        "date": "2026-11-22T02:33:04.000Z"
+        "title": "종묘 앞 재개발 갈등 장기화…해법 못 찾는 세운4구역",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122192839qI3",
+        "date": "2026-11-22T10:28:40.000Z"
       },
       {
-        "title": "가스 누출 시도·아내 흉기 협박…50대 집행유예",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122112245IOi",
-        "date": "2026-11-22T02:22:46.000Z"
+        "title": "인천 구월동서 수도관 파열…6시간 반 만에 복구",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122192729KqC",
+        "date": "2026-11-22T10:27:31.000Z"
       },
       {
-        "title": "대학생 45% \"취업 작년보다 어렵다\"…5명 중 1명만 서류 합격",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611221122194UL",
-        "date": "2026-11-22T02:22:21.000Z"
+        "title": "멕시코 마약 거물 전격 체포…트럼프의 딴소리, 왜?",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611221927133gr",
+        "date": "2026-11-22T10:27:15.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "삼보기술단+유신, SYSTRA 손잡고 베트남 북남 고속철도 수주",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23903",
+          "date": "2026-11-22T13:24:54.000Z"
+        },
+        {
           "title": "[FIDIC 아·태 특집]위둔 치암칫트롱 FIDIC 아시아태평양 회장 “동남아 건설시장의 방향성, 태국에서 찾는다”",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23897",
           "date": "2026-11-20T15:22:31.000Z"
@@ -88,11 +93,6 @@
           "title": "건엔협·염태영 의원, 제7회 정책포럼 개최",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23894",
           "date": "2026-11-20T09:31:42.000Z"
-        },
-        {
-          "title": "항소심 법원도 “새만금공항 기본계획 취소해야”",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23891",
-          "date": "2026-11-19T17:38:09.000Z"
         }
       ]
     }
@@ -102,6 +102,21 @@
     "source": "BBC World",
     "items": [
       {
+        "title": "South Korea education minister resigns over exam cheating scandal",
+        "link": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-22T09:20:45.000Z"
+      },
+      {
+        "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
+        "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-22T07:12:41.000Z"
+      },
+      {
+        "title": "Three killed and dozens missing after fire at Indonesian factory",
+        "link": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-22T06:05:00.000Z"
+      },
+      {
         "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
         "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
         "date": "2026-11-22T01:25:03.000Z"
@@ -110,21 +125,6 @@
         "title": "FBI reportedly investigating apparent hack of its criminal database",
         "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
         "date": "2026-11-22T00:10:44.000Z"
-      },
-      {
-        "title": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
-        "link": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T00:10:37.000Z"
-      },
-      {
-        "title": "How a teen gamer and his mother helped rescue a missing girl",
-        "link": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T00:09:58.000Z"
-      },
-      {
-        "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-        "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T22:19:43.000Z"
       }
     ]
   }
