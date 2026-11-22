@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-21T22:56:49.343Z",
+  "updated": "2026-11-22T02:55:15.313Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "'5경기 연속 선발' 황희찬, 길어지는 골 침묵…카스트로프는 시즌 첫 선발 출전",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122073622Vef",
-        "date": "2026-11-21T22:36:22.000Z"
+        "title": "최교진 교육장관 사의 표명…\"준비 미흡 지적 책임 통감\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611221151036Ta",
+        "date": "2026-11-22T02:51:05.000Z"
       },
       {
-        "title": "코레일 \"경부선 일반열차 운행 정상적으로 재개\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261122073322cah",
-        "date": "2026-11-21T22:33:23.000Z"
+        "title": "[속보] 최교진 교육장관, 사의 표명···\"수능 책임 통감\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122114948Jdq",
+        "date": "2026-11-22T02:49:50.000Z"
       },
       {
-        "title": "백혈병 투병 소녀의 마지막 소원…\"친구들과 수업 듣고 싶어요\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261119171728elq",
-        "date": "2026-11-21T21:02:03.000Z"
+        "title": "한은 올해 성장 눈높이 3%대 후반 전망…\"내년 더 올릴 수도\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122113303qeP",
+        "date": "2026-11-22T02:33:04.000Z"
       },
       {
-        "title": "경찰서 뒷마당서 도넛 훔친 다람쥐…미 경찰 \"수배 중\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261119161743Lv9",
-        "date": "2026-11-21T20:01:04.000Z"
+        "title": "가스 누출 시도·아내 흉기 협박…50대 집행유예",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261122112245IOi",
+        "date": "2026-11-22T02:22:46.000Z"
       },
       {
-        "title": "머리 한가운데 '뿔 하나 불쑥'…에스토니아서 발견된 '유니콘'?",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261118155212U6u",
-        "date": "2026-11-21T20:01:04.000Z"
+        "title": "대학생 45% \"취업 작년보다 어렵다\"…5명 중 1명만 서류 합격",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611221122194UL",
+        "date": "2026-11-22T02:22:21.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-        "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T22:19:43.000Z"
-      },
-      {
-        "title": "Lock of former US President George Washington's hair sells for $4,000",
-        "link": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T22:01:19.000Z"
-      },
-      {
         "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
         "link": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T21:05:29.000Z"
-      },
-      {
-        "title": "Russia-bound ship attacked in Gulf of Finland",
-        "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T19:20:22.000Z"
+        "date": "2026-11-22T01:25:03.000Z"
       },
       {
         "title": "FBI reportedly investigating apparent hack of its criminal database",
         "link": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-21T16:35:15.000Z"
+        "date": "2026-11-22T00:10:44.000Z"
+      },
+      {
+        "title": "Nigerian youth have shown their power in the past - why aren't they shaping this election?",
+        "link": "https://www.bbc.co.uk/news/articles/ck4g174n020eo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-22T00:10:37.000Z"
+      },
+      {
+        "title": "How a teen gamer and his mother helped rescue a missing girl",
+        "link": "https://www.bbc.co.uk/news/articles/cmq8lyv8lkjwo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-22T00:09:58.000Z"
+      },
+      {
+        "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+        "link": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-21T22:19:43.000Z"
       }
     ]
   }
