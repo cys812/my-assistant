@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-22T23:45:15.426Z",
+  "updated": "2026-11-23T06:52:56.589Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "이란, 새 미사일 발사대 공개…혁명수비대 \"적군에 굴욕 안길 것\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123084349cIv",
-        "date": "2026-11-22T23:43:49.000Z"
+        "title": "변리사 시험도 수상?…'고득점자 급증'만으로 단정 어려워",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123155118Sun",
+        "date": "2026-11-23T06:51:21.000Z"
       },
       {
-        "title": "트럼프 \"이란은 늘 말만 해\"…새해 공격 경고",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261123083959F0Q",
-        "date": "2026-11-22T23:40:02.000Z"
+        "title": "신임 국정원장 후보자에 강금실…외교 임웅순·통일 홍익표",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123154849550",
+        "date": "2026-11-23T06:48:50.000Z"
       },
       {
-        "title": "교체 투입 이강인, 킬패스 빛났다…AT마드리드, 3-0 완승",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123083605J5h",
-        "date": "2026-11-22T23:36:07.000Z"
+        "title": "임금 줄 돈 유용 요양병원 대표 구속……임금·퇴직금 7억원 체불",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR2026112315403483D",
+        "date": "2026-11-23T06:40:35.000Z"
       },
       {
-        "title": "'핑계고', 음주운전 고경표 시상식 후보 올렸다 사과",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123083501SXP",
-        "date": "2026-11-22T23:35:04.000Z"
+        "title": "'해외 출장·여비' 논란…이경식 울산경자청장 해임",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123154014bIY",
+        "date": "2026-11-23T06:40:14.000Z"
       },
       {
-        "title": "'김지우 해트트릭' 한국, 뉴칼레도니아 잡고 32강 조기 확정",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123083123Kzd",
-        "date": "2026-11-22T23:31:25.000Z"
+        "title": "전남광주 공사 정체 구간서 차량 5대 추돌…3명 부상",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261123153938P4l",
+        "date": "2026-11-23T06:39:40.000Z"
       }
     ]
   },
@@ -70,6 +70,16 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "11월 4주 엔지니어링 주간 입낙찰 동향",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23906",
+          "date": "2026-11-23T15:23:03.000Z"
+        },
+        {
+          "title": "유신, 베트남 하노이 메트로 5개 노선 F/S 및 FEED 수주",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23905",
+          "date": "2026-11-23T14:37:40.000Z"
+        },
+        {
           "title": "삼보기술단+유신, SYSTRA 손잡고 베트남 북남 고속철도 수주",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23903",
           "date": "2026-11-22T13:24:54.000Z"
@@ -83,16 +93,6 @@
           "title": "“영업정지 맞느니 휴업” 인력난 중소사…컨소사 부담 전가도",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23896",
           "date": "2026-11-20T14:43:12.000Z"
-        },
-        {
-          "title": "부전-마산 복선전철 붕괴, 한계 20배 고압 주입 원인",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23895",
-          "date": "2026-11-20T10:12:57.000Z"
-        },
-        {
-          "title": "건엔협·염태영 의원, 제7회 정책포럼 개최",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23894",
-          "date": "2026-11-20T09:31:42.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
-        "link": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T22:37:43.000Z"
+        "title": "What's next after no deal at COP31 climate talks?",
+        "link": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-23T05:34:39.000Z"
       },
       {
-        "title": "'Danger seems greater all the time': Ukrainians search for missing after Russian strikes",
-        "link": "https://www.bbc.co.uk/news/videos/cre3dvd1k9y1o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T22:37:43.000Z"
+        "title": "What's next after no deal at COP31 climate talks?",
+        "link": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-23T05:34:39.000Z"
       },
       {
-        "title": "Miley Cyrus marries Maxx Morando in California ceremony",
-        "link": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T21:22:40.000Z"
+        "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
+        "link": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-23T05:33:17.000Z"
+      },
+      {
+        "title": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
+        "link": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-23T05:15:06.000Z"
       },
       {
         "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
         "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T20:28:09.000Z"
-      },
-      {
-        "title": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-        "link": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-22T20:26:24.000Z"
+        "date": "2026-11-23T02:59:35.000Z"
       }
     ]
   }
