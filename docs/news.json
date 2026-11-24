@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-23T19:06:39.965Z",
+  "updated": "2026-11-24T04:16:20.559Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "'투표율 허위 입력' 선관위 직원 1명 구속·7명 기각",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124020608BwL",
-        "date": "2026-11-23T17:06:09.000Z"
+        "title": "中관영매체 \"젠슨 황 복귀, '중국 간첩 의혹' 허구 의미\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124131517xcA",
+        "date": "2026-11-24T04:15:18.000Z"
       },
       {
-        "title": "젠슨 황, 다시 엔비디아 CEO로…\"안보상 위험 없어\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261124020512qmu",
-        "date": "2026-11-23T17:05:12.000Z"
+        "title": "정상빈, 손흥민 앞에서 1골 1도움…세인트루이스 PO 1승 선취",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124131056iwq",
+        "date": "2026-11-24T04:10:56.000Z"
       },
       {
-        "title": "미국 민주당, '젠슨황 복귀' 비판…\"트럼프가 안보 팔아넘겨\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124020155vq0",
-        "date": "2026-11-23T17:01:56.000Z"
+        "title": "신세계백화점 폭파 협박범...붙잡았더니 '울산 중학생'",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124122230xnW",
+        "date": "2026-11-24T03:22:31.000Z"
       },
       {
-        "title": "[속보] '투표율 허위입력' 선관위 직원 1명 구속·7명 기각",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124013252GEJ",
-        "date": "2026-11-23T16:32:53.000Z"
+        "title": "헬스장·요가·필라테스 가격 표시의무 미이행 11곳 적발…2,500개 업장 점검",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124121358GFF",
+        "date": "2026-11-24T03:14:00.000Z"
       },
       {
-        "title": "젠슨 황 복귀에 나스닥 7% 급등…엔비디아 33%↑",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261124010404yfQ",
-        "date": "2026-11-23T16:04:06.000Z"
+        "title": "인덕션 냄비 10종 품질 비교…\"가열·온도유지 성능 고려해야\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261124084222R7K",
+        "date": "2026-11-24T03:00:06.000Z"
       }
     ]
   },
@@ -70,6 +70,11 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "엔지니어링협회, 사업대가 기준 개정…\"투명성 강화\"",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23920",
+          "date": "2026-11-24T09:21:17.000Z"
+        },
+        {
           "title": "[시론]우리는 왜 스스로 값을 깎는가",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23909",
           "date": "2026-11-23T20:42:58.000Z"
@@ -88,11 +93,6 @@
           "title": "유신, 베트남 하노이 메트로 5개 노선 F/S 및 FEED 수주",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23905",
           "date": "2026-11-23T14:37:40.000Z"
-        },
-        {
-          "title": "삼보기술단+유신, SYSTRA 손잡고 베트남 북남 고속철도 수주",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23903",
-          "date": "2026-11-22T13:24:54.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
-        "link": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-23T18:04:20.000Z"
+        "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+        "link": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T02:15:59.000Z"
       },
       {
-        "title": "What failure of COP31 reveals about a divided world",
-        "link": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-23T17:24:25.000Z"
+        "title": "How Nvidia is reacting to Jensen Huang's return as CEO",
+        "link": "https://www.bbc.co.uk/news/videos/ckedq2edqegzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T01:21:41.000Z"
       },
       {
-        "title": "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
-        "link": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-23T17:14:50.000Z"
+        "title": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
+        "link": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T01:11:54.000Z"
       },
       {
-        "title": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
-        "link": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-23T17:07:25.000Z"
+        "title": "King Charles and Elton John pay tribute to Australian music legend Molly Meldrum",
+        "link": "https://www.bbc.co.uk/news/articles/c3qj57rkd2k1o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T00:23:25.000Z"
       },
       {
-        "title": "The rise and fall and rise again of Jensen Huang",
-        "link": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-23T15:49:52.000Z"
+        "title": "Dad who discovered daughter's murder on Facebook feels ignored by South African police",
+        "link": "https://www.bbc.co.uk/news/articles/cqglr0d5jejxo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T00:02:15.000Z"
       }
     ]
   }
