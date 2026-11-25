@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-24T15:10:37.271Z",
+  "updated": "2026-11-25T00:02:13.347Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "러 대사관 \"국제법 위반 아냐\"…울릉도 근접 비행 해명",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611242349079ox",
-        "date": "2026-11-24T14:49:08.000Z"
+        "title": "[사건사고] 남해고속도 트레일러 넘어져 6중 추돌…3명 심정지 外",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125090126j0M",
+        "date": "2026-11-25T00:01:27.000Z"
       },
       {
-        "title": "[날씨] 출근길 영하권 추위…해안·산지 강풍 유의",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261124233825JVp",
-        "date": "2026-11-24T14:38:26.000Z"
+        "title": "[월드앤이슈] 젠슨 황 '추가 불륜' 고백…공화 강경파도 공세",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125085656yM2",
+        "date": "2026-11-24T23:57:00.000Z"
       },
       {
-        "title": "[오늘의영상] '해트트릭만 3명' 스페인 U-17 대표팀, 피지에 15골 맹폭",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261124233735WsH",
-        "date": "2026-11-24T14:37:36.000Z"
+        "title": "1조 달러 한국 수출, 60년간 세계 평균 2배 속도로 성장",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125085030o3F",
+        "date": "2026-11-24T23:50:31.000Z"
       },
       {
-        "title": "펜싱 여자 에페, 단체전 1위상…13년 연속 수상",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611242337057lK",
-        "date": "2026-11-24T14:37:05.000Z"
+        "title": "김하성, 디트로이트와 1년 500만 달러…빅리그 잔류 성공",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125084921h8u",
+        "date": "2026-11-24T23:49:22.000Z"
       },
       {
-        "title": "선수협, 프로연맹 쇄신안에 반발…\"재검토 촉구\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261124233622ECv",
-        "date": "2026-11-24T14:36:23.000Z"
+        "title": "국내 최대 디자인박람회 '디자인코리아 2026' 개막",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125084906oV3",
+        "date": "2026-11-24T23:49:07.000Z"
       }
     ]
   },
@@ -67,34 +67,35 @@
     {
       "key": "engineering",
       "label": "엔지니어링",
-      "source": "엔지니어링데일리",
+      "source": "구글 뉴스 · 엔지니어링데일리",
       "items": [
         {
           "title": "“같은 10년차라도 전문성 달라”…국토부, 기술인 경력체계 보완 추진",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23938",
-          "date": "2026-11-24T17:18:43.000Z"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52em5pNEJMWmVkb1BSVWFwN1FubWdSMnFBdnlHWmQ2WWhENTVlb0V1WnNQcDdVRURqNDNZbnlDZjhsOURGRlhTWFhzbWVNLW83NXVfcXVDQzdZcDc4aEQtZ0JZcEJWLTRlVXc?oc=5",
+          "date": "2026-11-24T08:18:43.000Z"
         },
         {
           "title": "[FIDIC 아·태 특집]수디르 다완 FIDIC 아시아태평양 전 회장 “한국-인도, 경쟁 관계에서 전략적 파트너로 세계시장에 도전 필요”",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23937",
-          "date": "2026-11-24T17:14:31.000Z"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XVmJpaDVWejh0eVlyNGY4ZEtsMkFfb3ZWMGZ0STJZMXp5TjhzVndfam5WNmdmQlk0NjFRM0s3Qm9xajM1c3lDLXJaVU1rUWV1MUNXbWVSNUxaS2ExRGFZMURaTVJqTnRVc0E?oc=5",
+          "date": "2026-11-24T08:14:31.000Z"
         },
         {
           "title": "엔지니어링협회, 사업대가 기준 개정…\"투명성 강화\"",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23920",
-          "date": "2026-11-24T09:21:17.000Z"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54RzNEUlY3Y21IWVlRVWRycDh1cllfMkdndHFlcFRwcjN0M1pOa1N6cl9BbDZZY1hfZW1hbk91OWNkVzVCSGlIM21hTThtYVNXTnFNTy1pa2RBRmJWQ0Ezd1BKRXVjWUhISUE?oc=5",
+          "date": "2026-11-24T00:21:17.000Z"
         },
         {
           "title": "[시론]우리는 왜 스스로 값을 깎는가",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23909",
-          "date": "2026-11-23T20:42:58.000Z"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fbmllUWxtSXJ1SzV4MHFQNThNREtTXy1TR2ZpRkhlanhZb19zR0lEZnBOWFN5SHJYajBMQ2NYZkFBNXFLanhfODluZHBXejVsTTFvTTBSSDJxbWFVb0FZMHVsTVIwekZIa2c?oc=5",
+          "date": "2026-11-23T11:42:58.000Z"
         },
         {
           "title": "[기자수첩]지분 5%로 생색내는 국토부",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23907",
-          "date": "2026-11-23T18:07:07.000Z"
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ndTlvbHNIODVxSDFxWmJtcXpheFFHeHFhTTd2YW5EZURQWjJjVDJ2dl9xcmNGTnFOOUdkQUhtSFc3cWFWSkpYelQyTXF2V1d6ZzY2eDh5MGtsVTJiOFhFcmRObUU1dWtNcnc?oc=5",
+          "date": "2026-11-23T09:07:07.000Z"
         }
-      ]
+      ],
+      "note": "엔지니어링데일리: ECONNREFUSED"
     }
   ],
   "world": {
@@ -102,29 +103,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Russian governor detained in rare criminal case against regional leader",
-        "link": "https://www.bbc.co.uk/news/articles/cmwy868v3nneo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T12:45:43.000Z"
+        "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+        "link": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T22:24:23.000Z"
       },
       {
-        "title": "Israeli air strike kills Hamas internal security chief in Gaza",
-        "link": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T12:12:48.000Z"
+        "title": "US attorney general dodges questions about Nvidia investigation",
+        "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T21:19:42.000Z"
       },
       {
-        "title": "Car bomb tears through Colombian city wounding more than 20",
-        "link": "https://www.bbc.co.uk/news/articles/cjqlq2n4np7do?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T11:45:52.000Z"
+        "title": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
+        "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T19:27:23.000Z"
       },
       {
-        "title": "Pope Francis' diary reveals claims he saw the devil three times",
-        "link": "https://www.bbc.co.uk/news/articles/cm78270l4z7no?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T11:10:57.000Z"
+        "title": "Nigerian monarch, 92, suspended after sexual assault claims",
+        "link": "https://www.bbc.co.uk/news/articles/cmglrz462nn6o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T19:10:31.000Z"
       },
       {
-        "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
-        "link": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T10:58:51.000Z"
+        "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
+        "link": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-24T18:07:46.000Z"
       }
     ]
   }
