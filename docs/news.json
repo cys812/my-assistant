@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-25T07:54:23.280Z",
+  "updated": "2026-11-25T18:33:46.317Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "中, 화웨이 美 유죄 평결에 반발…\"기업 압박 반대\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125165254LNd",
-        "date": "2026-11-25T07:52:56.000Z"
+        "title": "노재헌 주중대사에 소환 통보…노태우 비자금 수사",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126012651IXe",
+        "date": "2026-11-25T16:26:53.000Z"
       },
       {
-        "title": "'조희대 탄핵' 공동전선 구축되나…여야 내홍 여전",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125165249B1U",
-        "date": "2026-11-25T07:52:50.000Z"
+        "title": "美, 과잉생산 관세 추가…15% 상한은 유지",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126011713j1c",
+        "date": "2026-11-25T16:17:13.000Z"
       },
       {
-        "title": "\"육아휴직하며 세무사 합격\"…'세무냥이' 그 시험 후기 또 논란",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125165222npd",
-        "date": "2026-11-25T07:52:22.000Z"
+        "title": "임광현, AI 부정행위 방지책 '속도' 주문",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126003947UEK",
+        "date": "2026-11-25T15:39:48.000Z"
       },
       {
-        "title": "'리트만점' 이진우 과외교사 경찰 조사…\"진실 묻어선 안 돼\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125164913uhL",
-        "date": "2026-11-25T07:49:16.000Z"
+        "title": "北, 스위스 외교사무소 폐쇄…김여정 담화 하루 만",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126000712Nn6",
+        "date": "2026-11-25T15:07:13.000Z"
       },
       {
-        "title": "배경훈 \"국가시험 AI 부정행위 기술대책 검토\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611251648246r6",
-        "date": "2026-11-25T07:48:25.000Z"
+        "title": "美, 韓 등에 과잉생산 관세 예고…15% 상한 유지",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126000042F0W",
+        "date": "2026-11-25T15:00:43.000Z"
       }
     ]
   },
@@ -70,6 +70,16 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "[마닐라 특집①]필리핀 패자 경호엔지니어링 \"현지 직영화가 경쟁력\"",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23954",
+          "date": "2026-11-25T19:19:48.000Z"
+        },
+        {
+          "title": "지역사 우대 입찰에 ENG업계, 수주 셈법 복잡",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23953",
+          "date": "2026-11-25T17:40:11.000Z"
+        },
+        {
           "title": "삼성E&A, 2027년 임원인사 실시",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23951",
           "date": "2026-11-25T12:25:32.000Z"
@@ -83,16 +93,6 @@
           "title": "“사업비 편성 이전 노선·공법 검토부터 해야”",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23949",
           "date": "2026-11-25T10:27:28.000Z"
-        },
-        {
-          "title": "국토안전관리원-철도기술연구원, 피지컬 AI·로봇 터널 진단 실시",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23948",
-          "date": "2026-11-25T10:18:43.000Z"
-        },
-        {
-          "title": "철도공단, 호남고속철도 2단계 1공구 현장 점검",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23947",
-          "date": "2026-11-25T09:59:13.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
-        "link": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-25T06:36:00.000Z"
+        "title": "US stocks fall further as fears over AI intensify",
+        "link": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T17:48:09.000Z"
       },
       {
-        "title": "Four years after huge asteroid crash, a spacecraft has now returned to assess the damage",
+        "title": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
         "link": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-25T06:00:36.000Z"
+        "date": "2026-11-25T17:30:16.000Z"
       },
       {
-        "title": "US attorney general dodges questions about Nvidia investigation",
-        "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-25T03:44:07.000Z"
+        "title": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+        "link": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T16:20:14.000Z"
       },
       {
-        "title": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
-        "link": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-25T03:28:37.000Z"
+        "title": "South Africa's Ramaphosa wins court battle over impeachment threat",
+        "link": "https://www.bbc.co.uk/news/articles/cq4gn6gj3z37o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T15:42:50.000Z"
       },
       {
-        "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
-        "link": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-25T02:59:27.000Z"
+        "title": "Canadian astronaut welcomes baby girl from space station",
+        "link": "https://www.bbc.co.uk/news/articles/ckx283y8wwwgo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T15:41:39.000Z"
       }
     ]
   }
