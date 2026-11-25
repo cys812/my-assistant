@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-25T00:02:13.347Z",
+  "updated": "2026-11-25T07:54:23.280Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[사건사고] 남해고속도 트레일러 넘어져 6중 추돌…3명 심정지 外",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125090126j0M",
-        "date": "2026-11-25T00:01:27.000Z"
+        "title": "中, 화웨이 美 유죄 평결에 반발…\"기업 압박 반대\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125165254LNd",
+        "date": "2026-11-25T07:52:56.000Z"
       },
       {
-        "title": "[월드앤이슈] 젠슨 황 '추가 불륜' 고백…공화 강경파도 공세",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125085656yM2",
-        "date": "2026-11-24T23:57:00.000Z"
+        "title": "'조희대 탄핵' 공동전선 구축되나…여야 내홍 여전",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125165249B1U",
+        "date": "2026-11-25T07:52:50.000Z"
       },
       {
-        "title": "1조 달러 한국 수출, 60년간 세계 평균 2배 속도로 성장",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125085030o3F",
-        "date": "2026-11-24T23:50:31.000Z"
+        "title": "\"육아휴직하며 세무사 합격\"…'세무냥이' 그 시험 후기 또 논란",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125165222npd",
+        "date": "2026-11-25T07:52:22.000Z"
       },
       {
-        "title": "김하성, 디트로이트와 1년 500만 달러…빅리그 잔류 성공",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125084921h8u",
-        "date": "2026-11-24T23:49:22.000Z"
+        "title": "'리트만점' 이진우 과외교사 경찰 조사…\"진실 묻어선 안 돼\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261125164913uhL",
+        "date": "2026-11-25T07:49:16.000Z"
       },
       {
-        "title": "국내 최대 디자인박람회 '디자인코리아 2026' 개막",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261125084906oV3",
-        "date": "2026-11-24T23:49:07.000Z"
+        "title": "배경훈 \"국가시험 AI 부정행위 기술대책 검토\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH202611251648246r6",
+        "date": "2026-11-25T07:48:25.000Z"
       }
     ]
   },
@@ -67,35 +67,34 @@
     {
       "key": "engineering",
       "label": "엔지니어링",
-      "source": "구글 뉴스 · 엔지니어링데일리",
+      "source": "엔지니어링데일리",
       "items": [
         {
-          "title": "“같은 10년차라도 전문성 달라”…국토부, 기술인 경력체계 보완 추진",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52em5pNEJMWmVkb1BSVWFwN1FubWdSMnFBdnlHWmQ2WWhENTVlb0V1WnNQcDdVRURqNDNZbnlDZjhsOURGRlhTWFhzbWVNLW83NXVfcXVDQzdZcDc4aEQtZ0JZcEJWLTRlVXc?oc=5",
-          "date": "2026-11-24T08:18:43.000Z"
+          "title": "삼성E&A, 2027년 임원인사 실시",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23951",
+          "date": "2026-11-25T12:25:32.000Z"
         },
         {
-          "title": "[FIDIC 아·태 특집]수디르 다완 FIDIC 아시아태평양 전 회장 “한국-인도, 경쟁 관계에서 전략적 파트너로 세계시장에 도전 필요”",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9XVmJpaDVWejh0eVlyNGY4ZEtsMkFfb3ZWMGZ0STJZMXp5TjhzVndfam5WNmdmQlk0NjFRM0s3Qm9xajM1c3lDLXJaVU1rUWV1MUNXbWVSNUxaS2ExRGFZMURaTVJqTnRVc0E?oc=5",
-          "date": "2026-11-24T08:14:31.000Z"
+          "title": "현대엔지니어링, 용인-호남서 2조3,000억원대 발전사업 연속 수주 완료",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23950",
+          "date": "2026-11-25T12:20:56.000Z"
         },
         {
-          "title": "엔지니어링협회, 사업대가 기준 개정…\"투명성 강화\"",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54RzNEUlY3Y21IWVlRVWRycDh1cllfMkdndHFlcFRwcjN0M1pOa1N6cl9BbDZZY1hfZW1hbk91OWNkVzVCSGlIM21hTThtYVNXTnFNTy1pa2RBRmJWQ0Ezd1BKRXVjWUhISUE?oc=5",
-          "date": "2026-11-24T00:21:17.000Z"
+          "title": "“사업비 편성 이전 노선·공법 검토부터 해야”",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23949",
+          "date": "2026-11-25T10:27:28.000Z"
         },
         {
-          "title": "[시론]우리는 왜 스스로 값을 깎는가",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fbmllUWxtSXJ1SzV4MHFQNThNREtTXy1TR2ZpRkhlanhZb19zR0lEZnBOWFN5SHJYajBMQ2NYZkFBNXFLanhfODluZHBXejVsTTFvTTBSSDJxbWFVb0FZMHVsTVIwekZIa2c?oc=5",
-          "date": "2026-11-23T11:42:58.000Z"
+          "title": "국토안전관리원-철도기술연구원, 피지컬 AI·로봇 터널 진단 실시",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23948",
+          "date": "2026-11-25T10:18:43.000Z"
         },
         {
-          "title": "[기자수첩]지분 5%로 생색내는 국토부",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ndTlvbHNIODVxSDFxWmJtcXpheFFHeHFhTTd2YW5EZURQWjJjVDJ2dl9xcmNGTnFOOUdkQUhtSFc3cWFWSkpYelQyTXF2V1d6ZzY2eDh5MGtsVTJiOFhFcmRObUU1dWtNcnc?oc=5",
-          "date": "2026-11-23T09:07:07.000Z"
+          "title": "철도공단, 호남고속철도 2단계 1공구 현장 점검",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23947",
+          "date": "2026-11-25T09:59:13.000Z"
         }
-      ],
-      "note": "엔지니어링데일리: ECONNREFUSED"
+      ]
     }
   ],
   "world": {
@@ -103,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
-        "link": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T22:24:23.000Z"
+        "title": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
+        "link": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T06:36:00.000Z"
+      },
+      {
+        "title": "Four years after huge asteroid crash, a spacecraft has now returned to assess the damage",
+        "link": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T06:00:36.000Z"
       },
       {
         "title": "US attorney general dodges questions about Nvidia investigation",
         "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T21:19:42.000Z"
+        "date": "2026-11-25T03:44:07.000Z"
       },
       {
-        "title": "DR Congo says military aircraft missing as rebels claim to shoot down plane",
-        "link": "https://www.bbc.co.uk/news/articles/cwy7r5z8gg65o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T19:27:23.000Z"
+        "title": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
+        "link": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T03:28:37.000Z"
       },
       {
-        "title": "Nigerian monarch, 92, suspended after sexual assault claims",
-        "link": "https://www.bbc.co.uk/news/articles/cmglrz462nn6o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T19:10:31.000Z"
-      },
-      {
-        "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-        "link": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-24T18:07:46.000Z"
+        "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
+        "link": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-25T02:59:27.000Z"
       }
     ]
   }
