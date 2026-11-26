@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-26T10:39:34.209Z",
+  "updated": "2026-11-26T20:02:33.100Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "태국 방콕서 정유공장 폭발·화재…7명 부상",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126193457qmb",
-        "date": "2026-11-26T10:34:58.000Z"
+        "title": "2살 아이 수영장서 '허우적'…몸 던져 구한 골든 리트리버",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126115312gLa",
+        "date": "2026-11-26T20:01:05.000Z"
       },
       {
-        "title": "순식간에 공장 전체로…남동산단 화재로 1명 사망",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126193223T4m",
-        "date": "2026-11-26T10:32:25.000Z"
+        "title": "트럼프 \"중간선거 전 발표된 3분기 성장률은 가짜\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127045843CLX",
+        "date": "2026-11-26T19:58:43.000Z"
       },
       {
-        "title": "영국, 냉전 이후 처음으로 예비군 10만명에 \"소집 대비하라\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611261931448u1",
-        "date": "2026-11-26T10:31:45.000Z"
+        "title": "트럼프 \"푸틴에 유럽 침략 중단 요구…우크라 종전 충분히 가능\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127043131YpI",
+        "date": "2026-11-26T19:31:33.000Z"
       },
       {
-        "title": "[이슈5] 수사도 않고 \"안보위험 없다\"…젠슨황 면죄부 논란 外",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126193104YSa",
-        "date": "2026-11-26T10:31:05.000Z"
+        "title": "\"中에 1%라도 임대하면 판매 중단\" 엔비디아 판매상 강경방침",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127035624bMq",
+        "date": "2026-11-26T18:56:25.000Z"
       },
       {
-        "title": "트럼프·나토 수장 \"러시아, 우크라전 확전 말라\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126192609Xg4",
-        "date": "2026-11-26T10:26:09.000Z"
+        "title": "\"중국·베트남 따라가자\"…쿠바, 2조7천억원 규모 외국인 투자 승인",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127035201SzQ",
+        "date": "2026-11-26T18:52:04.000Z"
       }
     ]
   },
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "US Army says controlled blast of explosives in Iowa was 'huge success'",
-        "link": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T10:38:35.000Z"
+        "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+        "link": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T19:27:45.000Z"
+      },
+      {
+        "title": "Nine injured, three critically, after Bangkok oil refinery explosion",
+        "link": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T16:21:19.000Z"
       },
       {
         "title": "New UK-EU treaty has 10-year termination clause",
         "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T09:59:14.000Z"
+        "date": "2026-11-26T15:23:17.000Z"
       },
       {
-        "title": "Musk's plan to send a million SpaceX data satellites into space approved",
-        "link": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T09:27:44.000Z"
+        "title": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+        "link": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T15:17:18.000Z"
       },
       {
-        "title": "Two screenings of Pakistani TV show cancelled in India after backlash",
-        "link": "https://www.bbc.co.uk/news/articles/cky97x7delz9o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T08:30:12.000Z"
-      },
-      {
-        "title": "Guinea orders residents to clean up the capital months after deadly rubbish dump collapse",
-        "link": "https://www.bbc.co.uk/news/articles/cqwy4377yxnlo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T07:43:48.000Z"
+        "title": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
+        "link": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T14:44:26.000Z"
       }
     ]
   }
