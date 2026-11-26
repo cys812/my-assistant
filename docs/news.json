@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-26T01:55:18.499Z",
+  "updated": "2026-11-26T10:39:34.209Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "[속보] 대법, 윤석열 '한덕수 재판 위증' 무죄 확정",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126105208PDG",
-        "date": "2026-11-26T01:52:09.000Z"
+        "title": "태국 방콕서 정유공장 폭발·화재…7명 부상",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126193457qmb",
+        "date": "2026-11-26T10:34:58.000Z"
       },
       {
-        "title": "[속보] 대법, 윤석열 '한덕수 재판 위증' 무죄 확정",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126104847nAX",
-        "date": "2026-11-26T01:48:47.000Z"
+        "title": "순식간에 공장 전체로…남동산단 화재로 1명 사망",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126193223T4m",
+        "date": "2026-11-26T10:32:25.000Z"
       },
       {
-        "title": "'국제시장2' 내년 설 개봉…전작 1,400만 신화 잇는다",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126104843Usk",
-        "date": "2026-11-26T01:48:44.000Z"
+        "title": "영국, 냉전 이후 처음으로 예비군 10만명에 \"소집 대비하라\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611261931448u1",
+        "date": "2026-11-26T10:31:45.000Z"
       },
       {
-        "title": "LG, '2차례 우승' 김민식 영입…\"젊은 포수들 성장에 역할\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126104606wM7",
-        "date": "2026-11-26T01:46:08.000Z"
+        "title": "[이슈5] 수사도 않고 \"안보위험 없다\"…젠슨황 면죄부 논란 外",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261126193104YSa",
+        "date": "2026-11-26T10:31:05.000Z"
       },
       {
-        "title": "누리호 6차 발사 준비…단 모사체 육상·해상 이송 점검",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126104335pKW",
-        "date": "2026-11-26T01:43:35.000Z"
+        "title": "트럼프·나토 수장 \"러시아, 우크라전 확전 말라\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126192609Xg4",
+        "date": "2026-11-26T10:26:09.000Z"
       }
     ]
   },
@@ -70,29 +70,29 @@
       "source": "엔지니어링데일리",
       "items": [
         {
-          "title": "서부선 민자사업 재추진… 총사업비 2조3,252억원",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23962",
-          "date": "2026-11-26T10:36:52.000Z"
+          "title": "“균열 메워도 벌점, 시공사 사정에 설계변경”…발주청에 휘둘리는 엔지니어링사",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23970",
+          "date": "2026-11-26T17:34:39.000Z"
         },
         {
-          "title": "KDI “내년도 건설투자 2.5% 반등”",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23961",
-          "date": "2026-11-26T10:10:00.000Z"
+          "title": "자이C&A, 기술 전문가 제도 신설",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23969",
+          "date": "2026-11-26T16:49:05.000Z"
         },
         {
-          "title": "일자리만, 교통만 강조하는 도시계획, 인구소멸 앞당기는 촉매제",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23960",
-          "date": "2026-11-26T09:05:08.000Z"
+          "title": "위즈코어, 캐디안 폴더 출시",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23968",
+          "date": "2026-11-26T16:36:57.000Z"
         },
         {
-          "title": "[마닐라 특집①]필리핀 패자 경호엔지니어링 \"현지 직영화가 경쟁력\"",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23954",
-          "date": "2026-11-25T19:19:48.000Z"
+          "title": "현대스틸산업, 신안군에 1,100억원 들여 해상풍력 전용 배후기지 조성",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23967",
+          "date": "2026-11-26T15:54:19.000Z"
         },
         {
-          "title": "지역사 우대 입찰에 ENG업계, 수주 셈법 복잡",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23953",
-          "date": "2026-11-25T17:40:11.000Z"
+          "title": "가덕도 신공항 공사비, 특별법 개정으로 현실화 준비",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23966",
+          "date": "2026-11-26T15:36:10.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "California warns of flooding as king tides peak over Thanksgiving",
-        "link": "https://www.bbc.co.uk/news/articles/ckn806qq760po?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T01:22:55.000Z"
+        "title": "US Army says controlled blast of explosives in Iowa was 'huge success'",
+        "link": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T10:38:35.000Z"
       },
       {
-        "title": "US announces new tariffs on host of countries including China",
-        "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T01:20:14.000Z"
+        "title": "New UK-EU treaty has 10-year termination clause",
+        "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T09:59:14.000Z"
       },
       {
-        "title": "The US pastor who wants to see women's right to vote overturned",
-        "link": "https://www.bbc.co.uk/news/articles/cwe89jyz4012o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T00:24:25.000Z"
+        "title": "Musk's plan to send a million SpaceX data satellites into space approved",
+        "link": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T09:27:44.000Z"
       },
       {
-        "title": "Spanish elections: What you need to know and what's at stake",
-        "link": "https://www.bbc.co.uk/news/articles/c6wy4ejnyvdyo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T00:23:49.000Z"
+        "title": "Two screenings of Pakistani TV show cancelled in India after backlash",
+        "link": "https://www.bbc.co.uk/news/articles/cky97x7delz9o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T08:30:12.000Z"
       },
       {
-        "title": "France's political mainstream risks presidential vote debacle with no clear candidate",
-        "link": "https://www.bbc.co.uk/news/articles/cq772vedgepro?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T00:23:27.000Z"
+        "title": "Guinea orders residents to clean up the capital months after deadly rubbish dump collapse",
+        "link": "https://www.bbc.co.uk/news/articles/cqwy4377yxnlo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T07:43:48.000Z"
       }
     ]
   }
