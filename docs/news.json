@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-27T02:43:50.162Z",
+  "updated": "2026-11-27T11:55:54.197Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "\"전용 가운까지 입고\"…서울대 수시 면접 현장",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127114234eys",
-        "date": "2026-11-27T02:42:35.000Z"
+        "title": "장동혁 \"韓 복당해도 다시 징계\"…친한계 \"막가파\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127205435PZI",
+        "date": "2026-11-27T11:54:36.000Z"
       },
       {
-        "title": "'동해 표류' 북한 어선 24일 만에 송환…1명 귀순·6명 귀환",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127114129eKm",
-        "date": "2026-11-27T02:41:31.000Z"
+        "title": "[속보] 국외 초미세먼지 유입…곳곳 공기질 나쁨",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127204823KWZ",
+        "date": "2026-11-27T11:48:23.000Z"
       },
       {
-        "title": "유진그룹, 'YTN 인수 의혹' 보도 뉴스타파 기자·제보자 고소",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611271141194y8",
-        "date": "2026-11-27T02:41:22.000Z"
+        "title": "러시아, 항공유 수출 금지 4개월 연장…\"자국 연료시장 안정 조치\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611272047595Yp",
+        "date": "2026-11-27T11:47:59.000Z"
       },
       {
-        "title": "사전 경고했는데 더 늘었다…수능 부정행위 474건으로 급증",
-        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127113857X8s",
-        "date": "2026-11-27T02:38:58.000Z"
+        "title": "'당원권 2년 정지' 중징계…최민희 \"재심 신청\"",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127204742DWz",
+        "date": "2026-11-27T11:47:44.000Z"
       },
       {
-        "title": "LIG D&A, 네덜란드 한국전 참전용사 방문…사진 기록·기념품 전달",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127113640K8R",
-        "date": "2026-11-27T02:36:42.000Z"
+        "title": "[이시각헤드라인] 11월 27일 뉴스리뷰",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127203535hyo",
+        "date": "2026-11-27T11:35:37.000Z"
       }
     ]
   },
@@ -70,6 +70,21 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "커트라인 높아진 엔지니어링사…\"서성한도 중견사 탈락\"",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23991",
+          "date": "2026-11-27T17:50:24.000Z"
+        },
+        {
+          "title": "호남선 가수원~논산 고속화 노반 기본·실시 설계 종심제 발주",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23988",
+          "date": "2026-11-27T14:39:28.000Z"
+        },
+        {
+          "title": "대영+KG, 진해신항 서컨 2단계 항만배후 조성공사 수주 유력",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23987",
+          "date": "2026-11-27T13:49:01.000Z"
+        },
+        {
           "title": "경북도, 서대구~의성 대구경북광역철도 포함 6개 사업 예타 통과",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23986",
           "date": "2026-11-27T10:49:42.000Z"
@@ -78,21 +93,6 @@
           "title": "우상호·추미애 도지사 “포천~철원 고속도 예타 통과 필요”",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23985",
           "date": "2026-11-27T10:37:34.000Z"
-        },
-        {
-          "title": "\"신입 엔지니어 모였다\"…엔협, 비전 프로그램 개최",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23984",
-          "date": "2026-11-27T10:16:25.000Z"
-        },
-        {
-          "title": "남부내륙철도 1·7·9공구 CM 발주…모두 100억원대",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23982",
-          "date": "2026-11-27T10:03:54.000Z"
-        },
-        {
-          "title": "“균열 메워도 벌점, 시공사 사정에 설계변경”…발주청에 휘둘리는 엔지니어링사",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23970",
-          "date": "2026-11-26T17:34:39.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
-        "link": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-27T02:22:37.000Z"
+        "title": "Ex-media executive admits saying Australian child sex abuse survivor 'looking to be raped again'",
+        "link": "https://www.bbc.co.uk/news/articles/ckr5grlq78n9o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T11:44:40.000Z"
       },
       {
-        "title": "Major Thanksgiving storm brings flooding, flight delays across US",
-        "link": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-27T00:52:11.000Z"
+        "title": "Uganda to withdraw troops from DR Congo town amid diplomatic row",
+        "link": "https://www.bbc.co.uk/news/articles/cq4gnj2ldkyzo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T10:39:31.000Z"
       },
       {
-        "title": "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple",
-        "link": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-27T00:48:11.000Z"
+        "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+        "link": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T10:26:28.000Z"
       },
       {
-        "title": "Death-sentenced Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind",
-        "link": "https://www.bbc.co.uk/news/articles/cx30g71rev23o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-27T00:47:43.000Z"
+        "title": "Clashes mar European games as Macron condemns violence",
+        "link": "https://www.bbc.co.uk/sport/football/articles/c69q8y5x03ywo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T10:24:24.000Z"
       },
       {
-        "title": "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
-        "link": "https://www.bbc.co.uk/news/videos/c6evr2y40v0jo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T23:03:16.000Z"
+        "title": "India busts cyberfraud and trafficking network rescuing 164 foreigners",
+        "link": "https://www.bbc.co.uk/news/articles/crkgvjy7q83wo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T10:01:07.000Z"
       }
     ]
   }
