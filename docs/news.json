@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-26T20:02:33.100Z",
+  "updated": "2026-11-27T02:43:50.162Z",
   "domestic": {
     "label": "주요 · 연합뉴스TV",
     "source": "연합뉴스TV 최신기사",
     "items": [
       {
-        "title": "2살 아이 수영장서 '허우적'…몸 던져 구한 골든 리트리버",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261126115312gLa",
-        "date": "2026-11-26T20:01:05.000Z"
+        "title": "\"전용 가운까지 입고\"…서울대 수시 면접 현장",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127114234eys",
+        "date": "2026-11-27T02:42:35.000Z"
       },
       {
-        "title": "트럼프 \"중간선거 전 발표된 3분기 성장률은 가짜\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127045843CLX",
-        "date": "2026-11-26T19:58:43.000Z"
+        "title": "'동해 표류' 북한 어선 24일 만에 송환…1명 귀순·6명 귀환",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127114129eKm",
+        "date": "2026-11-27T02:41:31.000Z"
       },
       {
-        "title": "트럼프 \"푸틴에 유럽 침략 중단 요구…우크라 종전 충분히 가능\"",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127043131YpI",
-        "date": "2026-11-26T19:31:33.000Z"
+        "title": "유진그룹, 'YTN 인수 의혹' 보도 뉴스타파 기자·제보자 고소",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR202611271141194y8",
+        "date": "2026-11-27T02:41:22.000Z"
       },
       {
-        "title": "\"中에 1%라도 임대하면 판매 중단\" 엔비디아 판매상 강경방침",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127035624bMq",
-        "date": "2026-11-26T18:56:25.000Z"
+        "title": "사전 경고했는데 더 늘었다…수능 부정행위 474건으로 급증",
+        "link": "https://www.yonhapnewstv.co.kr/news/MYH20261127113857X8s",
+        "date": "2026-11-27T02:38:58.000Z"
       },
       {
-        "title": "\"중국·베트남 따라가자\"…쿠바, 2조7천억원 규모 외국인 투자 승인",
-        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127035201SzQ",
-        "date": "2026-11-26T18:52:04.000Z"
+        "title": "LIG D&A, 네덜란드 한국전 참전용사 방문…사진 기록·기념품 전달",
+        "link": "https://www.yonhapnewstv.co.kr/news/AKR20261127113640K8R",
+        "date": "2026-11-27T02:36:42.000Z"
       }
     ]
   },
@@ -70,29 +70,29 @@
       "source": "엔지니어링데일리",
       "items": [
         {
+          "title": "경북도, 서대구~의성 대구경북광역철도 포함 6개 사업 예타 통과",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23986",
+          "date": "2026-11-27T10:49:42.000Z"
+        },
+        {
+          "title": "우상호·추미애 도지사 “포천~철원 고속도 예타 통과 필요”",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23985",
+          "date": "2026-11-27T10:37:34.000Z"
+        },
+        {
+          "title": "\"신입 엔지니어 모였다\"…엔협, 비전 프로그램 개최",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23984",
+          "date": "2026-11-27T10:16:25.000Z"
+        },
+        {
+          "title": "남부내륙철도 1·7·9공구 CM 발주…모두 100억원대",
+          "link": "http://www.engdaily.com/news/articleView.html?idxno=23982",
+          "date": "2026-11-27T10:03:54.000Z"
+        },
+        {
           "title": "“균열 메워도 벌점, 시공사 사정에 설계변경”…발주청에 휘둘리는 엔지니어링사",
           "link": "http://www.engdaily.com/news/articleView.html?idxno=23970",
           "date": "2026-11-26T17:34:39.000Z"
-        },
-        {
-          "title": "자이C&A, 기술 전문가 제도 신설",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23969",
-          "date": "2026-11-26T16:49:05.000Z"
-        },
-        {
-          "title": "위즈코어, 캐디안 폴더 출시",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23968",
-          "date": "2026-11-26T16:36:57.000Z"
-        },
-        {
-          "title": "현대스틸산업, 신안군에 1,100억원 들여 해상풍력 전용 배후기지 조성",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23967",
-          "date": "2026-11-26T15:54:19.000Z"
-        },
-        {
-          "title": "가덕도 신공항 공사비, 특별법 개정으로 현실화 준비",
-          "link": "http://www.engdaily.com/news/articleView.html?idxno=23966",
-          "date": "2026-11-26T15:36:10.000Z"
         }
       ]
     }
@@ -102,29 +102,29 @@
     "source": "BBC World",
     "items": [
       {
-        "title": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
-        "link": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T19:27:45.000Z"
+        "title": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
+        "link": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T02:22:37.000Z"
       },
       {
-        "title": "Nine injured, three critically, after Bangkok oil refinery explosion",
-        "link": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T16:21:19.000Z"
+        "title": "Major Thanksgiving storm brings flooding, flight delays across US",
+        "link": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T00:52:11.000Z"
       },
       {
-        "title": "New UK-EU treaty has 10-year termination clause",
-        "link": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T15:23:17.000Z"
+        "title": "Met Police ruined my life, says Kenyan man wrongly sentenced over attack on UK couple",
+        "link": "https://www.bbc.co.uk/news/articles/cqvg2nlr8kd8o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T00:48:11.000Z"
       },
       {
-        "title": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
-        "link": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T15:17:18.000Z"
+        "title": "Death-sentenced Sheikh Hasina's planned return puts Bangladesh on edge - and India in a bind",
+        "link": "https://www.bbc.co.uk/news/articles/cx30g71rev23o?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-27T00:47:43.000Z"
       },
       {
-        "title": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
-        "link": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
-        "date": "2026-11-26T14:44:26.000Z"
+        "title": "My dad's watch stopped the moment he died - I found it in the ashes of Hong Kong tower fire",
+        "link": "https://www.bbc.co.uk/news/videos/c6evr2y40v0jo?at_medium=RSS&at_campaign=rss",
+        "date": "2026-11-26T23:03:16.000Z"
       }
     ]
   }
